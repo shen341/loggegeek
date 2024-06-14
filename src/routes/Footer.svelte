@@ -33,7 +33,7 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>リンク</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> ホーム</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#"> ホーム</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="/#about"> 概要</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="/#services"> サービス</a></li>
               <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li> -->
@@ -69,4 +69,4 @@
       </div>
     </div>
 
-  </footer>
+</footer>

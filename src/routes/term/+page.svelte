@@ -3,12 +3,14 @@
      import '../styltes/bootstrap.min.css';
 	 import '../styltes/main.css';
      import  MetaTagComponent from "../Components/MetaTagComponent.svelte";
+     import Header from '../Header.svelte';
 
 </script>
 
 <svelte:head>
 	<MetaTagComponent/>
 </svelte:head>
+<Header/>
 <div class="container-fluid bg-light bg-icon my-5 py-6">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-10 col-xl-8 bg-white" style="margin-top: 50px;">

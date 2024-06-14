@@ -16,10 +16,10 @@
       <!-- svelte-ignore a11y-no-static-element-interactions -->
       <nav id="navmenu" class="navmenu {mobileMenuOpen?'active_mobile_memu':""}">
         <ul>
-          <li><a href="#hero" class="">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="/#hero" class="">Home<br></a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#portfolio">Portfolio</a></li>
           <!-- <li><a href="#team">Team</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
