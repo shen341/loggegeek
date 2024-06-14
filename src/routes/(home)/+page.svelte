@@ -746,7 +746,7 @@
 				</div>
 				<div>
 				  <h3>Call Us</h3>
-				  <p>03-6824-7905</p>
+				  <p><a href="tel:03-6824-7905">03-6824-7905</a></p>
 				</div>
 			  </div><!-- End Info Item -->
   

@@ -17,7 +17,7 @@
               <p>西葛西2-22-45 542室
               </p>
               <p>東京都江戸川区</p>
-              <p><strong>Phone:</strong> <span>03-6824-7905</span></p>
+              <p><strong>Phone:</strong> <span><a href="tel:03-6824-7905">03-6824-7905</a></span></p>
               <p><strong>Fax:</strong> <span> 03-4530-8790</span></p>
               <p><strong>Email:</strong> <span><a href="mailTo:contact@lodgegeek.com" class="__cf_email__" >contact@lodgegeek.com
               </a></span></p>
@@ -46,7 +46,7 @@
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="/#services"> 宿泊施設</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="/#services"> IoT機器の輸入販売</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> SIMカードの販売t</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> SIMカードの販売</a></li>
 
             </ul>
           </div>
