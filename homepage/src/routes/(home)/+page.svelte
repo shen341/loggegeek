@@ -384,7 +384,7 @@
 				  <h4>宿泊施設事業</h4>
 				  <p></p>
 				  <a href="{PORTFOLIO1}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -394,7 +394,7 @@
 				  <h4>IoT機器事業</h4>
 				  <p>スマートロック　ソリューション</p>
 				  <a href="{PORTFOLIO2}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -404,7 +404,7 @@
 				  <h4>IoT機器事業</h4>
 				  <p>スマートハウス</p>
 				  <a href="{PORTFOLIO3}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -416,7 +416,7 @@
 				  <h4>民泊代行サービス</h4>
 				  <p>民泊代行サービス</p>
 				  <a href="{PORTFOLIO4}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -426,7 +426,7 @@
 				  <h4>通信機器</h4>
 				  <p>SIMカード事業</p>
 				  <a href="{PORTFOLIO5}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -436,7 +436,7 @@
 				  <h4>システム</h4>
 				  <p>民宿スマートハウスシステム、コンサルティング</p>
 				  <a href="{PORTFOLIO6}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
