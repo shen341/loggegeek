@@ -60,7 +60,7 @@
       <div class="container text-center">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">LodgeGeek </strong> <span>All Rights Reserved</span></p>
         <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">LodgeGeek</a>
+          Designed by <a href="/">LodgeGeek</a>
         </div>
       </div>
     </div>
