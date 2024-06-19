@@ -1,5 +1,9 @@
 <script>
  	import FormatListBulleted from "svelte-material-icons/FormatListBulleted.svelte"
+  import TranslateVariant from "svelte-material-icons/TranslateVariant.svelte"
+  import "/node_modules/flag-icons/css/flag-icons.min.css";
+  import { trans,locale, locales } from "$lib/language/i18n";
+
 	let mobileMenuOpen = false;
 </script>
 
@@ -16,15 +20,27 @@
       <!-- svelte-ignore a11y-no-static-element-interactions -->
       <nav id="navmenu" class="navmenu {mobileMenuOpen?'active_mobile_memu':""}">
         <ul>
-          <li><a href="/#hero" class="">Home<br></a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#services">Services</a></li>
-          <li><a href="/#portfolio">Portfolio</a></li>
+          <li><a href="/#hero" class="">{$trans("memu.title.home")}<br></a></li>
+          <li><a href="/#about">{$trans("memu.title.about")}</a></li>
+          <li><a href="/#services">{$trans("memu.title.service")}</a></li>
+          <li><a href="/#portfolio">{$trans("memu.title.portfolio")}</a></li>
           <!-- <li><a href="#team">Team</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#contact">{$trans("memu.title.contact")}</a></li>
+          <li class="dropdown"><a href="#"><TranslateVariant color="white" width=24 height=24/></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              {#each locales as language}
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+                <li class="list-group-item" on:click={()=>{$locale=language}}>
+                  <!-- svelte-ignore a11y-invalid-attribute -->
+                  <a href="javascript:void(0);">
+                    <span class="fi {language=="日本語"?"fi-jp":(language=="中文"?"fi-cn":"fi-um")}"></span>
+                    <span style="margin-left: 5px;">{language}</span>
+                  </a>
+              </li>                      
+              {/each}
+
+              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -32,13 +48,9 @@
                   <li><a href="#">Deep Dropdown 4</a></li>
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              </li> -->
             </ul>
-          </li> -->
-          <li><a href="#contact">Contact</a></li>
+          </li>         
         </ul>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div class="menu_icon" on:click={() => mobileMenuOpen =!mobileMenuOpen}>
@@ -50,6 +62,10 @@
   </header>
 
   <style>
+  ul li.dropdown ul li a {
+      justify-content: flex-start;
+      font-size: 12px;
+  }
 	.active_mobile_memu {
 		position: fixed;
 		overflow: hidden;

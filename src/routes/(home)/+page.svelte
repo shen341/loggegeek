@@ -35,6 +35,9 @@
 
 	import  MetaTagComponent from "../Components/MetaTagComponent.svelte";
 
+	import { trans, locale, locales } from "$lib/language/i18n";
+
+
 </script>
 
 <svelte:head>
@@ -56,8 +59,8 @@
   
 		  <div class="row justify-content-center text-center">
 			<div class="col-xl-12 col-lg-12">
-			  <h2>革新的なサービスで豊かで快適な生活を創造</h2>
-			  <p>宿泊施設の収益向上、ゲスト満足度の向上</p>
+			  <h2>{$trans("hero.section.title")}</h2>
+			  <p>{$trans("hero.section.subtitle")}</p>
 			</div>
 		  </div>
   
@@ -65,31 +68,31 @@
 			<div class="col-xl-2 col-md-4">
 			  <div class="icon-box">
 				<ChartLine color="#ffc451" width=56 height=56/>
-				<h3><a href="">企画運営</a></h3>
+				<h3><a href="">{$trans("hero.section.planning")}</a></h3>
 			  </div>
 			</div>
 			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
 			  <div class="icon-box">
 				<LockSmart color="#ffc451" width=56 height=56/>
-				<h3><a href="">IoT機器販売</a></h3>
+				<h3><a href="">{$trans("hero.section.iotSales")}</a></h3>
 			  </div>
 			</div>
 			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
 			  <div class="icon-box">
 				<AccountStar color="#ffc451" width=56 height=56/>
-				<h3><a href="">宿泊顧問</a></h3>
+				<h3><a href="">{$trans("hero.section.consultant")}</a></h3>
 			  </div>
 			</div>
 			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
 			  <div class="icon-box">
 				<NfcTap color="#ffc451" width=56 height=56/>
-				<h3><a href="">通信機器</a></h3>
+				<h3><a href="">{$trans("hero.section.communication.equipment")}</a></h3>
 			  </div>
 			</div>
 			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
 			  <div class="icon-box">
 				<Sim color="#ffc451" width=48 height=48/>
-				<h3><a href="">SIMカード販売</a></h3>
+				<h3><a href="">{$trans("hero.section.communication.sim")}</a></h3>
 			  </div>
 			</div>
 		  </div>
@@ -110,17 +113,15 @@
 			<div class="col-lg-6 order-2 order-lg-1 content">
 			  <h3>About Us</h3>
 			  <p class="mb-3">
-				株式会社ロッジギークは、宿泊施設の企画、管理、運営、各種IoT機器の輸入販売、通信機器・SIMカードの販売を行う会社です。
-				私たちは、宿泊施設事業、IoT機器事業、通信機器・SIMカード事業を通じて、人々の生活を豊かにする革新的なサービスを提供することを目指しています。
+				{$trans("about.section.title")}
 			  </p>
 			  <ul>
-				<li><div style="margin-right:0.5rem;"><CheckAll color="#ffc451" width=32 height=32/></div> <span>宿泊施設を単なる滞在場所から、人と人が繋がり、新しい体験を生み出す場へと進化させる。</span></li>
-				<li><div style="margin-right:0.5rem;"><CheckAll color="#ffc451" width=32 height=32/></div> <span>IoT機器を活用し、より便利で快適な生活空間を創造する。</span></li>
-				<li><div style="margin-right:0.5rem;"><CheckAll color="#ffc451" width=32 height=32/></div><span>通信機器・SIMカードを通じて、人々がいつでもどこでも情報にアクセスできる環境を実現する</span></li>
+				<li><div style="margin-right:0.5rem;"><CheckAll color="#ffc451" width=32 height=32/></div> <span>{$trans("about.section.vision1")}</span></li>
+				<li><div style="margin-right:0.5rem;"><CheckAll color="#ffc451" width=32 height=32/></div> <span>{$trans("about.section.vision2")}</span></li>
+				<li><div style="margin-right:0.5rem;"><CheckAll color="#ffc451" width=32 height=32/></div> <span>{$trans("about.section.vision3")}</span></li>
 			  </ul>
 			  <p>
-				これらの事業を通じて、私たちは社会に貢献し、持続可能な成長を目指していきます。
-				株式会社ロッジギークは、今後もお客様に新たな価値を提供し続けるために、努力を続けてまいります。
+				{$trans("about.section.vision.end")}
 			  </p>
 			</div>
 		  </div>
@@ -167,10 +168,10 @@
 					<Creation color="#ffc451" width=48 height=48/>
 				</div>
 				<div>
-				  <h4>宿泊施設事業とIoT機器事業の融合</h4>
+				  <h4>{$trans("features.section.job1")}</h4>
 				  <ul>
-					<li>宿泊施設にIoT機器を導入することで、付加価値の高いサービスを提供</li>
-					<li>ゲストの快適性を向上させ、リピーター獲得に繋げる</li>
+					<li>{$trans("features.section.job1.detail1")}</li>
+					<li>{$trans("features.section.job1.detail2")}</li>
 				  </ul>
 				</div>
 			  </div><!-- End Features Item-->
@@ -180,10 +181,10 @@
 					<EarthPlus color="#ffc451" width=48 height=48/>
 				</div>
 				<div>
-				  <h4>グローバルなネットワーク</h4>
+				  <h4>{$trans("features.section.job2")}</h4>
 				  <ul>
-					<li>海外メーカーとの直接取引による高品質な製品の提供</li>
-					<li>現地の事情に精通したスタッフによるサポート</li>
+					<li>{$trans("features.section.job2.detail1")}</li>
+					<li>{$trans("features.section.job2.detail2")}</li>
 				  </ul>				  
 				</div>
 			  </div><!-- End Features Item-->
@@ -193,10 +194,10 @@
 					<Numeric1Circle color="#ffc451" width=48 height=48/>
 				</div>
 				<div>
-				  <h4>顧客中心主義</h4>
+				  <h4>{$trans("features.section.job3")}</h4>
 				  <ul>
-					<li>常に顧客ニーズを把握し、最適なソリューションを提案</li>
-					<li>迅速かつ丁寧な対応で顧客満足度向上を目指す</li>
+					<li>{$trans("features.section.job3.detail1")}</li>
+					<li>{$trans("features.section.job3.detail2")}</li>
 				  </ul>					  
 				</div>
 			  </div><!-- End Features Item-->
@@ -206,10 +207,10 @@
 					<WifiArrowUpDown color="#ffc451" width=48 height=48/>
 				</div>				
 				<div>
-				  <h4>通信機器・SIMカード事業</h4>
+				  <h4>{$trans("features.section.job4")}</h4>
 				  <ul>
-					<li>外国人旅行者が、日本のモバイル通信ネットワークを利用</li>
-					<li>民宿周辺の情報や観光</li>
+					<li>{$trans("features.section.job4.detail1")}</li>
+					<li>{$trans("features.section.job4.detail2")}</li>
 				  </ul>					
 				</div>
 			  </div><!-- End Features Item-->
@@ -239,12 +240,12 @@
 					<BedOutline color="white" width=36 height=36/>
 				</div>
 				<a href="javascript:void(0);" class="stretched-link">
-				  <h3>宿泊施設事業</h3>
+				  <h3>{$trans("services.section.job1")}</h3>
 				</a>
 				<ul class="custom">
-					<li>独自のコンセプトに基づいた宿泊施設の企画・開発</li>
-					<li>運営ノウハウを活用した効率的な施設管理</li>
-					<li>顧客満足度向上のためのホスピタリティ溢れるサービス提供</li>
+					<li>{$trans("services.section.job1.detail1")}</li>
+					<li>{$trans("services.section.job1.detail2")}</li>
+					<li>{$trans("services.section.job1.detail3")}</li>
 				</ul>				  
 			 </div>
 			</div><!-- End Service Item -->
@@ -255,13 +256,13 @@
 					<LockSmart color="white" width=36 height=36/>
 				</div>
 				<a href="javascript:void(0);" class="stretched-link">
-				  <h3>IoT機器事業</h3>
+				  <h3>{$trans("services.section.job2")}</h3>
 				</a>
 				<ul class="custom">
-					<li>海外メーカーとの連携による高品質なIoT機器の輸入販売</li>
-					<li>スマートホーム化や業務効率化を実現するソリューション提案</li>
-					<li>専門スタッフによる設置</li>
-					<li>メンテナンスサービス提供</li>
+					<li>{$trans("services.section.job2.detail1")}</li>
+					<li>{$trans("services.section.job2.detail2")}</li>
+					<li>{$trans("services.section.job2.detail3")}</li>
+					<li>{$trans("services.section.job2.detail4")}</li>
 				</ul>				  
 			</div>
 			</div><!-- End Service Item -->
@@ -272,11 +273,11 @@
 					<WifiArrowUpDown color="white" width=36 height=36/>
 				</div>
 				<a href="javascript:void(0);" class="stretched-link">
-				  <h3>通信機器・SIMカード事業</h3>
+				  <h3>{$trans("services.section.job3")}</h3>
 				</a>
 				<ul class="custom">
-					<li>国内外の通信事業者と提携した通信機器・SIMカードの販売</li>
-					<li>充実した顧客サポート体制による安心のサービス提供</li>
+					<li>{$trans("services.section.job3.detail1")}</li>
+					<li>{$trans("services.section.job3.detail2")}</li>
 				</ul>
 			</div>
 			</div><!-- End Service Item -->
@@ -287,12 +288,12 @@
 					<CogSyncOutline color="white" width=36 height=36/>
 				</div>
 				<a href="javascript:void(0);" class="stretched-link">
-				  <h3>民宿スマートハウスシステム</h3>
+				  <h3>{$trans("services.section.job4")}</h3>
 				</a>
 				<ul class="custom">
-					<li>民宿管理システムとスマートハウスシステムを提供し、運営の効率化とゲストの快適性を向上</li>
-					<li>スマートロックでゲストのセルフチェックイン/チェックアウト</li>
-					<li>遠隔操作や自動制御による、省エネルギー化や利便性の向上</li>
+					<li>{$trans("services.section.job4.detail1")}</li>
+					<li>{$trans("services.section.job4.detail2")}</li>
+					<li>{$trans("services.section.job4.detail3")}</li>
 				</ul>
 			  </div>
 			</div><!-- End Service Item -->
@@ -303,13 +304,13 @@
 					<FaceAgent color="white" width=36 height=36/>
 				</div>
 				<a href="javascript:void(0);" class="stretched-link">
-				  <h3>民泊代行サービス</h3>
+				  <h3>{$trans("services.section.job5")}</h3>
 				</a>
 				<ul class="custom">
-					<li>民泊申請代行</li>
-					<li>オーナーに代わって宿泊予約の管理</li>
-					<li>清掃、チェックイン・チェックアウトの手続き</li>
-					<li>ゲストとのコミュニケーション</li>
+					<li>{$trans("services.section.job5.detail1")}</li>
+					<li>{$trans("services.section.job5.detail2")}</li>
+					<li>{$trans("services.section.job5.detail3")}</li>
+					<li>{$trans("services.section.job5.detail4")}</li>
 				</ul>				
 				<!-- <a href="javascript:void(0);" class="stretched-link"></a> -->
 			  </div>
@@ -321,12 +322,12 @@
 					<ChatProcessing color="white" width=36 height=36/>
 				</div>
 				<a href="javascript:void(0);" class="stretched-link">
-				  <h3>コンサルティング</h3>
+				  <h3>{$trans("services.section.job6")}</h3>
 				</a>
 				<ul class="custom">
-					<li>民泊収益性の向上やホスピタリティの改善</li>
-					<li>集客支援、WEBコンサルティング支援</li>
-					<li>運営改善、人材教育、接客講習など</li>
+					<li>{$trans("services.section.job6.detail1")}</li>
+					<li>{$trans("services.section.job6.detail2")}</li>
+					<li>{$trans("services.section.job6.detail3")}</li>
 				</ul>				<!-- <a href="javascript:void(0);" class="stretched-link"></a> -->
 			  </div>
 			</div><!-- End Service Item -->
@@ -346,8 +347,8 @@
 		  <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
 			<div class="col-xl-10">
 			  <div class="text-center">
-				<h3>革新的なサービスで創造する</h3>
-				<p>人と場所をつなぐ、革新的なサービスで、豊かで快適な生活を創造する。</p>
+				<h3>{$trans("action.section.title")}</h3>
+				<p>{$trans("action.section.subtitle")}</p>
 				<a class="cta-btn" href="#">Call To Action</a>
 			  </div>
 			</div>
@@ -381,7 +382,7 @@
 			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
 				<img src="{PORTFOLIO1}" class="img-fluid" alt="">
 				<div class="portfolio-info">
-				  <h4>宿泊施設事業</h4>
+				  <h4>{$trans("action.section.category1")}</h4>
 				  <p></p>
 				  <a href="{PORTFOLIO1}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -391,8 +392,8 @@
 			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
 				<img src="{PORTFOLIO2}" class="img-fluid" alt="">
 				<div class="portfolio-info">
-				  <h4>IoT機器事業</h4>
-				  <p>スマートロック　ソリューション</p>
+				  <h4>{$trans("action.section.category2")}</h4>
+				  <p>{$trans("action.section.category2.comment")}</p>
 				  <a href="{PORTFOLIO2}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
@@ -401,8 +402,8 @@
 			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
 				<img src="{PORTFOLIO3}" class="img-fluid" alt="">
 				<div class="portfolio-info">
-				  <h4>IoT機器事業</h4>
-				  <p>スマートハウス</p>
+				  <h4>{$trans("action.section.category3")}</h4>
+				  <p>{$trans("action.section.category3.comment")}</p>
 				  <a href="{PORTFOLIO3}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
@@ -413,8 +414,8 @@
 					<img src="{PORTFOLIO4}" class="img-fluid" alt="">
 				</a>
 				<div class="portfolio-info">
-				  <h4>民泊代行サービス</h4>
-				  <p>民泊代行サービス</p>
+				  <h4>{$trans("action.section.category4")}</h4>
+				  <p>{$trans("action.section.category4.comment")}</p>
 				  <a href="{PORTFOLIO4}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
@@ -423,8 +424,8 @@
 			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
 				<img src="{PORTFOLIO5}" class="img-fluid" alt="">
 				<div class="portfolio-info">
-				  <h4>通信機器</h4>
-				  <p>SIMカード事業</p>
+				  <h4>{$trans("action.section.category5")}</h4>
+				  <p>{$trans("action.section.category5.comment")}</p>
 				  <a href="{PORTFOLIO5}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
@@ -433,8 +434,8 @@
 			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
 				<img src="{PORTFOLIO6}" class="img-fluid" alt="">
 				<div class="portfolio-info">
-				  <h4>システム</h4>
-				  <p>民宿スマートハウスシステム、コンサルティング</p>
+				  <h4>{$trans("action.section.category6")}</h4>
+				  <p>{$trans("action.section.category6.comment")}</p>
 				  <a href="{PORTFOLIO6}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>

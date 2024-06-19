@@ -3,6 +3,8 @@
     import Facebook from "svelte-material-icons/Facebook.svelte"
     import Instagram from "svelte-material-icons/Instagram.svelte"
     import Linkedin from "svelte-material-icons/Linkedin.svelte"
+    import { trans,locale, locales } from "$lib/language/i18n";
+
 </script>
 
 <footer id="footer" class="footer">
@@ -14,9 +16,9 @@
               <span class="sitename">LodgeGeek</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>西葛西2-22-45 542室
+              <p>{$trans("footer.section.address1")}
               </p>
-              <p>東京都江戸川区</p>
+              <p>{$trans("footer.section.address2")}</p>
               <p><strong>Phone:</strong> <span><a href="tel:03-6824-7905">03-6824-7905</a></span></p>
               <p><strong>Fax:</strong> <span> 03-4530-8790</span></p>
               <p><strong>Email:</strong> <span><a href="mailTo:contact@lodgegeek.com" class="__cf_email__" >contact@lodgegeek.com
@@ -33,20 +35,20 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>リンク</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#"> ホーム</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#about"> 概要</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> サービス</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#"> {$trans("memu.title.home")}</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#about"> {$trans("memu.title.about")}</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> {$trans("memu.title.service")}</a></li>
               <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li> -->
-              <li><i class="bi bi-chevron-right"></i> <a href="/term" target="_blank"> プライバシーポリシー  </a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/term" target="_blank"> {$trans("footer.section.privacyPolicy")}   </a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> 宿泊施設</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> IoT機器の輸入販売</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> SIMカードの販売</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> {$trans("services.section.job1")}</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> {$trans("services.section.job2")}</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> {$trans("services.section.job3")}</a></li>
 
             </ul>
           </div>
