@@ -3,8 +3,16 @@
   import TranslateVariant from "svelte-material-icons/TranslateVariant.svelte"
   import "/node_modules/flag-icons/css/flag-icons.min.css";
   import { trans,locale, locales } from "$lib/language/i18n";
+  import { onMount } from "svelte";
 
 	let mobileMenuOpen = false;
+
+  function mobileClick() {
+    if (mobileMenuOpen==true) {
+      mobileMenuOpen=false;
+    }
+  }
+
 </script>
 
 <header id="header" class="header d-flex align-items-center fixed-top">
@@ -20,20 +28,20 @@
       <!-- svelte-ignore a11y-no-static-element-interactions -->
       <nav id="navmenu" class="navmenu {mobileMenuOpen?'active_mobile_memu':""}">
         <ul>
-          <li><a href="/#hero" class="">{$trans("memu.title.home")}<br></a></li>
-          <li><a href="/#about">{$trans("memu.title.about")}</a></li>
-          <li><a href="/#services">{$trans("memu.title.service")}</a></li>
-          <li><a href="/#portfolio">{$trans("memu.title.portfolio")}</a></li>
+          <li><a href="/#hero" class="" on:click={()=>{mobileClick()}}>{$trans("memu.title.home")}<br></a></li>
+          <li><a href="/#about" on:click={()=>{mobileClick()}}>{$trans("memu.title.about")}</a></li>
+          <li><a href="/#services" on:click={()=>{mobileClick()}}>{$trans("memu.title.service")}</a></li>
+          <li><a href="/#portfolio" on:click={()=>{mobileClick()}}>{$trans("memu.title.portfolio")}</a></li>
           <!-- <li><a href="#team">Team</a></li> -->
-          <li><a href="#contact">{$trans("memu.title.contact")}</a></li>
-          <li class="dropdown"><a href="#"><TranslateVariant color="white" width=24 height=24/></a>
+          <li><a href="#contact" on:click={()=>{mobileClick()}}>{$trans("memu.title.contact")}</a></li>
+          <li class="dropdown"><a href="#" on:click={()=>{mobileClick()}}><TranslateVariant color="{mobileMenuOpen==true?"#212529":"white"}" width=24 height=24/></a>
             <ul>
               {#each locales as language}
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
                 <li class="list-group-item" on:click={()=>{$locale=language}}>
                   <!-- svelte-ignore a11y-invalid-attribute -->
-                  <a href="javascript:void(0);">
+                  <a href="javascript:void(0);" on:click={()=>{mobileClick()}}>
                     <span class="fi {language=="日本語"?"fi-jp":(language=="中文"?"fi-cn":"fi-um")}"></span>
                     <span style="margin-left: 5px;">{language}</span>
                   </a>
