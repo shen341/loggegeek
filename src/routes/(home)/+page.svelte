@@ -35,7 +35,73 @@
 
 	import  MetaTagComponent from "../Components/MetaTagComponent.svelte";
 
-	import { trans, locale, locales } from "$lib/language/i18n";
+	import { trans } from "$lib/language/i18n";
+	import { toasts } from "svelte-toasts";
+
+	import {
+    useForm,
+    validators,
+    HintGroup,
+    Hint,
+    required,
+    email,
+    minLength,
+    maxLength,
+  } from "svelte-use-form";
+
+  const inquireForm = useForm();
+  let customerName="",customerEmail="",title="",customerMessage=""
+
+  /**
+   * @description お問い合わせフォームのバリデーション
+   */
+  async function inquireAction() {
+	let param={
+		customerName:customerName,
+		customerEmail:customerEmail,
+		title:title,
+		customerMessage:customerMessage
+	}
+
+	let result = await fetch('/mail', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+			Accept: "application/json",
+		},
+		body: JSON.stringify(param),
+	});
+
+	const resJson = await result.json();
+    if (resJson.status == "NG") {
+      toasts.clearAll();
+      toasts.add({
+        title: "警告",
+        description: resJson.message,
+        duration: 8000,
+        placement: "center-center",
+        type: "warning",
+        theme: "dark",
+        showProgress: true,
+      });
+    } else {
+		customerName=""
+		customerEmail=""
+		title=""
+		customerMessage=""
+		toasts.add({
+			title: "成功",
+			description: "問い合わせありがとうございました。",
+			duration: 8000,
+			placement: "center-center",
+			type: "success",
+			theme: "light",
+			showProgress: true,
+		});
+
+	}
+
+  }
 
 
 </script>
@@ -766,23 +832,52 @@
 			</div>
   
 			<div class="col-lg-8">
-			  <form   class="php-email-form" >
+			  <form   class="php-email-form"  use:inquireForm>
 				<div class="row gy-4">
   
 				  <div class="col-md-6">
-					<input type="text" name="name" class="form-control" placeholder="Your Name" >
+					<input type="text" name="name" class="form-control" placeholder="Your Name" 
+					 bind:value={customerName} 
+					 use:validators={[required,minLength(2)]}
+					 >
+					 <div class="use-form-hint">
+						<HintGroup for="name">
+						  <Hint on="required">名前を入力ください。</Hint>
+						  <Hint on="minLength">2文字を入力ください。</Hint>
+						</HintGroup>
+					  </div>					 
 				  </div>
   
 				  <div class="col-md-6 ">
-					<input type="email" class="form-control" name="email" placeholder="Your Email" >
+					<input type="email" class="form-control" name="email" placeholder="Your Email" bind:value={customerEmail} use:validators={[required,email]} >
+					<div class="use-form-hint">
+						<HintGroup for="email">
+						  <Hint on="required">Emailを入力ください。</Hint>
+						  <Hint on="email">Emailが不正です。</Hint>
+						</HintGroup>
+					</div>
 				  </div>
   
 				  <div class="col-md-12">
-					<input type="text" class="form-control" name="subject" placeholder="Subject" >
+					<input type="text" class="form-control" name="subject" placeholder="Subject" bind:value={title} use:validators={[required,minLength(4),maxLength(50)]} >
+					<div class="use-form-hint">
+						<HintGroup for="subject">
+						  <Hint on="required">subjectを入力ください。</Hint>
+						  <Hint on="minLength">4文字以上を入力ください。</Hint>
+						  <Hint on="maxLength">50文字以下を入力ください。</Hint>
+						</HintGroup>
+					</div>
 				  </div>
   
 				  <div class="col-md-12">
-					<textarea class="form-control" name="message" rows="6" placeholder="Message" ></textarea>
+					<textarea class="form-control" name="message" rows="6" placeholder="Message" bind:value={customerMessage} use:validators={[required,minLength(4),maxLength(200)]}></textarea>
+					<div class="use-form-hint">
+						<HintGroup for="message">
+						  <Hint on="required">messageを入力ください。</Hint>
+						  <Hint on="minLength">4文字以上を入力ください。</Hint>
+						  <Hint on="maxLength">200文字以下を入力ください。</Hint>
+						</HintGroup>
+					</div>
 				  </div>
   
 				  <div class="col-md-12 text-center">
@@ -790,7 +885,7 @@
 					<div class="error-message"></div>
 					<div class="sent-message">Your message has been sent. Thank you!</div>
   
-					<button type="submit">Send Message</button>
+					<button type="submit" disabled={!$inquireForm.valid } on:click={()=>{inquireAction()}}>Send Message</button>
 				  </div>
   
 				</div>
@@ -842,6 +937,17 @@
 			font-size: 14px;
 		}
 
+		button:disabled {
+			background-color: #e9cd77 !important;
+			color: var(--bs-gray-600) !important;
+			opacity: 1;
+			}
+
+		.use-form-hint {
+			font-size: 12px;
+			color: #eb3d3d;
+			margin-left: 5px;
+		}
 
 
 	  </style>

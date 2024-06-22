@@ -6,10 +6,18 @@
 	import '../styltes/swiper-bundle.min.css';
 	import '../styltes/glightbox.min.css';
 	import '../styltes/main.css';
+
+	import { ToastContainer, FlatToast } from "svelte-toasts";
+
+
 </script>
+
 
 <div class="app">
 	<Header />
+	<ToastContainer let:data>
+		<FlatToast {data} />
+	</ToastContainer>
 
 	<main class="main">
 		<slot />
