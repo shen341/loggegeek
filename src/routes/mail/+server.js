@@ -4,7 +4,7 @@ import { render } from "svelte-email";
 import Mailjet from "node-mailjet";
 
 export async function GET({url}) {
-    let data={message:"this is a test mail"}
+    let data={MAILJET_API_KEY,MAILJET_SECRET_KEY,RECEIVER_EMAIL}
     return new Response(JSON.stringify(data),{
         headers:{
             'content-type':'application/json'
