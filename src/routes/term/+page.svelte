@@ -4,6 +4,7 @@
 	 import '../styltes/main.css';
      import  MetaTagComponent from "../Components/MetaTagComponent.svelte";
      import Header from '../Header.svelte';
+     import { trans } from "$lib/language/i18n";
 
 </script>
 
@@ -14,78 +15,81 @@
 <div class="container-fluid bg-light bg-icon my-5 py-6">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-10 col-xl-8 bg-white" style="margin-top: 50px;">
-            <h1 class="h3 mb-4 page-title" style="margin-top: 20px;text-align: center;">プライバシーポリシー</h1>
+            <h1 class="h3 mb-4 page-title" style="margin-top: 20px;text-align: center;">{$trans("privacy.policy.title")}</h1>
             <hr class="my-4">
-            <p>株式会社ロッジギークは、当サイトをご利用になる方（以下「ユーザー」といいます）のプライバシーを尊重し、ユーザーの個人情報（以下「個人情報」といいます）の管理に細心の注意を払い、これを取扱うものとします。
+            <p>{$trans("privacy.policy.summary1")}
             </p>
-            <p>以下は、提供いただく個人情報に関し、提供いただく手段及び目的、並びにその他付随する事項について関係法令に基づき弊社が厳正に運用することを宣言するものです。この宣言を弊社のプライバシーポリシーとしてご案内させていただきます。</p>
-            <h5 class="mb-0 mt-5">1） 個人情報</h5>
-            <p>個人情報とは、ユーザー個人に関する情報であって、当該情報を構成する氏名、住所、電話番号、メールアドレス、会社名その他の記述等により当該ユーザーを識別できるものをいいます。また、その情報のみでは識別できない場合でも、他の情報と容易に照合することができ、結果的にユーザー個人を識別できるものも個人情報に含まれます。</p>
-            <h5 class="mb-0 mt-5">2） 個人情報の利用目的</h5>
+            <p>{$trans("privacy.policy.summary2")}</p>
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase1.title")}</h5>
+            <p>{$trans("privacy.policy.phase1.content")}</p>
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase2.title")}</h5>
             <ul>
-                <li>サービスの利用に伴う各種連絡・お知らせの配信</li>
-                <li>ユーザーの申込みに基づく、広告掲載企業・団体（以下「広告主」といいます）への資料請求</li>
-                <li>各種セミナー・個別相談会予約受付及び参加希望者への連絡</li>
-                <li>サービス運用に伴う一時的なバックアップ保管 </li>
-                <li>各種アンケート、キャンペーン等への応募受付及び当選者への連絡、プレゼント・謝礼発送</li>
-                <li>記事作成等におけるモニターや取材対象者の応募受付及び対象者への連絡</li>
-                <li>別途ご同意いただいたユーザーへのメールマガジン、各種お知らせ等の情報配信</li>
-                <li>別途ご同意いただいたユーザーへの取材、アンケート要請の連絡</li>
-                <li>株式会社LodgeGeekに関するご意見、お問い合わせへの回答
+                <li>{$trans("privacy.policy.phase2.content1")}</li>
+                <li>{$trans("privacy.policy.phase2.content2")}</li>
+                <li>{$trans("privacy.policy.phase2.content3")}</li>
+                <li>{$trans("privacy.policy.phase2.content4")} </li>
+                <li>{$trans("privacy.policy.phase2.content5")}</li>
+                <li>{$trans("privacy.policy.phase2.content6")}</li>
+                <li>{$trans("privacy.policy.phase2.content7")}</li>
+                <li>{$trans("privacy.policy.phase2.content8")}</li>
+                <li>{$trans("privacy.policy.phase2.content9")}
                 </li>
             </ul>
-            <h5 class="mb-0 mt-5">3） 不動産物件情報の利用目的について</h5>
-            <p>不動産会社等の広告主から提供された物件情報は、原則として個人を特定できないよう加工した後、以下の目的で利用いたします。</p>
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase3.title")}</h5>
+            <p>{$trans("privacy.policy.phase3.content1")}</p>
             <ul>
-                <li>広告掲載に伴う物件情報の現地調査（登記簿等の調査含む）</li>
-                <li>統計データの作成及び当該データに基づく調査・集計・分析並びに調査結果の社外への配布・公表
+                <li>{$trans("privacy.policy.phase3.content2")}</li>
+                <li>{$trans("privacy.policy.phase3.content3")}
                 </li>
             </ul>
-            <h5 class="mb-0 mt-5">4）  個人情報の第三者への提供</h5>
-            <p>当社は、原則として、ユーザーご本人の同意を得ずに個人情報を第三者に提供しません。提供先・提供情報内容を特定したうえで、ユーザーの同意を得た場合に限り提供します。ただし、以下の場合は、関係法令に反しない範囲で、ユーザーの同意なく個人情報を提供することがあります。</p>
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase4.title")}</h5>
+            <p>{$trans("privacy.policy.phase4.content1")}</p>
             <ul>
-                <li>ユーザーが第三者に不利益を及ぼすと判断した場合</li>
-                <li>公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって、ユーザーご本人の承諾を得ることが困難である場合 </li>
-                <li>国の機関若しくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合で、ユーザーご本人の同意を得ることによりその事務の遂行に支障を及ぼすおそれがある場合
+                <li>{$trans("privacy.policy.phase4.content2")}</li>
+                <li>{$trans("privacy.policy.phase4.content3")} </li>
+                <li>{$trans("privacy.policy.phase4.content4")}
                 </li>
-                <li>裁判所、検察庁、警察、弁護士会、消費者センターまたはこれらに準じた権限を有する機関から、個人情報についての開示を求められた場合
+                <li>{$trans("privacy.policy.phase4.content5")}
                 </li>
-                <li>ユーザーご本人から明示的に第三者への開示または提供を求められた場合
+                <li>{$trans("privacy.policy.phase4.content6")}
                 </li>
-                <li>法令により開示または提供が許容されている場合
+                <li>{$trans("privacy.policy.phase4.content7")}
                 </li>
-                <li>利用目的の達成に必要な範囲内において個人情報取扱い業務の一部または全部を委託する場合
+                <li>{$trans("privacy.policy.phase4.content8")}
                 </li>
-                <li>合併その他の事由による事業の承継に伴い個人情報を提供する場合であって、承継前の利用目的の範囲で取り扱われる場合
+                <li>{$trans("privacy.policy.phase4.content9")}
                 </li>
             </ul>
-            <h5 class="mb-0 mt-5">5） 第三者提供に関する免責事項</h5>
-            <p>以下の場合、第三者による個人情報の取得に関し、当社は何らの責任を負いません。なお、(1)の場合、広告主における個人情報の取扱いについては、各企業・団体に直接お問合せ下さい。
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase5.title")}</h5>
+            <p>{$trans("privacy.policy.phase5.content1")}
             </p>
             <ul>
-                <li>ユーザー自らが、本サービスにて資料請求等を申込み、広告主に個人情報を明らかにする場合
+                <li>{$trans("privacy.policy.phase5.content2")}
                 </li>
-                <li>本サービスに入力した情報により、期せずして本人が特定できてしまった場合
+                <li>{$trans("privacy.policy.phase5.content3")}
                 </li>
-                <li>ユーザーご本人以外がユーザー個人を識別できる情報（ID、パスワード等）を入手した場合
+                <li>{$trans("privacy.policy.phase5.content4")}
                 </li>
-                <li>本サービスからリンクされる外部サイトにおいてユーザーより個人情報が提供され、またそれが利用された場合
+                <li>{$trans("privacy.policy.phase5.content5")}
                 </li>
             </ul>            
-            <h5 class="mb-0 mt-5">6） 個人情報処理の外部委託</h5>
-            <p>当社は、個人情報を取り扱う業務の一部または全部を外部委託することがあります。 なお、委託先における個人情報の取扱いについては当社が責任を負います。
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase6.title")}</h5>
+            <p>{$trans("privacy.policy.phase6.content1")}
             </p>
-            <h5 class="mb-0 mt-5">7） 統計処理されたデータの利用</h5>
-            <p>当社は、提供を受けた個人情報をもとに、個人を特定できないよう加工した統計データを作成することがあります。個人を特定できない統計データについては、当社は何ら制限なく利用することができるものとします。
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase7.title")}</h5>
+            <p>{$trans("privacy.policy.phase7.content1")}
             </p>       
-            <h5 class="mb-0 mt-5">8） 個人情報の変更等</h5>
-            <p>ユーザーは、本サービスにおいて登録した個人情報をいつでも閲覧、訂正、追加または削除、利用停止することができます。また、原則としてユーザー本人に限り、「個人情報の利用目的」の通知を求めることが出来るものとします。具体的な方法についてはこちら。ただし、ユーザー本人または第三者の生命、身体、財産その他の権利・利益を害するおそれがある場合、本サービスの適正な実施に著しい支障を及ぼすおそれがある場合、他の法令に違反することとなる場合には、開示に応じないことがあります。また、当該個人情報の利用停止・第三者への提供の停止（以下「利用停止等」といいます）に多額の費用を要する場合その他の利用停止等を行うことが困難な場合であって、ユーザーの権利・利益を保護するため必要なこれに代わるべき措置をとるときは、利用停止等に応じないことがあります。            </p>                  
-            <h5 class="mb-0 mt-5">9） 個人情報の正確性</h5>
-            <p>当社は、ご提供いただいた個人情報を正確にデータ処理するように努めます。ただし、ご提供いただいた個人情報の内容が正確かつ最新であることについては、ユーザーが責任を負うものとします。
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase8.title")}</h5>
+            <p>{$trans("privacy.policy.phase8.content1")}            </p>                  
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase9.title")}</h5>
+            <p>{$trans("privacy.policy.phase9.content1")}
             </p> 
-            <h5 class="mb-0 mt-5">9） 個人情報の管理について</h5>
-            <p>当社は、ご提供いただいた個人情報を正確にデータ処理するように努めます。ただし、ご提供いただいた個人情報の内容が正確かつ最新であることについては、ユーザーが責任を負うものとします。
-            </p> 
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase10.title")}</h5>
+            <p>{$trans("privacy.policy.phase10.content1")}</p> 
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase11.title")}</h5>
+            <p>{$trans("privacy.policy.phase11.content1")}</p> 
+            <h5 class="mb-0 mt-5">{$trans("privacy.policy.phase12.title")}</h5>
+            <p>{$trans("privacy.policy.phase12.content1")}</p> 
             <hr class="my-4">
         </div>
     </div>
@@ -94,5 +98,10 @@
 <style>
     ul {
         list-style-type: decimal
+    }
+
+    p {
+     margin-left: 10px;
+     text-indent: 1.5em;
     }
 </style>

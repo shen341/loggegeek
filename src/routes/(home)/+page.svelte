@@ -1,5 +1,4 @@
 <script>
-	import HEROBG from "$lib/img/hero-bg.jpg";
 	import ABOUTIMG from "$lib/img/about.jpg";
 	import FEATUREBG from "$lib/img/features-bg.jpg";
 	import PORTFOLIO1 from "$lib/img/masonry-portfolio/masonry-portfolio-1.jpg";
@@ -52,6 +51,7 @@
   const inquireForm = useForm();
   let customerName="",customerEmail="",title="",customerMessage=""
 
+  let status="0";
   /**
    * @description お問い合わせフォームのバリデーション
    */
@@ -62,6 +62,9 @@
 		title:title,
 		customerMessage:customerMessage
 	}
+
+	// loading...
+	status="1";
 
 	let result = await fetch('/mail', {
 		method: 'POST',
@@ -84,6 +87,9 @@
         theme: "dark",
         showProgress: true,
       });
+	  // error...
+	  status="3";
+
     } else {
 		customerName=""
 		customerEmail=""
@@ -98,6 +104,8 @@
 			theme: "light",
 			showProgress: true,
 		});
+		// success...
+		status="2";
 
 	}
 
@@ -832,9 +840,8 @@
 			</div>
   
 			<div class="col-lg-8">
-			  <form   class="php-email-form"  use:inquireForm>
-				<div class="row gy-4">
-  
+			  <form class="php-email-form"  use:inquireForm>
+				<div class="row gy-4" style="{status=="1" || status=="2" ? "display:none" : ""}">
 				  <div class="col-md-6">
 					<input type="text" name="name" class="form-control" placeholder="Your Name" 
 					 bind:value={customerName} 
@@ -879,18 +886,18 @@
 						</HintGroup>
 					</div>
 				  </div>
-  
-				  <div class="col-md-12 text-center">
-					<div class="loading">Loading</div>
-					<div class="error-message"></div>
-					<div class="sent-message">Your message has been sent. Thank you!</div>
-  
-					<button type="submit" disabled={!$inquireForm.valid } on:click={()=>{inquireAction()}}>Send Message</button>
-				  </div>
-  
 				</div>
+
+				<div class="col-md-12 text-center">
+					<div class="loading" style="{status=="1" ? "display:block" : ""}">Loading</div>
+					<div class="sent-message" style="{status=="2" ? "display:block" : ""}">Your message has been sent. Thank you!</div>
+				  </div>				
 			  </form>
-			</div><!-- End Contact Form -->
+			  <div class="col-md-12 text-center" style="{status=="2" ? "display:none" : ""}">
+					<button class="submit" disabled={!$inquireForm.valid } on:click={()=>{inquireAction()}}>Send Message</button>
+			  </div>			  
+			</div>
+			<!-- End Contact Form -->
   
 		  </div>
   
@@ -937,6 +944,16 @@
 			font-size: 14px;
 		}
 
+
+				
+		.submit {
+			color: var(--contrast-color);
+			background: var(--accent-color);
+			border: 0;
+			padding: 10px 30px;
+			transition: 0.4s;
+			border-radius: 4px;
+		}
 		button:disabled {
 			background-color: #e9cd77 !important;
 			color: var(--bs-gray-600) !important;
@@ -949,6 +966,13 @@
 			margin-left: 5px;
 		}
 
+		.contact .php-email-form .loading {
+			display: none;
+			background: var(--background-color);
+			text-align: center;
+			padding: 15px;
+			margin-bottom: 24px;
+		}
 
 	  </style>
   

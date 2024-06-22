@@ -44,6 +44,9 @@ export async function POST({request}) {
             retObj.message="Messageは200文字以内で入力してください";
             return new Response(JSON.stringify(retObj)) 
         }     
+
+        // retObj.status="OK";
+        // return new Response(JSON.stringify(retObj)) 
         
         const mailjetClient = new Mailjet({
             apiKey: MAILJET_API_KEY,
