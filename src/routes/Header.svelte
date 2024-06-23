@@ -41,7 +41,7 @@
                 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
                 <li class="list-group-item" on:click={()=>{$locale=language}}>
                   <!-- svelte-ignore a11y-invalid-attribute -->
-                  <a href="#top" on:click={()=>{mobileClick()}}>
+                  <a href="#" on:click={()=>{mobileClick()}}>
                     <span class="fi {language=="日本語"?"fi-jp":(language=="中文"?"fi-cn":"fi-um")}"></span>
                     <span style="margin-left: 5px;">{language}</span>
                   </a>

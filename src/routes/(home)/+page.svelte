@@ -154,7 +154,7 @@
 			<div class="col-xl-2 col-md-4">
 			  <div class="icon-box">
 				<ChartLine color="#ffc451" width=56 height=56/>
-				<h3><a href="#top">{$trans("hero.section.planning")}</a></h3>
+				<h3><a href="#">{$trans("hero.section.planning")}</a></h3>
 			  </div>
 			</div>
 			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
@@ -325,7 +325,7 @@
 				<div class="icon">
 					<BedOutline color="white" width=36 height=36/>
 				</div>
-				<a href="#top" class="stretched-link">
+				<a href="#" class="stretched-link">
 				  <h3>{$trans("services.section.job1")}</h3>
 				</a>
 				<ul class="custom">
@@ -341,7 +341,7 @@
 				<div class="icon">
 					<LockSmart color="white" width=36 height=36/>
 				</div>
-				<a href="#top" class="stretched-link">
+				<a href="#" class="stretched-link">
 				  <h3>{$trans("services.section.job2")}</h3>
 				</a>
 				<ul class="custom">
@@ -358,7 +358,7 @@
 				<div class="icon">
 					<WifiArrowUpDown color="white" width=36 height=36/>
 				</div>
-				<a href="#top" class="stretched-link">
+				<a href="#" class="stretched-link">
 				  <h3>{$trans("services.section.job3")}</h3>
 				</a>
 				<ul class="custom">
@@ -373,7 +373,7 @@
 				<div class="icon">
 					<CogSyncOutline color="white" width=36 height=36/>
 				</div>
-				<a href="#top" class="stretched-link">
+				<a href="#" class="stretched-link">
 				  <h3>{$trans("services.section.job4")}</h3>
 				</a>
 				<ul class="custom">
@@ -389,7 +389,7 @@
 				<div class="icon">
 					<FaceAgent color="white" width=36 height=36/>
 				</div>
-				<a href="#top" class="stretched-link">
+				<a href="#" class="stretched-link">
 				  <h3>{$trans("services.section.job5")}</h3>
 				</a>
 				<ul class="custom">
@@ -398,7 +398,7 @@
 					<li>{$trans("services.section.job5.detail3")}</li>
 					<li>{$trans("services.section.job5.detail4")}</li>
 				</ul>				
-				<!-- <a href="#top" class="stretched-link"></a> -->
+				<!-- <a href="#" class="stretched-link"></a> -->
 			  </div>
 			</div><!-- End Service Item -->
   
@@ -407,14 +407,14 @@
 				<div class="icon">
 					<ChatProcessing color="white" width=36 height=36/>
 				</div>
-				<a href="#top" class="stretched-link">
+				<a href="#" class="stretched-link">
 				  <h3>{$trans("services.section.job6")}</h3>
 				</a>
 				<ul class="custom">
 					<li>{$trans("services.section.job6.detail1")}</li>
 					<li>{$trans("services.section.job6.detail2")}</li>
 					<li>{$trans("services.section.job6.detail3")}</li>
-				</ul>				<!-- <a href="#top" class="stretched-link"></a> -->
+				</ul>				<!-- <a href="#" class="stretched-link"></a> -->
 			  </div>
 			</div><!-- End Service Item -->
   
@@ -471,7 +471,7 @@
 				  <h4>{$trans("action.section.category1")}</h4>
 				  <p></p>
 				  <a href="{PORTFOLIO1}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -481,7 +481,7 @@
 				  <h4>{$trans("action.section.category2")}</h4>
 				  <p>{$trans("action.section.category2.comment")}</p>
 				  <a href="{PORTFOLIO2}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -491,7 +491,7 @@
 				  <h4>{$trans("action.section.category3")}</h4>
 				  <p>{$trans("action.section.category3.comment")}</p>
 				  <a href="{PORTFOLIO3}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -503,7 +503,7 @@
 				  <h4>{$trans("action.section.category4")}</h4>
 				  <p>{$trans("action.section.category4.comment")}</p>
 				  <a href="{PORTFOLIO4}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -513,7 +513,7 @@
 				  <h4>{$trans("action.section.category5")}</h4>
 				  <p>{$trans("action.section.category5.comment")}</p>
 				  <a href="{PORTFOLIO5}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -523,7 +523,7 @@
 				  <h4>{$trans("action.section.category6")}</h4>
 				  <p>{$trans("action.section.category6.comment")}</p>
 				  <a href="{PORTFOLIO6}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -721,14 +721,14 @@
 				<div class="member-img">
 				  <img src="{TEAM1}" class="img-fluid" alt="">
 				  <div class="social">
-					<a href="#top">
+					<a href="#">
 						<div class="icon">
 							<Twitter color="#ffc451" width=36 height=36/>
 						</div>
 					</a>
-					<a href="#top"><i class="bi bi-facebook"></i></a>
-					<a href="#top"><i class="bi bi-instagram"></i></a>
-					<a href="#top"><i class="bi bi-linkedin"></i></a>
+					<a href="#"><i class="bi bi-facebook"></i></a>
+					<a href="#"><i class="bi bi-instagram"></i></a>
+					<a href="#"><i class="bi bi-linkedin"></i></a>
 				  </div>
 				</div>
 				<div class="member-info">
@@ -743,10 +743,10 @@
 				<div class="member-img">
 				  <img src="{TEAM2}" class="img-fluid" alt="">
 				  <div class="social">
-					<a href="#top"><i class="bi bi-twitter-x"></i></a>
-					<a href="#top"><i class="bi bi-facebook"></i></a>
-					<a href="#top"><i class="bi bi-instagram"></i></a>
-					<a href="#top"><i class="bi bi-linkedin"></i></a>
+					<a href="#"><i class="bi bi-twitter-x"></i></a>
+					<a href="#"><i class="bi bi-facebook"></i></a>
+					<a href="#"><i class="bi bi-instagram"></i></a>
+					<a href="#"><i class="bi bi-linkedin"></i></a>
 				  </div>
 				</div>
 				<div class="member-info">
@@ -761,10 +761,10 @@
 				<div class="member-img">
 				  <img src="{TEAM3}" class="img-fluid" alt="">
 				  <div class="social">
-					<a href="#top"><i class="bi bi-twitter-x"></i></a>
-					<a href="#top"><i class="bi bi-facebook"></i></a>
-					<a href="#top"><i class="bi bi-instagram"></i></a>
-					<a href="#top"><i class="bi bi-linkedin"></i></a>
+					<a href="#"><i class="bi bi-twitter-x"></i></a>
+					<a href="#"><i class="bi bi-facebook"></i></a>
+					<a href="#"><i class="bi bi-instagram"></i></a>
+					<a href="#"><i class="bi bi-linkedin"></i></a>
 				  </div>
 				</div>
 				<div class="member-info">
@@ -779,10 +779,10 @@
 				<div class="member-img">
 				  <img src="{TEAM4}" class="img-fluid" alt="">
 				  <div class="social">
-					<a href="#top"><i class="bi bi-twitter-x"></i></a>
-					<a href="#top"><i class="bi bi-facebook"></i></a>
-					<a href="#top"><i class="bi bi-instagram"></i></a>
-					<a href="#top"><i class="bi bi-linkedin"></i></a>
+					<a href="#"><i class="bi bi-twitter-x"></i></a>
+					<a href="#"><i class="bi bi-facebook"></i></a>
+					<a href="#"><i class="bi bi-instagram"></i></a>
+					<a href="#"><i class="bi bi-linkedin"></i></a>
 				  </div>
 				</div>
 				<div class="member-info">
