@@ -13,7 +13,7 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="/" class="logo d-flex align-items-center">
-              <span class="sitename">LodgeGeek</span>
+              <span class="sitename">株式会社LodgeGeek</span>
             </a>
             <div class="footer-contact pt-3">
               <p>{$trans("footer.section.address1")}
