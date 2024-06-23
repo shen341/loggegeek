@@ -154,31 +154,31 @@
 			<div class="col-xl-2 col-md-4">
 			  <div class="icon-box">
 				<ChartLine color="#ffc451" width=56 height=56/>
-				<h3><a href="">{$trans("hero.section.planning")}</a></h3>
+				<h3><a href="#top">{$trans("hero.section.planning")}</a></h3>
 			  </div>
 			</div>
 			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
 			  <div class="icon-box">
 				<LockSmart color="#ffc451" width=56 height=56/>
-				<h3><a href="">{$trans("hero.section.iotSales")}</a></h3>
+				<h3><a href="top">{$trans("hero.section.iotSales")}</a></h3>
 			  </div>
 			</div>
 			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
 			  <div class="icon-box">
 				<AccountStar color="#ffc451" width=56 height=56/>
-				<h3><a href="">{$trans("hero.section.consultant")}</a></h3>
+				<h3><a href="top">{$trans("hero.section.consultant")}</a></h3>
 			  </div>
 			</div>
 			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
 			  <div class="icon-box">
 				<NfcTap color="#ffc451" width=56 height=56/>
-				<h3><a href="">{$trans("hero.section.communication.equipment")}</a></h3>
+				<h3><a href="top">{$trans("hero.section.communication.equipment")}</a></h3>
 			  </div>
 			</div>
 			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
 			  <div class="icon-box">
 				<Sim color="#ffc451" width=48 height=48/>
-				<h3><a href="">{$trans("hero.section.communication.sim")}</a></h3>
+				<h3><a href="top">{$trans("hero.section.communication.sim")}</a></h3>
 			  </div>
 			</div>
 		  </div>
@@ -471,7 +471,7 @@
 				  <h4>{$trans("action.section.category1")}</h4>
 				  <p></p>
 				  <a href="{PORTFOLIO1}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -481,7 +481,7 @@
 				  <h4>{$trans("action.section.category2")}</h4>
 				  <p>{$trans("action.section.category2.comment")}</p>
 				  <a href="{PORTFOLIO2}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -491,7 +491,7 @@
 				  <h4>{$trans("action.section.category3")}</h4>
 				  <p>{$trans("action.section.category3.comment")}</p>
 				  <a href="{PORTFOLIO3}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -503,7 +503,7 @@
 				  <h4>{$trans("action.section.category4")}</h4>
 				  <p>{$trans("action.section.category4.comment")}</p>
 				  <a href="{PORTFOLIO4}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -513,7 +513,7 @@
 				  <h4>{$trans("action.section.category5")}</h4>
 				  <p>{$trans("action.section.category5.comment")}</p>
 				  <a href="{PORTFOLIO5}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
@@ -523,7 +523,7 @@
 				  <h4>{$trans("action.section.category6")}</h4>
 				  <p>{$trans("action.section.category6.comment")}</p>
 				  <a href="{PORTFOLIO6}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				  <a href="#top" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
 			  </div><!-- End Portfolio Item -->
   
