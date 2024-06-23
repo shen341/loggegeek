@@ -325,7 +325,7 @@
 				<div class="icon">
 					<BedOutline color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="#top" class="stretched-link">
 				  <h3>{$trans("services.section.job1")}</h3>
 				</a>
 				<ul class="custom">
@@ -341,7 +341,7 @@
 				<div class="icon">
 					<LockSmart color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="#top" class="stretched-link">
 				  <h3>{$trans("services.section.job2")}</h3>
 				</a>
 				<ul class="custom">
@@ -358,7 +358,7 @@
 				<div class="icon">
 					<WifiArrowUpDown color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="#top" class="stretched-link">
 				  <h3>{$trans("services.section.job3")}</h3>
 				</a>
 				<ul class="custom">
@@ -373,7 +373,7 @@
 				<div class="icon">
 					<CogSyncOutline color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="#top" class="stretched-link">
 				  <h3>{$trans("services.section.job4")}</h3>
 				</a>
 				<ul class="custom">
@@ -389,7 +389,7 @@
 				<div class="icon">
 					<FaceAgent color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="#top" class="stretched-link">
 				  <h3>{$trans("services.section.job5")}</h3>
 				</a>
 				<ul class="custom">
@@ -398,7 +398,7 @@
 					<li>{$trans("services.section.job5.detail3")}</li>
 					<li>{$trans("services.section.job5.detail4")}</li>
 				</ul>				
-				<!-- <a href="javascript:void(0);" class="stretched-link"></a> -->
+				<!-- <a href="#top" class="stretched-link"></a> -->
 			  </div>
 			</div><!-- End Service Item -->
   
@@ -407,14 +407,14 @@
 				<div class="icon">
 					<ChatProcessing color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="#top" class="stretched-link">
 				  <h3>{$trans("services.section.job6")}</h3>
 				</a>
 				<ul class="custom">
 					<li>{$trans("services.section.job6.detail1")}</li>
 					<li>{$trans("services.section.job6.detail2")}</li>
 					<li>{$trans("services.section.job6.detail3")}</li>
-				</ul>				<!-- <a href="javascript:void(0);" class="stretched-link"></a> -->
+				</ul>				<!-- <a href="#top" class="stretched-link"></a> -->
 			  </div>
 			</div><!-- End Service Item -->
   
@@ -721,14 +721,14 @@
 				<div class="member-img">
 				  <img src="{TEAM1}" class="img-fluid" alt="">
 				  <div class="social">
-					<a href="">
+					<a href="#top">
 						<div class="icon">
 							<Twitter color="#ffc451" width=36 height=36/>
 						</div>
 					</a>
-					<a href=""><i class="bi bi-facebook"></i></a>
-					<a href=""><i class="bi bi-instagram"></i></a>
-					<a href=""><i class="bi bi-linkedin"></i></a>
+					<a href="#top"><i class="bi bi-facebook"></i></a>
+					<a href="#top"><i class="bi bi-instagram"></i></a>
+					<a href="#top"><i class="bi bi-linkedin"></i></a>
 				  </div>
 				</div>
 				<div class="member-info">
@@ -743,10 +743,10 @@
 				<div class="member-img">
 				  <img src="{TEAM2}" class="img-fluid" alt="">
 				  <div class="social">
-					<a href=""><i class="bi bi-twitter-x"></i></a>
-					<a href=""><i class="bi bi-facebook"></i></a>
-					<a href=""><i class="bi bi-instagram"></i></a>
-					<a href=""><i class="bi bi-linkedin"></i></a>
+					<a href="#top"><i class="bi bi-twitter-x"></i></a>
+					<a href="#top"><i class="bi bi-facebook"></i></a>
+					<a href="#top"><i class="bi bi-instagram"></i></a>
+					<a href="#top"><i class="bi bi-linkedin"></i></a>
 				  </div>
 				</div>
 				<div class="member-info">
@@ -761,10 +761,10 @@
 				<div class="member-img">
 				  <img src="{TEAM3}" class="img-fluid" alt="">
 				  <div class="social">
-					<a href=""><i class="bi bi-twitter-x"></i></a>
-					<a href=""><i class="bi bi-facebook"></i></a>
-					<a href=""><i class="bi bi-instagram"></i></a>
-					<a href=""><i class="bi bi-linkedin"></i></a>
+					<a href="#top"><i class="bi bi-twitter-x"></i></a>
+					<a href="#top"><i class="bi bi-facebook"></i></a>
+					<a href="#top"><i class="bi bi-instagram"></i></a>
+					<a href="#top"><i class="bi bi-linkedin"></i></a>
 				  </div>
 				</div>
 				<div class="member-info">
@@ -779,10 +779,10 @@
 				<div class="member-img">
 				  <img src="{TEAM4}" class="img-fluid" alt="">
 				  <div class="social">
-					<a href=""><i class="bi bi-twitter-x"></i></a>
-					<a href=""><i class="bi bi-facebook"></i></a>
-					<a href=""><i class="bi bi-instagram"></i></a>
-					<a href=""><i class="bi bi-linkedin"></i></a>
+					<a href="#top"><i class="bi bi-twitter-x"></i></a>
+					<a href="#top"><i class="bi bi-facebook"></i></a>
+					<a href="#top"><i class="bi bi-instagram"></i></a>
+					<a href="#top"><i class="bi bi-linkedin"></i></a>
 				  </div>
 				</div>
 				<div class="member-info">
@@ -810,7 +810,7 @@
 		<div class="container" data-aos="fade-up" data-aos-delay="100">
   
 		  <div class="mb-5" >
-			<iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6482.7408347996625!2d139.8547251!3d35.6678802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601888756278020d%3A0x58adabc057d1728b!2z44CSMTM0LTAwODgg5p2x5Lqs6YO95rGf5oi45bed5Yy66KW_6JGb6KW_77yS5LiB55uu77yS77yS4oiS77yU77yV!5e0!3m2!1sja!2sjp!4v1717805375116!5m2!1sja!2sjp" frameborder="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6482.7408347996625!2d139.8547251!3d35.6678802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601888756278020d%3A0x58adabc057d1728b!2z44CSMTM0LTAwODgg5p2x5Lqs6YO95rGf5oi45bed5Yy66KW_6JGb6KW_77yS5LiB55uu77yS77yS4oiS77yU77yV!5e0!3m2!1sja!2sjp!4v1717805375116!5m2!1sja!2sjp" frameborder="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps"></iframe>
 		  </div><!-- End Google Maps -->
   
 		  <div class="row gy-4">
@@ -968,7 +968,7 @@
 		}
 
 
-				
+		/*
 		.submit {
 			color: var(--contrast-color);
 			background: var(--accent-color);
@@ -996,6 +996,8 @@
 			padding: 15px;
 			margin-bottom: 24px;
 		}
+		*/
+
 
 	  </style>
   

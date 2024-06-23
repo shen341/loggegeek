@@ -29,10 +29,10 @@
               </a></span></p>
             </div>
             <div class="social-links d-flex mt-4">
-              <a href=""><Twitter color="white" width=36 height=36/></a>
-              <a href=""><Facebook color="white" width=36 height=36/></a>
-              <a href=""><Instagram color="white" width=36 height=36/></a>
-              <a href=""><Linkedin color="white" width=36 height=36/></a>
+              <a href="#top"><Twitter color="white" width=36 height=36/></a>
+              <a href="#top"><Facebook color="white" width=36 height=36/></a>
+              <a href="#top"><Instagram color="white" width=36 height=36/></a>
+              <a href="#top"><Linkedin color="white" width=36 height=36/></a>
             </div>
           </div>
 
