@@ -111,6 +111,7 @@
 
   }
 
+  console.log(import.meta.env.BASE_URL); // BASE_URLの値をコンソールに出力
 
 </script>
 
@@ -122,21 +123,32 @@
   
 </svelte:head>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+	  <!-- Hero Section -->
+      <section id="hero" class="hero section">
 		<!-- <img src="{HEROBG}" class="hero-bg" alt=""> -->
         <video autoplay loop muted  playsinline  class="hero-video" >
             <source src={backgroundVideo} type="video/mp4">
         </video>
-
+		
 		<div class="container">
+			<div class="row justify-content-center text-center">
+			  <div class="col-xl-12 col-lg-12">
+				<!--
+				<img src="/LodgeGeek_Logo_temp_by_canva.png" alt="ロゴ" class="hero-logo" onerror="console.log('ロゴ画像の読み込みに失敗しました')" onload="console.log('ロゴ画像が正常に読み込まれました')">
+			    -->
+				<h2>{$trans("hero.section.title")}</h2>
+				<p>{$trans("hero.section.subtitle")}</p>
+			  </div>
+			</div>
   
+		  <!--
 		  <div class="row justify-content-center text-center">
 			<div class="col-xl-12 col-lg-12">
 			  <h2>{$trans("hero.section.title")}</h2>
 			  <p>{$trans("hero.section.subtitle")}</p>
 			</div>
 		  </div>
+		  -->
   
 		  <div class="row gy-4 mt-5 justify-content-center" >
 			<div class="col-xl-2 col-md-4">
@@ -413,7 +425,7 @@
 	  </section><!-- /Services Section -->
   
 	  <!-- Call To Action Section -->
-	  <section id="call-to-action" class="call-to-action section">
+	  <!-- <section id="call-to-action" class="call-to-action section">
   
 		<img src="{CTABG}" alt="">
   
@@ -811,7 +823,8 @@
 
 				<div>
 				  <h3>Address</h3>
-				  <p>東京都江戸川区西葛西2-22-45 542室</p>
+				  <p>〒134-0088 東京都江戸川区西葛西2-22-45 542室</p>
+				  <p>Room.542, 2-22-45, Nishikasai, Edogawaku, Tokyo, 134-0088, Japan</p>
 				</div>
 			  </div><!-- End Info Item -->
   
@@ -821,7 +834,8 @@
 				</div>
 				<div>
 				  <h3>Call Us</h3>
-				  <p><a href="tel:03-6824-7905">03-6824-7905</a></p>
+				  <p><a href="tel:03-6824-7905">Japan Local: 03-6824-7905</a></p>
+				  <p><a href="tel:+81368247905">International: +81-368247905</a></p>
 				</div>
 			  </div><!-- End Info Item -->
   
@@ -838,7 +852,16 @@
 			  </div><!-- End Info Item -->
   
 			</div>
-  
+
+			<!-- Start of Contact Form (Tallyを使用)-->
+			<div class="col-lg-8">
+				<div class="wrap">
+					<iframe data-tally-src="https://tally.so/embed/meBRqQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="313" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+				</div>
+			</div>
+			<!-- End of Contact Form (Tallyを使用)-->
+
+			<!-- Start Contact Form 
 			<div class="col-lg-8">
 			  <form class="php-email-form"  use:inquireForm>
 				<div class="row gy-4" style="{status=="1" || status=="2" ? "display:none" : ""}">
@@ -897,7 +920,7 @@
 					<button class="submit" disabled={!$inquireForm.valid } on:click={()=>{inquireAction()}}>Send Message</button>
 			  </div>			  
 			</div>
-			<!-- End Contact Form -->
+			End of Contact Form -->
   
 		  </div>
   
