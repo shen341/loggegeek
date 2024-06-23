@@ -809,6 +809,24 @@ section,
   justify-content: center;
 }
 
+.hero-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+  z-index: 2; /* 他の要素の上に表示されるように調整 */
+  position: relative; /* ロゴの位置を相対的に調整 */
+}
+
+.hero-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+  margin-top: 20px; /* 上部にスペースを追加 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2; /* 他の要素の上に表示されるように調整 */
+  position: relative; /* ロゴの位置を相対的に調整 */
+}
+
 .hero img {
   position: absolute;
   inset: 0;
