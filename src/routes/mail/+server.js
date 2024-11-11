@@ -117,8 +117,9 @@ export async function POST({request}) {
                                 {
                                     Email: RECEIVER_EMAIL,
                                     Name: "問い合わせメールボックス",
-                                }
+                                },
                               ],
+                            
                               Subject: title,
                               TextPart: customerMessage,
                               HTMLPart: emailHtml

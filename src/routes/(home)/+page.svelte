@@ -36,6 +36,10 @@
 
 	import { trans } from "$lib/language/i18n";
 	import { toasts } from "svelte-toasts";
+	import Geolocation from "svelte-geolocation";
+	let coords = [123.45, 67.89];
+
+
 
 	import {
     useForm,
@@ -121,6 +125,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   
 </svelte:head>
+
+<Geolocation getPosition bind:coords />
+<pre>{JSON.stringify(coords)}</pre>
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
