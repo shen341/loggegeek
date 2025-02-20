@@ -4,7 +4,7 @@ import { render } from "svelte-email";
 import Mailjet from "node-mailjet";
 
 export async function GET({url}) {
-    let data={MAILJET_API_KEY,MAILJET_SECRET_KEY,RECEIVER_EMAIL}
+    let data={message:"this is a test mail"}
     return new Response(JSON.stringify(data),{
         headers:{
             'content-type':'application/json'
@@ -75,59 +75,25 @@ export async function POST({request}) {
             props:{"customerName":customerName,"customerEmail":customerEmail,"title":title,"customerMessage":customerMessage}
         })
 
-        // const request =await mailjetClient.post('send', { version: 'v3.1' }).request({
-        //   Messages: [
-        //     {
-        //         From: {
-        //             Email: "shen020316@gmail.com",
-        //             Name: "問い合わせいた",
-        //         },
-        //       To: [
-        //         {
-        //           Email: RECEIVER_EMAIL,
-        //           Name: "問い合わせメールボックス",
-        //         }
-        //       ],
-        //       Subject: title,
-        //       TextPart: customerMessage,
-        //       HTMLPart: emailHtml
-        //     }
-        //   ]
-        // })
-
-        const encoded = btoa(`${MAILJET_API_KEY}:${MAILJET_SECRET_KEY}`)
-
-
-        await fetch('https://api.mailjet.com/v3.1/send', {
-            method: 'POST',
-            mode : 'no-cors',
-            headers: {
-                'Content-Type': 'application/json',
-                Accept: "application/json",
-                Authorization: `Basic ${encoded}`,
-            },
-            body: JSON.stringify({
-                "Messages":[
-                            {
-                              "From": {
-                                "Email":"shen020316@gmail.com",
-                                "Name": "問い合わせいた"
-                              },
-                              "To": [
-                                {
-                                    Email: RECEIVER_EMAIL,
-                                    Name: "問い合わせメールボックス",
-                                },
-                              ],
-                            
-                              Subject: title,
-                              TextPart: customerMessage,
-                              HTMLPart: emailHtml
-                            }
-                        ]
-              }),
-        });
-
+        const request =await mailjetClient.post('send', { version: 'v3.1' }).request({
+          Messages: [
+            {
+                From: {
+                    Email: "shen020316@gmail.com",
+                    Name: "問い合わせいた",
+                },
+              To: [
+                {
+                  Email: RECEIVER_EMAIL,
+                  Name: "問い合わせメールボックス",
+                }
+              ],
+              Subject: title,
+              TextPart: customerMessage,
+              HTMLPart: emailHtml
+            }
+          ]
+        })
 
         retObj.status="OK"       
     } catch (error) {

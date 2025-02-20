@@ -1,10 +1,10 @@
 export default {
     "日本語":{
-        "memu.title.home":"ホーム",
-        "memu.title.about":"概要",
-        "memu.title.service":"サービス",
-        "memu.title.portfolio":"ポートフォリオ",
-        "memu.title.contact":"お問い合わせ",
+        "memu.title.home":"Home",
+        "memu.title.about":"About",
+        "memu.title.service":"Services",
+        "memu.title.portfolio":"Portfolio",
+        "memu.title.contact":"Contact",
         "hero.section.title":"革新的なサービスで豊かで快適な生活を創造",
         "hero.section.subtitle":"宿泊施設の収益向上、ゲスト満足度の向上",
         "hero.section.planning":"企画運営",
@@ -82,9 +82,10 @@ export default {
         "action.section.category6":"システム",     
         "action.section.category6.comment":"民宿スマートハウスシステム、コンサルティング",  
 
-        "footer.section.address1":"西葛西2-22-45 542室", 
-        "footer.section.address2":"東京都江戸川区",
-        "footer.section.privacyPolicy":"プライバシーポリシー",     
+        "footer.section.companyName":"株式会社LodgeGeek(ロッジギーク)",
+        "footer.section.address1":"東京都江戸川区", 
+        "footer.section.address2":"西葛西2-22-45 542室",
+        "footer.section.privacyPolicy":"Privacy Policy",
 
         "privacy.policy.title":"プライバシーポリシー",
         "privacy.policy.summary1":"株式会社ロッジギークは、当サイトをご利用になる方（以下「ユーザー」といいます.のプライバシーを尊重し、ユーザーの個人情報（以下「個人情報」といいます.の管理に細心の注意を払い、これを取扱うものとします。",
@@ -233,8 +234,9 @@ export default {
         "action.section.category6":"住宿软件系统支持",     
         "action.section.category6.comment":"住宿软件系统导入支援",  
 
-        "footer.section.address1":"西葛西2-22-45 542号", 
-        "footer.section.address2":"东京都江户川区",
+        "footer.section.companyName":"株式会社LodgeGeek",
+        "footer.section.address1":"日本東京都江戸川区", 
+        "footer.section.address2":"西葛西2-22-45 542室",
         "footer.section.privacyPolicy":"隐私政策",       
 
 
@@ -384,8 +386,9 @@ export default {
         "action.section.category6":"Accommodation software system introduction support",     
         "action.section.category6.comment":"Accommodation software system introduction support",  
 
+        "footer.section.companyName":"LodgeGeek Co., Ltd.",
         "footer.section.address1":"No542, 2-22-45 Nishikasai ", 
-        "footer.section.address2":"Edogawa-ku, Tokyo-to",   
+        "footer.section.address2":"Edogawa-ku, Tokyo, Japan",   
         "footer.section.privacyPolicy":"Privacy policy",    
 
         "privacy.policy.title":"LodgeGeek Privacy Policy",

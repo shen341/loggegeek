@@ -17,7 +17,7 @@
     description: '宿泊施設事業とIoT機器事業の融合,通信機器・SIMカード事業,民泊代行サービス,民宿スマートハウスシステム',
     images: [
       {
-        url: "https://lodgegeek.com/src/lib/img/logo1.png",
+        url: "https://lodgegeek.com//src/lib/img/logo1.png",
         width: 800,
         height: 600,
         alt: 'LOGO'
