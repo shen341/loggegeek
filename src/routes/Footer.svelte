@@ -6,6 +6,9 @@
     import { trans,locale, locales } from "$lib/language/i18n";
 
 </script>
+<svelte:head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</svelte:head>
 
 <footer id="footer" class="footer">
     <div class="footer-top">
@@ -39,20 +42,20 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Link</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#"> {$trans("memu.title.home")}</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#about"> {$trans("memu.title.about")}</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> {$trans("memu.title.service")}</a></li>
-              <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li> -->
-              <li><i class="bi bi-chevron-right"></i> <a href="/term" target="_blank"> {$trans("footer.section.privacyPolicy")}   </a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/#"> {$trans("memu.title.home")}</a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/#about"> {$trans("memu.title.about")}</a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/#services"> {$trans("memu.title.service")}</a></li>
+              <!-- <li><span class="material-icons">chevron_right</span> <a href="#"> Terms of service</a></li> -->
+              <li><span class="material-icons">chevron_right</span> <a href="/term" target="_blank"> {$trans("footer.section.privacyPolicy")}   </a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> {$trans("services.section.job1")}</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> {$trans("services.section.job2")}</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/#services"> {$trans("services.section.job3")}</a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/#services"> {$trans("services.section.job1")}</a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/#services"> {$trans("services.section.job2")}</a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/#services"> {$trans("services.section.job3")}</a></li>
 
             </ul>
           </div>

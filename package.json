@@ -32,7 +32,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"bootstrap-icons": "^1.11.3",
 		"flag-icons": "^7.2.3",
 		"node-mailjet": "^6.0.5",
 		"svelte-email": "^0.0.4",

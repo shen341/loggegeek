@@ -7,9 +7,8 @@
 	import PORTFOLIO4 from "$lib/img/masonry-portfolio/masonry-portfolio-4.jpg";
 	import PORTFOLIO5 from "$lib/img/masonry-portfolio/masonry-portfolio-5.jpg";
 	import PORTFOLIO6 from "$lib/img/masonry-portfolio/cvr01.png";
-
-	import CTABG from "$lib/img/cta-bg.jpg";
-
+	import WALL7 from "$lib/img/manage/7.jpg";
+	import WALL12 from "$lib/img/manage/Image_20250222170109.jpg";
 
 	import CheckAll from "svelte-material-icons/CheckAll.svelte"
 
@@ -30,7 +29,7 @@
 	import Numeric1Circle from "svelte-material-icons/Numeric1Circle.svelte"
 	import WifiArrowUpDown from "svelte-material-icons/WifiArrowUpDown.svelte"
 	import BedOutline from "svelte-material-icons/BedOutline.svelte"
-	import backgroundVideo from '$lib/video/backgroud3.mp4';
+	import backgroundVideo from '$lib/video/backgroud4.mp4';
 
 	import  MetaTagComponent from "../Components/MetaTagComponent.svelte";
 
@@ -39,13 +38,6 @@
 
 	import {
     useForm,
-    validators,
-    HintGroup,
-    Hint,
-    required,
-    email,
-    minLength,
-    maxLength,
   } from "svelte-use-form";
 
   const inquireForm = useForm();
@@ -130,7 +122,7 @@
             <source src={backgroundVideo} type="video/mp4">
         </video>
 		
-		<div class="container">
+		<div class="container custom-backgroud">
 			<div class="row justify-content-center text-center">
 			  <div class="col-xl-12 col-lg-12">
 				<!--
@@ -151,36 +143,41 @@
 		  -->
   
 		  <div class="row gy-4 mt-5 justify-content-center" >
-			<div class="col-xl-2 col-md-4">
-			  <div class="icon-box">
-				<ChartLine color="#ffc451" width=56 height=56/>
-				<h3><a href="">{$trans("hero.section.planning")}</a></h3>
-			  </div>
+			<div class="col-xl-3 col-md-4">
+				<a href="/management-service">
+					<div class="icon-box">
+						<ChartLine color="#ffc451" width=56 height=56/>
+						<h3>{$trans("hero.section.planning")}</h3>
+					  </div>
+				</a>
 			</div>
-			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
+			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
 			  <div class="icon-box">
 				<LockSmart color="#ffc451" width=56 height=56/>
-				<h3><a href="">{$trans("hero.section.iotSales")}</a></h3>
+				<h3><a href="#">{$trans("hero.section.iotSales")}</a></h3>
 			  </div>
 			</div>
-			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
-			  <div class="icon-box">
-				<AccountStar color="#ffc451" width=56 height=56/>
-				<h3><a href="">{$trans("hero.section.consultant")}</a></h3>
-			  </div>
+			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+				<a href="/consultant">
+					<div class="icon-box">
+						<AccountStar color="#ffc451" width=56 height=56/>
+						<h3>{$trans("hero.section.consultant")}</h3>
+					  </div>
+				</a>
+
 			</div>
-			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
+			<!-- <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
 			  <div class="icon-box">
 				<NfcTap color="#ffc451" width=56 height=56/>
 				<h3><a href="">{$trans("hero.section.communication.equipment")}</a></h3>
 			  </div>
-			</div>
-			<div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+			</div> -->
+			<!-- <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
 			  <div class="icon-box">
 				<Sim color="#ffc451" width=48 height=48/>
 				<h3><a href="">{$trans("hero.section.communication.sim")}</a></h3>
 			  </div>
-			</div>
+			</div> -->
 		  </div>
   
 		</div>
@@ -194,7 +191,7 @@
   
 		  <div class="row gy-4">
 			<div class="col-lg-6 order-1 order-lg-2">
-			  <img src="{ABOUTIMG}" class="img-fluid" alt="">
+			  <img src="{WALL7}" class="img-fluid" alt="">
 			</div>
 			<div class="col-lg-6 order-2 order-lg-1 content">
 			  <h3>About Us</h3>
@@ -246,7 +243,7 @@
 		<div class="container">
   
 		  <div class="row gy-4">
-			<div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{FEATUREBG}" alt=""></div>
+			<div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{WALL12}" alt=""></div>
 			<div class="col-lg-6">
   
 			  <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" >
@@ -325,7 +322,7 @@
 				<div class="icon">
 					<BedOutline color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="/management-service" class="stretched-link">
 				  <h3>{$trans("services.section.job1")}</h3>
 				</a>
 				<ul class="custom">
@@ -341,7 +338,7 @@
 				<div class="icon">
 					<LockSmart color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="#" class="stretched-link">
 				  <h3>{$trans("services.section.job2")}</h3>
 				</a>
 				<ul class="custom">
@@ -353,12 +350,12 @@
 			</div>
 			</div><!-- End Service Item -->
   
-			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+			<!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
 			  <div class="service-item position-relative">
 				<div class="icon">
 					<WifiArrowUpDown color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="/consultant" class="stretched-link">
 				  <h3>{$trans("services.section.job3")}</h3>
 				</a>
 				<ul class="custom">
@@ -366,9 +363,10 @@
 					<li>{$trans("services.section.job3.detail2")}</li>
 				</ul>
 			</div>
-			</div><!-- End Service Item -->
+			</div> -->
+			<!-- End Service Item -->
   
-			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+			<!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
 			  <div class="service-item position-relative">
 				<div class="icon">
 					<CogSyncOutline color="white" width=36 height=36/>
@@ -382,14 +380,15 @@
 					<li>{$trans("services.section.job4.detail3")}</li>
 				</ul>
 			  </div>
-			</div><!-- End Service Item -->
+			</div> -->
+			<!-- End Service Item -->
   
 			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
 			  <div class="service-item position-relative">
 				<div class="icon">
 					<FaceAgent color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="/consultant" class="stretched-link">
 				  <h3>{$trans("services.section.job5")}</h3>
 				</a>
 				<ul class="custom">
@@ -407,7 +406,7 @@
 				<div class="icon">
 					<ChatProcessing color="white" width=36 height=36/>
 				</div>
-				<a href="javascript:void(0);" class="stretched-link">
+				<a href="/consultant" class="stretched-link">
 				  <h3>{$trans("services.section.job6")}</h3>
 				</a>
 				<ul class="custom">
@@ -951,9 +950,9 @@
 				left: 0;
 				right: 0;
 				/* top: 0; */
-				bottom: 0;
+				/* bottom: 0; */
 				/* z-index: -1; */
-				width: 100vw;
+				/* width: 100vw; */
 				object-fit: cover;
 				margin-top: 160px;
 				/* height: 300px; */
@@ -968,33 +967,28 @@
 		}
 
 
-				
-		.submit {
-			color: var(--contrast-color);
-			background: var(--accent-color);
-			border: 0;
-			padding: 10px 30px;
-			transition: 0.4s;
-			border-radius: 4px;
+		.custom-backgroud{
+			background: color-mix(in srgb, #063b71, transparent 30%);
+			padding: 10px;
 		}
-		button:disabled {
-			background-color: #e9cd77 !important;
-			color: var(--bs-gray-600) !important;
-			opacity: 1;
+
+
+		/* スマホ */
+		@media only screen and (max-width: 767px){
+			.hero-video{
+				margin-top: 0px;
+				top: 0;
 			}
 
-		.use-form-hint {
-			font-size: 12px;
-			color: #eb3d3d;
-			margin-left: 5px;
 		}
 
-		.contact .php-email-form .loading {
-			display: none;
-			background: var(--background-color);
-			text-align: center;
-			padding: 15px;
-			margin-bottom: 24px;
+		@media only screen and (min-width: 768px){
+			.hero-video{
+				bottom: 0;
+				width: 100vw;
+				margin-top: 160px;
+			}
+
 		}
 
 	  </style>

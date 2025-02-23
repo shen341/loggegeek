@@ -3,7 +3,6 @@
   import TranslateVariant from "svelte-material-icons/TranslateVariant.svelte"
   import "/node_modules/flag-icons/css/flag-icons.min.css";
   import { trans,locale, locales } from "$lib/language/i18n";
-  import { onMount } from "svelte";
 
 	let mobileMenuOpen = false;
 
