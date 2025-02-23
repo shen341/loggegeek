@@ -409,7 +409,7 @@
               <h5 class="card-title">
                 <span class="material-icons">maps_home_work</span> 民泊設備
               </h5>
-              <img src="{HOUSE}" alt="House Icon" class="img-fluid my-3" />
+              <img src="{HOUSE}" alt="House Icon" class="img-fluid my-3" style="width: 96px;" />
               <p class="card-text">
                インテリアコーディネートやカメラ撮影、旅館業申請など、民泊運営に欠かせないサービスを専門パートナーと協力して提供しています。経験豊富なチームでゲストの満足度向上を支援します。詳細は、以下をご確認ください。
               </p>
@@ -426,7 +426,7 @@
                 <span class="material-icons">maps_home_work</span> 民泊コンサル業
               </h1>
 
-              <img src="{CONSULTANT}" alt="Consultant Icon" class="img-fluid my-3" />
+              <img src="{CONSULTANT}" alt="Consultant Icon" class="img-fluid my-3"  style="width: 96px;" />
               <p class="card-text">
                 初めての民泊立ち上げから運営改善、収益最大化まで、オーナー様のニーズに合わせたコンサルティングを実施しています。詳しくはお問い合わせください。
               </p>
@@ -451,9 +451,7 @@
 {/if}    
 
 <style>
-  .img-fluid {
-    width: 96px;
-  }
+
 
   .big-title{
     color: #063b71;
