@@ -1,6 +1,4 @@
 <script>
-	import ABOUTIMG from "$lib/img/about.jpg";
-	import FEATUREBG from "$lib/img/features-bg.jpg";
 	import PORTFOLIO1 from "$lib/img/masonry-portfolio/masonry-portfolio-1.jpg";
 	import PORTFOLIO2 from "$lib/img/masonry-portfolio/masonry-portfolio-2.jpg";
 	import PORTFOLIO3 from "$lib/img/masonry-portfolio/HomeAndConsumerIoT_Devices.png";
@@ -164,8 +162,18 @@
 						<h3>{$trans("hero.section.consultant")}</h3>
 					  </div>
 				</a>
-
 			</div>
+
+			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+				<a href="/subcontracting">
+					<div class="icon-box">
+						<CogSyncOutline color="#ffc451" width=56 height=56/>
+						<h3>再委託型民泊管理</h3>
+					  </div>
+				</a>
+			</div>
+
+
 			<!-- <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
 			  <div class="icon-box">
 				<NfcTap color="#ffc451" width=56 height=56/>

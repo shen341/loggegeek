@@ -1,14 +1,9 @@
 <script>
   import { onMount } from 'svelte';
-  import ArrowRightBold from "svelte-material-icons/ArrowRightBold.svelte";
   import PROCESSALL from "$lib/img/subcontracting/all.png";
   import OWNERALL from "$lib/img/subcontracting/owner_all.png";
   import OWNERPART from "$lib/img/subcontracting/owner_part.png";
   import OWNERSLECT from "$lib/img/subcontracting/owner_select.png";
-  import ASK1 from "$lib/img/manage/illustration/2110.jpg";
-  import ASK2 from "$lib/img/manage/illustration/2111.jpg";
-  import ASK3 from "$lib/img/manage/illustration/2115.jpg";
-  import ASK4 from "$lib/img/manage/illustration/2119.png";
 
   onMount(() => {
     const elements = document.querySelectorAll('.animate-on-scroll');
