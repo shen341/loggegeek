@@ -120,13 +120,13 @@
       <p class="watermark">LODGEGEEK  QUALITY LODGEGEEK QUALITY</p>
     </div>
     <div class="row justify-content-center text-center mt-4">
-      <div class="col-xl-3 col-lg-3 animate-on-scroll">
+      <div class="col-xl-3 col-lg-3 animate-on-scroll custom_img">
         <div class="d-flex justify-content-center">
           <img src="{TOPLEFT}" alt="consoltant right" class="img-fluid"/>
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 animate-on-scroll" >
-        <h1 class="display-4  mb-4 mt-4 big-title">月額<span class="important_red">1,000</span>円！</h1>
+        <h1 class="display-4  mb-4 mt-4 big-title">月額<span class="important_red">1,000</span>円～</h1>
         <h2 class="h2  mb-4 big-title">業界最安値の民泊管理代行</h2>
         <p class="lead mb-4">
           住宅宿泊管理業者に払う管理代行用を抑えて<br>
@@ -141,7 +141,7 @@
         </div>
 
       </div>
-      <div class="col-xl-3 col-lg-3 animate-on-scroll">
+      <div class="col-xl-3 col-lg-3 animate-on-scroll custom_img">
         <div class="d-flex justify-content-center">
           <img src="{TOPRIGHT}" alt="consoltant right" class="img-fluid"/>
         </div>
@@ -489,4 +489,24 @@
     margin: 0px 0px -16px 4px;
     text-align: left;
 }
+
+
+.custom_img{
+       display:none;
+	}
+
+@media only screen and (min-width: 768px){
+			.custom_img{
+       display:block;
+			}
+}
+
+  /* スマホ */
+  @media only screen and (max-width: 767px){
+    .big-title{
+      font-size: 48px;
+    }
+  }
+
+
 </style>

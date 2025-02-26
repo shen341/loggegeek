@@ -168,7 +168,7 @@
 				<a href="/subcontracting">
 					<div class="icon-box">
 						<CogSyncOutline color="#ffc451" width=56 height=56/>
-						<h3>再委託型民泊管理</h3>
+						<h3>再委託型民泊業務</h3>
 					  </div>
 				</a>
 			</div>
@@ -987,7 +987,6 @@
 				margin-top: 0px;
 				top: 0;
 			}
-
 		}
 
 		@media only screen and (min-width: 768px){
@@ -996,7 +995,6 @@
 				width: 100vw;
 				margin-top: 160px;
 			}
-
 		}
 
 	  </style>

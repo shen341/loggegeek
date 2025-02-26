@@ -1,9 +1,12 @@
 <script>
   import { onMount } from 'svelte';
-  import PROCESSALL from "$lib/img/subcontracting/all.png";
-  import OWNERALL from "$lib/img/subcontracting/owner_all.png";
-  import OWNERPART from "$lib/img/subcontracting/owner_part.png";
-  import OWNERSLECT from "$lib/img/subcontracting/owner_select.png";
+	import CheckAll from "svelte-material-icons/CheckAll.svelte"
+  import TagCheck from "svelte-material-icons/TagCheck.svelte"
+  import SAITAKU from "$lib/img/backgroud/saiitaku.jpg";
+	import Cellphone from "svelte-material-icons/Cellphone.svelte"
+	import EmailOutline from "svelte-material-icons/EmailOutline.svelte"
+	import MapMarkerRadius from "svelte-material-icons/MapMarkerRadius.svelte"
+  import ArrowRightCircle from "svelte-material-icons/ArrowRightCircle.svelte"
 
   onMount(() => {
     const elements = document.querySelectorAll('.animate-on-scroll');
@@ -59,93 +62,83 @@
   </style>
 </svelte:head>
 
-<section class="solution-section">
+<section class="solution-section" id="solution">
   <div class="container py-5">
     <!-- Solution Header -->
-    <div class="text-center mb-5 animate-on-scroll">
+    <div class="text-center  animate-on-scroll">
       <h6 class="important_red mb-3 text-center">SOLUTION</h6>
-      <h2 class="big-title  mb-4">
-       オーナー主体型民泊管理代行なら、<br/>
-        法律を遵守してオーナー自身が自由に運営可能
-      </h2>
+      <h1 class="big-title  mb-4">
+        「再委託型」民泊運営業務
+      </h1>
     </div>
 
-    <!-- Main Content Box -->
-    <div class="bg-white rounded-4 p-5 mb-5 animate-on-scroll">
-      <div class="text-center mb-5">
-        <h3 class="section-title mb-4">
-          再委託型の運営で、<span class="important_red">ほとんど全ての民泊業務</span>をオーナー及び<br/>
-          オーナーが選んだ業者に<span class="important_red">「再委託」</span>できます。
-        </h3>
-        <div class="row">
-            <div class="col-md-8 offset-md-2  col-sm-12 ">
-                <div class="alert alert-light border">
-                    <p class="mb-0">
-                      住宅宿泊事業法には、民泊業務を住宅宿泊管理業者に委託した上で、一部をオーナーが<br/>
-                      <span class="text-danger">担うことができる</span>と記載されています。
-                    </p>
-                  </div>
-            </div>
-            <div class="col-md-10 offset-md-1">
-                <div class="d-flex justify-content-center">
-                    <img src="{PROCESSALL}" alt="all process" class="img-fluid"/>
-                  </div>
-            </div>
-        </div>
-      </div>
+    <!-- background -->
+    <div class="summary_top animate-on-scroll">
+      <h2><span class="txt">民泊運営方法における背景</span></h2>
+    </div>
+    <div class="mt-3 comment_box animate-on-scroll">
+      <p>
+        民泊の運営には、大きく分けて「家主居住型」と「家主不在型」の2つのスタイルがあります。
+      </p>
+      <strong>
+        ■家主居住型（ホームステイ型）
+      </strong>
 
-    
-      <div class="text-center mb-5">
-        <h3 class="section-title mb-4">
-            オーナーの方針によって運用方法は<span class="important_red">自由自在</span>様々なパターンでの運用が可能に
-        </h3>    
-        <!-- Flow Diagram1 owner_all -->
-        <div class="row text-center">
-            <div class="d-flex justify-content-center">
-                <h4 class="subtitle text-white">
-                    ① オーナーにほとんど全ての業務を再委託
-                </h4>
-            </div>
+      <ul class="mt-3">
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>ホストが普段住んでいる家の一部をゲストに貸し出すスタイルです。</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>ホストとゲストが同じ家で生活を共にします。</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>50㎡以下の部屋を貸し出す場合、消防設備の設置義務が緩和されることがあります。</span></li>
+      </ul>
 
-            <div class="col-md-10 offset-md-1">
-                <div class="d-flex justify-content-center">
-                    <img src="{OWNERALL}" alt="オーナーにほとんど全ての業務を再委託" class="img-fluid"/>
-                  </div>
-            </div>
-        </div>
-        
-        <!-- Flow Diagram1 owner_part -->
-        <hr>
-        <div class="row text-center">
-            <div class="d-flex justify-content-center">
-                <h4 class="subtitle text-white">
-                    ② オーナー ＋ 一部の業務のみを業者に再委託
-                </h4>
-            </div>
+      <p>
+        ただし、ホストの外出時間に制限があるなど、ルールが厳しく設定されています。
+      </p>
+      <strong>
+        ■家主不在型（空き家活用型）
+      </strong>
 
-            <div class="col-md-10 offset-md-1">
-                <div class="d-flex justify-content-center">
-                    <img src="{OWNERPART}" alt="オーナー ＋ 一部の業務のみを業者に再委託" class="img-fluid"/>
-                  </div>
-            </div>
-        </div>    
-        
-        <!-- Flow Diagram1 owner_select -->
-        <hr>
-        <div class="row text-center">
-            <div class="d-flex justify-content-center">
-                <h4 class="subtitle text-white">
-                    ③ オーナーが選定した業者に各業務を再委託
-                </h4>
-            </div>
+      <ul class="mt-3">
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>ホストが常に家にいる必要がないスタイルです。</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>空き家などを有効活用する場合に適しています。</span></li>
+      </ul>
 
-            <div class="col-md-10 offset-md-1">
-                <div class="d-flex justify-content-center">
-                    <img src="{OWNERSLECT}" alt="オーナーが選定した業者に各業務を再委託" class="img-fluid"/>
-                  </div>
-            </div>
-        </div>           
-      </div>
+      <p>
+        ホストの時間の自由度は高いですが、以下の点が義務付けられています。
+      </p>
+      <ul class="mt-3">
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#FF5722" width=24 height=24/></div> <span>消防設備の設置</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#FF5722" width=24 height=24/></div> <span>ゲスト対応、清掃、緊急時の駆けつけなど、民泊運営に関する全ての業務を住宅宿泊管理業者に委託
+        </span></li>
+      </ul>
+      
+
+    </div>
+
+    <!-- 再委託型民泊運営とは？ -->
+    <div class="summary_top animate-on-scroll">
+      <h2><span class="txt">再委託型民泊運営とは？</span></h2>
+    </div>
+    <div class="mt-3 comment_box animate-on-scroll">
+      <p>
+        現在、民泊の多くは家主が不在で、運営を管理会社に委託する「家主不在型」です。しかし、多くの家主は「もっと自分で運営に関わりたい」と感じています。
+      </p>
+     <p style="line-height: 1.5rem;">
+      この問題を解決する運営方法が「再委託型」の民泊運営になります。<br>
+      再委託型運営とは、ホストが住宅宿泊管理業者に委託した民泊業務の一部をホストおよびホストが選んだ業者に戻す形で再委託するという運営方法です。
+     </p>
+
+     <div class="d-flex justify-content-center">
+      <img src="{SAITAKU}" alt="再委託型民泊運営" class="img-fluid custom_img" />
+     </div>
+
+     <div class="mt-4 text-center">
+      <p class="lead mb-4">まずは無料相談からはじめませんか？お気軽にお問い合わせください</p>
+      <a href="#contact" class="btn btn-danger btn-lg rounded-pill px-5">
+        問い合わせ
+        <ArrowRightCircle/>
+      </a> 
+     </div>
+
     </div>
 
     <!-- Merit-->
@@ -156,7 +149,7 @@
 <section class="py-5 bg-light" id="Merit">
     <div class="container text-center">
         <h6 class="mb-4">MERIT</h6>
-        <h2 class="mb-5">再委託型民泊管理代行のメリット</h2>
+        <h2 class="mb-5">再委託型民泊管理のメリット</h2>
         <div class="row mb-4">
             <div class="col-md-6 col-lg-3 mb-3">
               <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
@@ -200,19 +193,102 @@
                 </div>
               </div>
 
-          </div>        
+        </div>        
     </div>
 
 </section>
 
+	  <!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+
+  <div class="container">
+    <h6 class="mb-4 text-center">CONTACT</h6>
+    <h2 class="mb-5 text-center">問い合わせ</h2>
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon">
+          <MapMarkerRadius color="#ffc451" width=36 height=36/>
+        </div>
+
+        <div>
+          <h3>Address</h3>
+          <p>〒134-0088 東京都江戸川区西葛西2-22-45 542室</p>
+          <p>Room.542, 2-22-45, Nishikasai, Edogawaku, Tokyo, 134-0088, Japan</p>
+        </div>
+        </div><!-- End Info Item -->
+  
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon">
+          <Cellphone color="#ffc451" width=36 height=36/>
+        </div>
+        <div>
+          <h3>Call Us</h3>
+          <p><a href="tel:03-6824-7905">Japan Local: 03-6824-7905</a></p>
+          <p><a href="tel:+81368247905">International: +81-368247905</a></p>
+        </div>
+        </div><!-- End Info Item -->
+  
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon">
+          <EmailOutline color="#ffc451" width=36 height=36/>
+        </div>
+        <div>
+          <h3>Email Us</h3>
+          <p><a href="mailTo:contact@lodgegeek.com" class="__cf_email__" >contact@lodgegeek.com
+          </a>
+        </p>
+        </div>
+        </div><!-- End Info Item -->
+  
+      </div>
+      <!-- Start of Contact Form (Tallyを使用)-->
+      <div class="col-lg-8">
+        <div class="wrap">
+          <iframe data-tally-src="https://tally.so/embed/meBRqQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="313" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        </div>
+      </div>
+      <!-- End of Contact Form (Tallyを使用)-->
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
+
+
+
 <style>
 
+.summary_top {
+    background: url(/background.jpg) repeat-x center top;
+    padding: 20px 0;
+    border-radius: 10px;
+}
 
-#Merit h6 {
+.summary_top h2 {
+    border-left: 8px solid #314c50;
+    width: 985px;
+    margin: 0 5px;
+    font-size: 24px;
+}
+
+.comment_box ul{
+  list-style: none;
+  padding: 0;
+}
+
+.comment_box ul li{
+  display: flex;
+  margin-left: 20px;
+}
+
+
+
+#Merit h6,#contact h6 {
   color: #c8391e;
   font-weight: bold;
 }
-#Merit h2 {
+#Merit h2,#contact h2 {
   color: #063b71;
   font-weight: bold;
 }
@@ -231,20 +307,6 @@
     line-height: 1.4;
 }
 
-.subtitle{
-    align-items: center;
-    background: #063b71;
-    border-radius: 8px 8px 0px 0px;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 56px;
-    justify-content: center;
-    width: 480px;
-    max-width: 100%;
-    padding: 15px 0 10px 0;
-    font-size: 20px;
-}
 
 .big-title{
     color: #063b71;
@@ -290,16 +352,12 @@
     z-index: -1;
   }
 
-  .section-title{
-    align-items: center;
-    background: #105092;
-    border-radius: 8px 8px 8px 8px;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    color: white;
-    padding: 10px;
-}    
+  @media only screen and (min-width: 768px){
+			.custom_img{
+        max-width: 600px;
+			}
+		}  
+
+
   
 </style>
