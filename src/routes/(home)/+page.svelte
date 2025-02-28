@@ -150,10 +150,12 @@
 				</a>
 			</div>
 			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-			  <div class="icon-box">
-				<LockSmart color="#ffc451" width=56 height=56/>
-				<h3><a href="#">{$trans("hero.section.iotSales")}</a></h3>
-			  </div>
+				<a href="/iot">
+					<div class="icon-box">
+						<LockSmart color="#ffc451" width=56 height=56/>
+						<h3>{$trans("hero.section.iotSales")}</h3>
+					</div>
+				</a>
 			</div>
 			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
 				<a href="/consultant">
@@ -346,7 +348,7 @@
 				<div class="icon">
 					<LockSmart color="white" width=36 height=36/>
 				</div>
-				<a href="#" class="stretched-link">
+				<a href="/iot" class="stretched-link">
 				  <h3>{$trans("services.section.job2")}</h3>
 				</a>
 				<ul class="custom">

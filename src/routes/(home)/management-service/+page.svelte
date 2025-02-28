@@ -27,7 +27,9 @@
   import Cleaner from "$lib/img/manage/illustration/cleaner.svg";
   import Security from "$lib/img/manage/illustration/Security.svg";
   import TriangleSmallDown from "svelte-material-icons/TriangleSmallDown.svelte"
-
+	import EmailOutline from "svelte-material-icons/EmailOutline.svelte"
+	import MapMarkerRadius from "svelte-material-icons/MapMarkerRadius.svelte"
+	import Cellphone from "svelte-material-icons/Cellphone.svelte"
 
 
   onMount(() => {
@@ -133,9 +135,9 @@
           自分で民泊運営をしたいオーナー様をサポートするサービスです。
         </p>
         <div>
-          <p class="important_red text-center mb-2">無料で簡単！30秒で完了</p>
-          <a href="#" class="btn btn-danger btn-lg rounded-pill">
-            LINEで仮審査申し込み
+          <p class="important_red text-center mb-2">問い合わせで簡単！30秒で完了</p>
+          <a href="#contact" class="btn btn-danger btn-lg rounded-pill">
+            問い合わせ
             <ArrowRightCircle/>
           </a>
         </div>
@@ -353,17 +355,63 @@
   </div>
 </section>
 
-<!-- CTA Section -->
-<section class="py-5 bg-light">
-  <div class="container text-center animate-on-scroll">
-    <h2 class="mb-4 big-title">まずは無料相談からはじめませんか？</h2>
-    <p class="lead mb-4">お気軽にお問い合わせください</p>
-    <a href="/#contact" class="btn btn-danger btn-lg rounded-pill px-5">
-      問い合わせ
-      <ArrowRightCircle/>
-    </a>
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h6 class="mb-4 text-center">まずは無料相談からはじめませんか？</h6>
+    <h2 class="mb-4 big-title">お気軽にお問い合わせください</h2>
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon">
+          <MapMarkerRadius color="#ffc451" width=36 height=36/>
+        </div>
+
+        <div>
+          <h3>Address</h3>
+          <p>〒134-0088 東京都江戸川区西葛西2-22-45 542室</p>
+          <p>Room.542, 2-22-45, Nishikasai, Edogawaku, Tokyo, 134-0088, Japan</p>
+        </div>
+        </div><!-- End Info Item -->
+  
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon">
+          <Cellphone color="#ffc451" width=36 height=36/>
+        </div>
+        <div>
+          <h3>Call Us</h3>
+          <p><a href="tel:03-6824-7905">Japan Local: 03-6824-7905</a></p>
+          <p><a href="tel:+81368247905">International: +81-368247905</a></p>
+        </div>
+        </div><!-- End Info Item -->
+  
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon">
+          <EmailOutline color="#ffc451" width=36 height=36/>
+        </div>
+        <div>
+          <h3>Email Us</h3>
+          <p><a href="mailTo:contact@lodgegeek.com" class="__cf_email__" >contact@lodgegeek.com
+          </a>
+        </p>
+        </div>
+        </div><!-- End Info Item -->
+  
+      </div>
+      <!-- Start of Contact Form (Tallyを使用)-->
+      <div class="col-lg-8">
+        <div class="wrap">
+          <iframe data-tally-src="https://tally.so/embed/meBRqQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="313" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        </div>
+      </div>
+      <!-- End of Contact Form (Tallyを使用)-->
+    </div>
+
   </div>
+
 </section>
+<!-- /Contact Section -->
+
 
 <style>
 

@@ -1,6 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-	import CheckAll from "svelte-material-icons/CheckAll.svelte"
   import TagCheck from "svelte-material-icons/TagCheck.svelte"
   import SAITAKU from "$lib/img/backgroud/saiitaku.jpg";
 	import Cellphone from "svelte-material-icons/Cellphone.svelte"
@@ -132,7 +131,7 @@
      </div>
 
      <div class="mt-4 text-center">
-      <p class="lead mb-4">まずは無料相談からはじめませんか？お気軽にお問い合わせください</p>
+      <p class="lead mb-4">まずは気軽にお問い合わからはじめませんか？</p>
       <a href="#contact" class="btn btn-danger btn-lg rounded-pill px-5">
         問い合わせ
         <ArrowRightCircle/>
@@ -198,9 +197,8 @@
 
 </section>
 
-	  <!-- Contact Section -->
+<!-- Contact Section -->
 <section id="contact" class="py-5 bg-light">
-
   <div class="container">
     <h6 class="mb-4 text-center">CONTACT</h6>
     <h2 class="mb-5 text-center">問い合わせ</h2>
@@ -253,9 +251,8 @@
 
   </div>
 
-</section><!-- /Contact Section -->
-
-
+</section>
+<!-- /Contact Section -->
 
 <style>
 

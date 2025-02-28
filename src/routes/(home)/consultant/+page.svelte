@@ -27,10 +27,19 @@
 
   let mobilePlan="plan1"
   const mobilePlanClick=(plan="plan1")=>{
-    if (plan=="plan1") {
-      mobilePlan="plan1"
-    }else{
-      mobilePlan="plan2"
+    switch (plan) {
+      case "plan1":
+        mobilePlan="plan1"
+        break;
+      case "plan2":
+        mobilePlan="plan2"
+        break;   
+      case "plan3":
+        mobilePlan="plan3";
+        break;
+      default:
+        mobilePlan="plan1"
+        break;
     }
   }
 
@@ -203,9 +212,10 @@
               </div>
           </div>
       </div>
+      <!--一部代行-->
       <div class="p-tb-pc__item p-tb-pc__detail">
           <div class="p-tb-pc__detail-wrap">
-              <h4 class="p-tb-pc__detail-ttl">完全代行</h4>
+              <h4 class="p-tb-pc__detail-ttl">一部代行</h4>
               <div class="p-tb-pc__detail-price-wrap">
                   <p class="p-tb-pc__detail-price">
                       売上×15％<span class="p-tb-pc__detail-price-note p-tb-pc__detail-price-note01">(OTA手数料除く)&ensp;※1</span>
@@ -219,10 +229,10 @@
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail">
-              <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-              <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-              <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-              <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+              <p class="p-tb-pc__ct-txt">ー</p>
+              <p class="p-tb-pc__ct-txt">ー</p>
+              <p class="p-tb-pc__ct-txt">ー</p>
+              <p class="p-tb-pc__ct-txt">ー</p>
               <p class="p-tb-pc__ct-txt"></p>
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
@@ -232,6 +242,39 @@
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
           </div>
       </div>
+      
+      <!--完全代行-->
+      <div class="p-tb-pc__item p-tb-pc__detail">
+        <div class="p-tb-pc__detail-wrap">
+            <h4 class="p-tb-pc__detail-ttl">完全代行</h4>
+            <div class="p-tb-pc__detail-price-wrap">
+                <p class="p-tb-pc__detail-price">
+                    売上×20％<span class="p-tb-pc__detail-price-note p-tb-pc__detail-price-note01">(OTA手数料除く)&ensp;※1</span>
+                </p>
+            </div>
+        </div>
+        <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+        </div>
+        <div class="p-tb-pc__ct p-tb-pc__ct--detail">
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"></p>
+        </div>
+        <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+        </div>
+      </div>
+
+      <!--メッセージ代行-->
       <div class="p-tb-pc__item p-tb-pc__detail">
           <div class="p-tb-pc__detail-wrap">
               <h4 class="p-tb-pc__detail-ttl">メッセージ代行</h4>
@@ -262,11 +305,18 @@
           </div>
       </div>
     </div>
+
     <div class="p-tb-sp fadeInTrigger fadeIn">
       <ul class="p-tb-sp__tab">
+           <!--完全代行 -->
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-          <li class="p-tb-sp__tab-item {mobilePlan=="plan1"?"is-open":""}" id="plan1" on:click={()=>{mobilePlanClick("plan1")}}>完全代行</li>
+          <li class="p-tb-sp__tab-item {mobilePlan=="plan1"?"is-open":""}" id="plan1" on:click={()=>{mobilePlanClick("plan1")}}>一部代行</li>
+           <!--完全代行 -->
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+          <li class="p-tb-sp__tab-item {mobilePlan=="plan3"?"is-open":""}" id="plan3" on:click={()=>{mobilePlanClick("plan3")}}>完全代行</li>
+          <!--メッセージ代行 -->
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
           <li class="p-tb-sp__tab-item {mobilePlan=="plan2"?"is-open":""}" id="plan2" on:click={()=>{mobilePlanClick("plan2")}}>メッセージ代行</li>
@@ -281,26 +331,133 @@
               </div>
           </div>
           <div class="p-tb-sp__ct">
-              <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
-              <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
-                  <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-              </div>
-              <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- サイトコントローラー設定</p>
-                  <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-              </div>
-              <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
-                  <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-              </div>
-              <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
-                  <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-              </div>
-          </div>
+            <h4 class="p-tb-sp__ct-ttl">ゲスト対応</h4>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- メッセージ</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 電話対応</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- レビュー対応</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 宿泊様情報の回収</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+        </div>
+        <div class="p-tb-sp__ct">
+            <h4 class="p-tb-sp__ct-ttl">製作&amp;構築関連</h4>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- リスティングページ構築</p>
+                <p class="p-tb-sp__ct-item-txt">ー</p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- ハウスガイド製作</p>
+                <p class="p-tb-sp__ct-item-txt">ー</p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 間取り図作成</p>
+                <p class="p-tb-sp__ct-item-txt">ー</p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 宿泊名簿フォーム構築</p>
+                <p class="p-tb-sp__ct-item-txt">ー</p>
+            </div>
+            <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button></span>
+        </div>
+        <div class="p-tb-sp__ct">
+            <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- サイトコントローラー設定</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+        </div>
       </div>
-  
+      <div class="p-tb-sp__item" id="plan3Item" style="{mobilePlan=="plan3"?"display: block;":"display: none;"}">
+        <div class="p-tb-sp__ct p-tb-sp__ct--item">
+            <h4 class="p-tb-sp__ct-ttl">料&emsp;金</h4>
+            <div class="p-tb-sp__price-wrap">
+                <p class="p-tb-sp__price p-tb-sp__price--ty">
+                    売上×20％<span class="p-tb-sp__price-note p-tb-sp__price-note01">(OTA手数料除く)&ensp;※1</span>
+                </p>
+            </div>
+        </div>
+        <div class="p-tb-sp__ct">
+            <h4 class="p-tb-sp__ct-ttl">ゲスト対応</h4>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- メッセージ</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 電話対応</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- レビュー対応</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 宿泊様情報の回収</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+        </div>
+        <div class="p-tb-sp__ct">
+            <h4 class="p-tb-sp__ct-ttl">製作&amp;構築関連</h4>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- リスティングページ構築</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- ハウスガイド製作</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 間取り図作成</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 宿泊名簿フォーム構築</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button></span>
+        </div>
+        <div class="p-tb-sp__ct">
+            <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- サイトコントローラー設定</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
+                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+            </div>
+        </div>
+      </div>
+      
       <div class="p-tb-sp__item" id="plan2Item" style="{mobilePlan=="plan2"?"display: block;":"display: none;"}">
           <div class="p-tb-sp__ct p-tb-sp__ct--item">
               <h4 class="p-tb-sp__ct-ttl">料&emsp;金</h4>
@@ -532,7 +689,7 @@
   .p-tb-pc {
     display: flex;
     justify-content: space-between;
-    width: 858px;
+    width: 1144px;
     margin: 40px auto 0;
     position: relative;
 }
@@ -694,9 +851,9 @@ p.p-tb-pc__ct-txt{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 49%;
+    width: 33%;
     height: 73px;
-    font-size: 22px;
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.4);
     border-radius: 15px 15px 0 0;
     background-color: #fff;
@@ -803,19 +960,7 @@ p.p-tb-pc__ct-txt{
     color: #E85832;
 }
 
-.p-tb-pc__ct-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 130px;
-    height: 30px;
-    font-size: 13px;
-    color: #E85832;
-    border-radius: 28px;
-    border: 2px solid #E85832;
-    transition: all 0.3s;
-    line-height: 1;
-}
+
 
 
 @media screen and (max-width: 767px) {
