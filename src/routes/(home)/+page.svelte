@@ -28,7 +28,9 @@
 	import WifiArrowUpDown from "svelte-material-icons/WifiArrowUpDown.svelte"
 	import BedOutline from "svelte-material-icons/BedOutline.svelte"
 	import backgroundVideo from '$lib/video/backgroud4.mp4';
-
+	import ArrowRightBold from "svelte-material-icons/ArrowRightBold.svelte";
+	import ArrowLeftBold from "svelte-material-icons/ArrowLeftBold.svelte";
+	
 	import  MetaTagComponent from "../Components/MetaTagComponent.svelte";
 
 	import { trans } from "$lib/language/i18n";
@@ -45,61 +47,6 @@
   /**
    * @description お問い合わせフォームのバリデーション
    */
-  async function inquireAction() {
-	let param={
-		customerName:customerName,
-		customerEmail:customerEmail,
-		title:title,
-		customerMessage:customerMessage
-	}
-
-	// loading...
-	status="1";
-
-	let result = await fetch('/mail', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-			Accept: "application/json",
-		},
-		body: JSON.stringify(param),
-	});
-
-	const resJson = await result.json();
-    if (resJson.status == "NG") {
-      toasts.clearAll();
-      toasts.add({
-        title: "警告",
-        description: resJson.message,
-        duration: 8000,
-        placement: "center-center",
-        type: "warning",
-        theme: "dark",
-        showProgress: true,
-      });
-	  // error...
-	  status="3";
-
-    } else {
-		customerName=""
-		customerEmail=""
-		title=""
-		customerMessage=""
-		toasts.add({
-			title: "成功",
-			description: "問い合わせありがとうございました。",
-			duration: 8000,
-			placement: "center-center",
-			type: "success",
-			theme: "light",
-			showProgress: true,
-		});
-		// success...
-		status="2";
-
-	}
-
-  }
 
   console.log(import.meta.env.BASE_URL); // BASE_URLの値をコンソールに出力
 
@@ -110,7 +57,8 @@
 	<link href="https://fonts.googleapis.com" rel="preconnect">
 	<link href="https://fonts.gstatic.com" rel="preconnect">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </svelte:head>
 
 	  <!-- Hero Section -->
@@ -452,6 +400,95 @@
   
 	  </section><!-- /Call To Action Section -->
   
+
+	  <section id="corporation" class="py-5">
+		<div class="container section-title" data-aos="fade-up">
+			<h2>Affiliation</h2>
+			<p>加盟我们</p>
+		  </div>
+
+		<div class="container">
+		  <!-- Model A -->
+		  <div class="model-box mb-5">
+			<h3 class="model-title">A. 全托管加盟(QIQI HOUSE线上+QIQI HOUSE线下)</h3>
+			
+			<!-- Flow Diagram -->
+			<div class="flow-diagram mt-4">
+			  <div class="row align-items-center justify-content-center">
+				<!-- Investor -->
+				<div class="col-md-3 text-center">
+				  <div class="icon-circle">
+					<i class="bi bi-person-plus-fill"></i>
+				  </div>
+				  <p class="mt-2">投资人</p>
+				</div>
+
+				<!-- Arrows and Text -->
+				<div class="col-md-1 text-center">
+				  <div class="arrows">
+					<div class="small-text">房源、资金</div>
+					<div class="arrow-right">→</div>
+					<div class="arrow-left">←</div>
+					<div class="small-text">选址、设计、改造、运营、营销等服务</div>
+				  </div>
+				</div>
+
+				<!-- QIQI -->
+				<div class="col-md-3 text-center">
+				  <div class="icon-circle qiqi-logo">
+					<span>QIQI HOUSE</span>
+				  </div>
+				  <p class="mt-2">QIQI</p>
+				</div>
+
+				<!-- Arrow -->
+				<div class="col-md-1 text-center">
+				  <div class="arrow-right">→</div>
+				  <div class="small-text">特色、高品质民宿及服务</div>
+				</div>
+
+				<!-- User -->
+				<div class="col-md-3 text-center">
+				  <div class="icon-circle">
+					<i class="bi bi-house-fill"></i>
+				  </div>
+				  <p class="mt-2">用户</p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- Info Boxes -->
+			<div class="row mt-5 g-4">
+			  <div class="col-md-6">
+				<div class="info-box">
+				  <h4>适用人群：</h4>
+				  <p>投资人不在日本当地</p>
+				</div>
+			  </div>
+			  <div class="col-md-6">
+				<div class="info-box">
+				  <h4>合作模式：</h4>
+				  <p>投资人负责，投入房源、资金</p>
+				</div>
+			  </div>
+			  <div class="col-md-6">
+				<div class="info-box">
+				  <h4>QIQI HOUSE负责：</h4>
+				  <p>房源筛建、改造；线上运营、营销；线下保洁、管家、紧急事件</p>
+				</div>
+			  </div>
+			  <div class="col-md-6">
+				<div class="info-box">
+				  <h4>特点：</h4>
+				  <p>投资人大幅减少前期筹建以及后期的运营时间，轻松成为“甩手掌柜”，持续享受收益。</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+  
+
 	  <!-- Portfolio Section -->
 	  <section id="portfolio" class="portfolio section">
   
@@ -459,7 +496,8 @@
 		<div class="container section-title" data-aos="fade-up">
 		  <h2>Portfolio</h2>
 		  <p>Check our Portfolio</p>
-		</div><!-- End Section Title -->
+		</div>
+		<!-- End Section Title -->
   
 		<div class="container">
   
@@ -516,7 +554,7 @@
 				</div>
 			  </div><!-- End Portfolio Item -->
   
-			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+			  <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
 				<img src="{PORTFOLIO5}" class="img-fluid" alt="">
 				<div class="portfolio-info">
 				  <h4>{$trans("action.section.category5")}</h4>
@@ -524,7 +562,8 @@
 				  <a href="{PORTFOLIO5}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 				</div>
-			  </div><!-- End Portfolio Item -->
+			  </div> -->
+			  <!-- End Portfolio Item -->
   
 			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
 				<img src="{PORTFOLIO6}" class="img-fluid" alt="">
@@ -806,7 +845,8 @@
 		</div>
 	  </section> -->
 	  <!-- /Team Section -->
-  
+
+
 	  <!-- Contact Section -->
 	  <section id="contact" class="contact section">
   
@@ -997,6 +1037,92 @@
 				width: 100vw;
 				margin-top: 160px;
 			}
+		}
+
+		.model-title {
+			/* color: #FF7043; */
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+		}
+
+		.icon-circle {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			background-color: #FF7043;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			font-size: 2rem;
+		}
+
+		.qiqi-logo {
+			font-size: 0.8rem;
+			font-weight: bold;
+		}
+
+		.arrows {
+			position: relative;
+		}
+
+		.arrow-right, .arrow-left {
+			color: #FF7043;
+			font-size: 2rem;
+			font-weight: bold;
+		}
+
+		.small-text {
+			font-size: 0.8rem;
+			color: #666;
+			margin: 5px 0;
+		}
+
+		.info-box {
+			background-color: white;
+			border: 2px solid #FF7043;
+			border-radius: 10px;
+			padding: 15px;
+		}
+
+		.info-box h4 {
+			color: #FF7043;
+			font-size: 1.2rem;
+			margin-bottom: 10px;
+		}
+
+		.info-box p {
+			margin: 0;
+			color: #333;
+		}
+
+		.flow-diagram {
+			background-color: white;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		@media (max-width: 768px) {
+			.franchise-title {
+				font-size: 1.5rem;
+			}
+
+			.icon-circle {
+				width: 60px;
+				height: 60px;
+				font-size: 1.5rem;
+			}
+
+			.arrows {
+				margin: 20px 0;
+			}
+
+			.qiqi-logo {
+				font-size: 12px;
+			}
+
 		}
 
 	  </style>

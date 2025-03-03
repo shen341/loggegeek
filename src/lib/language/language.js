@@ -71,7 +71,7 @@ export default {
         "action.section.category2":"スマートロック",     
         "action.section.category2.comment":"スマートロック　ソリューション",
 
-        "action.section.category3":"IoT機器事業",     
+        "action.section.category3":"IoT",     
         "action.section.category3.comment":"スマートハウス",
         "action.section.category4":"民泊代行サービス",     
         "action.section.category4.comment":"民泊代行サービス",
@@ -223,7 +223,7 @@ export default {
         "action.section.category2":"智能锁",     
         "action.section.category2.comment":"智能锁　解决方案",
 
-        "action.section.category3":"IoT设备事业",     
+        "action.section.category3":"IoT",     
         "action.section.category3.comment":"智能家居",
         "action.section.category4":"民宿代行服务",     
         "action.section.category4.comment":"民宿代行服务",
@@ -375,7 +375,7 @@ export default {
         "action.section.category2":"Smart lock",     
         "action.section.category2.comment":"Smart lock solution",
 
-        "action.section.category3":"IoT equipment business",     
+        "action.section.category3":"IoT",     
         "action.section.category3.comment":"Smart home",
         "action.section.category4":"B&B agency service",     
         "action.section.category4.comment":"B&B agency service",
