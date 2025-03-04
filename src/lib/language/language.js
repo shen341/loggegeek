@@ -8,16 +8,16 @@ export default {
         "hero.section.title":"革新的なサービスで豊かで快適な生活を創造",
         "hero.section.subtitle":"宿泊施設の収益向上、ゲスト満足度の向上",
         "hero.section.planning":"民泊運営代行",
-        "hero.section.iotSales":"IoT",
+        "hero.section.iotSales":"民泊旅館IoT",
         "hero.section.consultant":"民泊コンサル",
         "hero.section.communication.equipment":"通信機器",
         "hero.section.communication.sim":"SIMカード販売",
-        "about.section.title":"株式会社ロッジギークは、宿泊施設の企画、管理、運営、各種IoT機器の輸入販売、通信機器・SIMカードの販売を行う会社です。私たちは、宿泊施設事業、IoT機器事業、通信機器・SIMカード事業を通じて、人々の生活を豊かにする革新的なサービスを提供することを目指しています。",
+        "about.section.title":"株式会社ロッジギークは、宿泊施設の企画、管理、運営、各種IoT機器の輸入販売、通信機器・SIMカードの販売を行う会社です。私たちは、民泊運営代行、IoT機器事業、通信機器・SIMカード事業を通じて、人々の生活を豊かにする革新的なサービスを提供することを目指しています。",
         "about.section.vision1":"宿泊施設を単なる滞在場所から、人と人が繋がり、新しい体験を生み出す場へと進化させる。",
         "about.section.vision2":"IoT機器を活用し、より便利で快適な生活空間を創造する。",
         "about.section.vision3":"通信機器・SIMカードを通じて、人々がいつでもどこでも情報にアクセスできる環境を実現する。",
         "about.section.vision.end":"これらの事業を通じて、私たちは社会に貢献し、持続可能な成長を目指していきます。株式会社ロッジギークは、今後もお客様に新たな価値を提供し続けるために、努力を続けてまいります",
-        "features.section.job1":"宿泊施設事業とIoT機器事業の融合",
+        "features.section.job1":"民泊運営代行とIoT機器事業の融合",
         "features.section.job1.detail1":"宿泊施設にIoT機器を導入することで、付加価値の高いサービスを提供",
         "features.section.job1.detail2":"ゲストの快適性を向上させ、リピーター獲得に繋げる",
         "features.section.job2":"グローバルなネットワーク",
@@ -30,18 +30,18 @@ export default {
         "features.section.job4.detail1":"外国人旅行者が、日本のモバイル通信ネットワークを利用",
         "features.section.job4.detail2":"民宿周辺の情報や観光",
 
-        "services.section.job1":"宿泊施設事業",
+        "services.section.job1":"民泊運営代行",
         "services.section.job1.detail1":"独自のコンセプトに基づいた宿泊施設の企画・開発",
         "services.section.job1.detail2":"運営ノウハウを活用した効率的な施設管理",
         "services.section.job1.detail3":"顧客満足度向上のためのホスピタリティ溢れるサービス提供",
         
-        "services.section.job2":"IoT",
+        "services.section.job2":"民泊旅館IoT",
         "services.section.job2.detail1":"海外メーカーとの連携による高品質なIoT機器の輸入販売",
         "services.section.job2.detail2":"スマートホーム化や業務効率化を実現するソリューション提案",
         "services.section.job2.detail3":"専門スタッフによる設置",
         "services.section.job2.detail4":"メンテナンスサービス提供",
 
-        "services.section.job3":"通信機器・SIMカード事業",
+        "services.section.job3":"民泊コンサル",
         "services.section.job3.detail1":"国内外の通信事業者と提携した通信機器・SIMカードの販売",
         "services.section.job3.detail2":"充実した顧客サポート体制による安心のサービス提供",
 
@@ -66,7 +66,7 @@ export default {
         "action.section.title":"革新的なサービスで創造する",     
         "action.section.subtitle":"人と場所をつなぐ、革新的なサービスで、豊かで快適な生活を創造する。",   
 
-        "action.section.category1":"宿泊施設事業",     
+        "action.section.category1":"民泊運営代行",     
 
         "action.section.category2":"スマートロック",     
         "action.section.category2.comment":"スマートロック　ソリューション",
@@ -187,13 +187,13 @@ export default {
         "services.section.job1.detail2":"利用运营诀窍进行高效的设施管理",
         "services.section.job1.detail3":"提供充满热情服务的优质服务，提高客户满意度",
         
-        "services.section.job2":"IoT",
+        "services.section.job2":"民宿旅馆IoT",
         "services.section.job2.detail1":"与海外制造商合作，进口销售高品质IoT设备",
         "services.section.job2.detail2":"提出智能家居和业务效率化解决方案",
         "services.section.job2.detail3":"由专业人员进行安装",
         "services.section.job2.detail4":"提供维护服务",
 
-        "services.section.job3":"通信设备和SIM卡事业",
+        "services.section.job3":"民宿咨询",
         "services.section.job3.detail1":"与国内外通信运营商合作销售通信设备和SIM卡",
         "services.section.job3.detail2":"提供完善的客户支持体系，确保安心服务",
 
@@ -339,7 +339,7 @@ export default {
         "services.section.job1.detail2":"Leverage operational know-how for efficient facilities management",
         "services.section.job1.detail3":"Provide quality service with passionate service and increase customer satisfaction",
         
-        "services.section.job2":"IoT",
+        "services.section.job2":"IoT for private lodgings",
         "services.section.job2.detail1":"Cooperate with overseas manufacturers to import and sell high-quality IoT devices",
         "services.section.job2.detail2":"Propose smart home and business efficiency solutions",
         "services.section.job2.detail3":"Installation by professionals",

@@ -88,7 +88,7 @@
 		  </div>
 		  -->
   
-		  <div class="row gy-4 mt-5 justify-content-center" >
+		  <div class="row gy-4 mt-5 justify-content-center">
 			<div class="col-xl-3 col-md-4">
 				<a href="/management-service">
 					<div class="icon-box">
@@ -97,15 +97,9 @@
 					  </div>
 				</a>
 			</div>
-			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-				<a href="/iot">
-					<div class="icon-box">
-						<LockSmart color="#ffc451" width=56 height=56/>
-						<h3>{$trans("hero.section.iotSales")}</h3>
-					</div>
-				</a>
-			</div>
-			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+		  </div>
+		  <div class="row gy-4 mt-1 mb-5 justify-content-center" >
+			<div class="col-xl-3 col-md-3" data-aos="fade-up" data-aos-delay="500">
 				<a href="/consultant">
 					<div class="icon-box">
 						<AccountStar color="#ffc451" width=56 height=56/>
@@ -114,28 +108,14 @@
 				</a>
 			</div>
 
-			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
-				<a href="/subcontracting">
+			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+				<a href="/iot">
 					<div class="icon-box">
-						<CogSyncOutline color="#ffc451" width=56 height=56/>
-						<h3>再委託型民泊業務</h3>
-					  </div>
+						<LockSmart color="#ffc451" width=56 height=56/>
+						<h3>{$trans("hero.section.iotSales")}</h3>
+					</div>
 				</a>
 			</div>
-
-
-			<!-- <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
-			  <div class="icon-box">
-				<NfcTap color="#ffc451" width=56 height=56/>
-				<h3><a href="">{$trans("hero.section.communication.equipment")}</a></h3>
-			  </div>
-			</div> -->
-			<!-- <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
-			  <div class="icon-box">
-				<Sim color="#ffc451" width=48 height=48/>
-				<h3><a href="">{$trans("hero.section.communication.sim")}</a></h3>
-			  </div>
-			</div> -->
 		  </div>
   
 		</div>
@@ -266,123 +246,6 @@
 	  </section><!-- /Features Section -->
   
 	  <!-- Services Section -->
-	  <section id="services" class="services section">
-		<!-- Section Title -->
-		<div class="container section-title" data-aos="fade-up">
-		  <h2>Our Services</h2>
-		  <p>Check our Services</p>
-		</div><!-- End Section Title -->
-  
-		<div class="container">
-  
-		  <div class="row gy-4">
-  
-			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-			  <div class="service-item position-relative">
-				<div class="icon">
-					<BedOutline color="white" width=36 height=36/>
-				</div>
-				<a href="/management-service" class="stretched-link">
-				  <h3>{$trans("services.section.job1")}</h3>
-				</a>
-				<ul class="custom">
-					<li>{$trans("services.section.job1.detail1")}</li>
-					<li>{$trans("services.section.job1.detail2")}</li>
-					<li>{$trans("services.section.job1.detail3")}</li>
-				</ul>				  
-			 </div>
-			</div><!-- End Service Item -->
-  
-			<div class="col-lg-4 col-md-6" >
-			  <div class="service-item position-relative">
-				<div class="icon">
-					<LockSmart color="white" width=36 height=36/>
-				</div>
-				<a href="/iot" class="stretched-link">
-				  <h3>{$trans("services.section.job2")}</h3>
-				</a>
-				<ul class="custom">
-					<li>{$trans("services.section.job2.detail1")}</li>
-					<li>{$trans("services.section.job2.detail2")}</li>
-					<li>{$trans("services.section.job2.detail3")}</li>
-					<li>{$trans("services.section.job2.detail4")}</li>
-				</ul>				  
-			</div>
-			</div><!-- End Service Item -->
-  
-			<!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-			  <div class="service-item position-relative">
-				<div class="icon">
-					<WifiArrowUpDown color="white" width=36 height=36/>
-				</div>
-				<a href="/consultant" class="stretched-link">
-				  <h3>{$trans("services.section.job3")}</h3>
-				</a>
-				<ul class="custom">
-					<li>{$trans("services.section.job3.detail1")}</li>
-					<li>{$trans("services.section.job3.detail2")}</li>
-				</ul>
-			</div>
-			</div> -->
-			<!-- End Service Item -->
-  
-			<!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-			  <div class="service-item position-relative">
-				<div class="icon">
-					<CogSyncOutline color="white" width=36 height=36/>
-				</div>
-				<a href="javascript:void(0);" class="stretched-link">
-				  <h3>{$trans("services.section.job4")}</h3>
-				</a>
-				<ul class="custom">
-					<li>{$trans("services.section.job4.detail1")}</li>
-					<li>{$trans("services.section.job4.detail2")}</li>
-					<li>{$trans("services.section.job4.detail3")}</li>
-				</ul>
-			  </div>
-			</div> -->
-			<!-- End Service Item -->
-  
-			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-			  <div class="service-item position-relative">
-				<div class="icon">
-					<FaceAgent color="white" width=36 height=36/>
-				</div>
-				<a href="/consultant" class="stretched-link">
-				  <h3>{$trans("services.section.job5")}</h3>
-				</a>
-				<ul class="custom">
-					<li>{$trans("services.section.job5.detail1")}</li>
-					<li>{$trans("services.section.job5.detail2")}</li>
-					<li>{$trans("services.section.job5.detail3")}</li>
-					<li>{$trans("services.section.job5.detail4")}</li>
-				</ul>				
-				<!-- <a href="javascript:void(0);" class="stretched-link"></a> -->
-			  </div>
-			</div><!-- End Service Item -->
-  
-			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-			  <div class="service-item position-relative">
-				<div class="icon">
-					<ChatProcessing color="white" width=36 height=36/>
-				</div>
-				<a href="/consultant" class="stretched-link">
-				  <h3>{$trans("services.section.job6")}</h3>
-				</a>
-				<ul class="custom">
-					<li>{$trans("services.section.job6.detail1")}</li>
-					<li>{$trans("services.section.job6.detail2")}</li>
-					<li>{$trans("services.section.job6.detail3")}</li>
-				</ul>				<!-- <a href="javascript:void(0);" class="stretched-link"></a> -->
-			  </div>
-			</div><!-- End Service Item -->
-  
-		  </div>
-  
-		</div>
-  
-	  </section><!-- /Services Section -->
-  
 	  <!-- Call To Action Section -->
 	  <!-- <section id="call-to-action" class="call-to-action section">
   
@@ -405,99 +268,7 @@
   
 
 	  <!-- Portfolio Section -->
-	  <section id="portfolio" class="portfolio section">
-  
-		<!-- Section Title -->
-		<div class="container section-title" data-aos="fade-up">
-		  <h2>Portfolio</h2>
-		  <p>Check our Portfolio</p>
-		</div>
-		<!-- End Section Title -->
-  
-		<div class="container">
-  
-		  <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-  
-			<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-			  <!-- <li data-filter="*" class="filter-active">All</li> -->
-			  <!-- <li data-filter=".filter-app">App</li>
-			  <li data-filter=".filter-product">Card</li>
-			  <li data-filter=".filter-branding">Web</li> -->
-			</ul><!-- End Portfolio Filters -->
-  
-			<div class="row gy-4 isotope-container" >
-  
-			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-				<img src="{PORTFOLIO1}" class="img-fluid" alt="">
-				<div class="portfolio-info">
-				  <h4>{$trans("action.section.category1")}</h4>
-				  <p></p>
-				  <a href="{PORTFOLIO1}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-			  </div><!-- End Portfolio Item -->
-  
-			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-				<img src="{PORTFOLIO2}" class="img-fluid" alt="">
-				<div class="portfolio-info">
-				  <h4>{$trans("action.section.category2")}</h4>
-				  <p>{$trans("action.section.category2.comment")}</p>
-				  <a href="{PORTFOLIO2}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-			  </div><!-- End Portfolio Item -->
-  
-			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-				<img src="{PORTFOLIO3}" class="img-fluid" alt="">
-				<div class="portfolio-info">
-				  <h4>{$trans("action.section.category3")}</h4>
-				  <p>{$trans("action.section.category3.comment")}</p>
-				  <a href="{PORTFOLIO3}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-			  </div><!-- End Portfolio Item -->
-  
-			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-				<a href="https://www.google.com/maps?q=%E3%80%92131-0031+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E5%A2%A8%E7%94%B0%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%94%EF%BC%98%E2%88%92%EF%BC%91%EF%BC%90+QiQi+House+Serenity&ftid=0x60188fff6b303793:0xfa742f3a004c9e79&entry=gps&lucs=,94213532,47071704,47069508,47084304,94208458,94208447&g_ep=CAISDTYuMTE0LjMuNTkxOTAYACCenQoqNiw5NDIxMzUzMiw0NzA3MTcwNCw0NzA2OTUwOCw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICSlA%3D&g_st=ic" target="_blank">
-					<img src="{PORTFOLIO4}" class="img-fluid" alt="">
-				</a>
-				<div class="portfolio-info">
-				  <h4>{$trans("action.section.category4")}</h4>
-				  <p>{$trans("action.section.category4.comment")}</p>
-				  <a href="{PORTFOLIO4}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-			  </div><!-- End Portfolio Item -->
-  
-			  <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-				<img src="{PORTFOLIO5}" class="img-fluid" alt="">
-				<div class="portfolio-info">
-				  <h4>{$trans("action.section.category5")}</h4>
-				  <p>{$trans("action.section.category5.comment")}</p>
-				  <a href="{PORTFOLIO5}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-			  </div> -->
-			  <!-- End Portfolio Item -->
-  
-			  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-				<img src="{PORTFOLIO6}" class="img-fluid" alt="">
-				<div class="portfolio-info">
-				  <h4>{$trans("action.section.category6")}</h4>
-				  <p>{$trans("action.section.category6.comment")}</p>
-				  <a href="{PORTFOLIO6}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-				  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-			  </div><!-- End Portfolio Item -->
-  
-			</div><!-- End Portfolio Container -->
-  
-		  </div>
-  
-		</div>
-  
-	  </section><!-- /Portfolio Section -->
-  
+
 	  <!-- Stats Section -->
 	  <!-- <section id="stats" class="stats section">
   

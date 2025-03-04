@@ -31,11 +31,11 @@
             <h1 class=" mb-3 big-title">IoT</h1>
             <div class="service-intro mb-5">
                 <h2 style="color: #FF9800;">民宿運営、もっと楽に、もっと安全に</h2>
-                <p class="lead" style=";">
+                <!-- <p class="lead" style=";">
                     私たちは、最新なIot技術を活用し、民泊物件の管理をサポートすることで、オーナーとゲストの皆様、
                     より快適で安心な民泊体験を提供します。
                     <br>
-                </p>
+                </p> -->
             </div>
             <div class="row gy-4">
                 <div class="col-lg-6 order-1 order-lg-2">
@@ -73,7 +73,7 @@
         </div>
         <div class="row">
             <div class="mt-4 text-center">
-                <p class="lead mb-4" style="color:#2196F3">IoTの取付け又はソリューション提案は、まずはお問い合わせからはじめませんか？</p>
+                <p class="lead mb-4" style="color:#2196F3">IoTの取付け又はソリューション提案は、今すぐ問い合わせしませんか。</p>
                 <a href="/#contact" class="btn btn-danger btn-lg rounded-pill px-5">
                   問い合わせ
                   <ArrowRightCircle/>

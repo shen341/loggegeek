@@ -29,8 +29,8 @@
         <ul>
           <li><a href="/#hero" class="" on:click={()=>{mobileClick()}}>{$trans("memu.title.home")}<br></a></li>
           <li><a href="/#about" on:click={()=>{mobileClick()}}>{$trans("memu.title.about")}</a></li>
-          <li><a href="/#services" on:click={()=>{mobileClick()}}>{$trans("memu.title.service")}</a></li>
-          <li><a href="/#portfolio" on:click={()=>{mobileClick()}}>{$trans("memu.title.portfolio")}</a></li>
+          <li><a href="/#hero" on:click={()=>{mobileClick()}}>{$trans("memu.title.service")}</a></li>
+          <!-- <li><a href="/#portfolio" on:click={()=>{mobileClick()}}>{$trans("memu.title.portfolio")}</a></li> -->
           <!-- <li><a href="#team">Team</a></li> -->
           <li><a href="#contact" on:click={()=>{mobileClick()}}>{$trans("memu.title.contact")}</a></li>
           <li class="dropdown"><a href="#" on:click={()=>{mobileClick()}}><TranslateVariant color="{mobileMenuOpen==true?"#212529":"white"}" width=24 height=24/></a>
