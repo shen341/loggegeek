@@ -43,9 +43,10 @@
                 </div>
                 <div class="col-lg-6 order-2 order-lg-1 content">
                     <h3>スマートロック</h3>
-                    <p class="mb-3" style="text-align: left;">
-                        鍵の受け渡し、もう不要です！ ワンタイムパスワードやスマホで、いつでもどこでもドアを解錠。
-                        遠隔からの開閉や、不審な操作の検知も可能で、セキュリティも万全。オーナー様もゲストも、鍵の心配から解放され、快適で安全な滞在を楽しめます。
+                    <p class="mb-3" style="font-weight: bold;">
+                        鍵の受け渡し不要です！<br>
+                        1滞在1パスワード！ <br>
+                        鍵紛失失敗不要！
                     </p>
                     <h4>解除スタイル</h4>
                     <div class="mt-2">
@@ -63,10 +64,10 @@
                 </div>
                 <div class="col-lg-6 order-2 order-lg-2 content">
                     <h3>カメラ</h3>
-                    <p class="mb-3" style="text-align: left;">
-                        ゲスト到着が遅くなる心配。民泊物件の安全を悩む時間。屋外カメラが解決します。
-                        昼夜問わずリアルタイムの映像提供、人感技術で異常を検知し、すぐにスポットライトとサイレンで威嚇。
-                        もう安心、快適に暮らせます。
+                    <p class="mb-3" style="font-weight: bold;">
+                        リアルタイム監視！<br>
+                        予約者全員顔チェック！<br>
+                        不審者検知！
                     </p>
                 </div>
             </div>
