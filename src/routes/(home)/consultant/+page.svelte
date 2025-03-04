@@ -116,10 +116,6 @@
                 <p class="service-description">
                   民泊運営で培った実践的なノウハウを活かし、民泊立ち上げや収益最大化を支援する「コンサルティングサービス」を提供しています。物件購入型の民泊や転貸民泊の運営経験を持ち、物件選び、トラブル対応、リスティング構築、収益改善まで幅広くサポートします。
                 </p>
-                <a href="#plan" class="btn btn-outline-danger rounded-pill">
-                  料金プランはこちら
-                  <ArrowRightCircle/>
-                </a>
               </div>
             </div>
           </div>
