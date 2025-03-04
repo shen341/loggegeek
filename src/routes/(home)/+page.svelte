@@ -243,7 +243,7 @@
 				</div>
 			  </div><!-- End Features Item-->
   
-			  <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+			  <!-- <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
 				<div class="icon-class1">
 					<WifiArrowUpDown color="#ffc451" width=48 height=48/>
 				</div>				
@@ -254,7 +254,9 @@
 					<li>{$trans("features.section.job4.detail2")}</li>
 				  </ul>					
 				</div>
-			  </div><!-- End Features Item-->
+			  </div> -->
+			  
+			  <!-- End Features Item-->
   
 			</div>
 		  </div>
@@ -400,93 +402,6 @@
   
 	  </section><!-- /Call To Action Section -->
   
-
-	  <section id="corporation" class="py-5">
-		<div class="container section-title" data-aos="fade-up">
-			<h2>Affiliation</h2>
-			<p>加盟我们</p>
-		  </div>
-
-		<div class="container">
-		  <!-- Model A -->
-		  <div class="model-box mb-5">
-			<h3 class="model-title">A. 全托管加盟(QIQI HOUSE线上+QIQI HOUSE线下)</h3>
-			
-			<!-- Flow Diagram -->
-			<div class="flow-diagram mt-4">
-			  <div class="row align-items-center justify-content-center">
-				<!-- Investor -->
-				<div class="col-md-3 text-center">
-				  <div class="icon-circle">
-					<i class="bi bi-person-plus-fill"></i>
-				  </div>
-				  <p class="mt-2">投资人</p>
-				</div>
-
-				<!-- Arrows and Text -->
-				<div class="col-md-1 text-center">
-				  <div class="arrows">
-					<div class="small-text">房源、资金</div>
-					<div class="arrow-right">→</div>
-					<div class="arrow-left">←</div>
-					<div class="small-text">选址、设计、改造、运营、营销等服务</div>
-				  </div>
-				</div>
-
-				<!-- QIQI -->
-				<div class="col-md-3 text-center">
-				  <div class="icon-circle qiqi-logo">
-					<span>QIQI HOUSE</span>
-				  </div>
-				  <p class="mt-2">QIQI</p>
-				</div>
-
-				<!-- Arrow -->
-				<div class="col-md-1 text-center">
-				  <div class="arrow-right">→</div>
-				  <div class="small-text">特色、高品质民宿及服务</div>
-				</div>
-
-				<!-- User -->
-				<div class="col-md-3 text-center">
-				  <div class="icon-circle">
-					<i class="bi bi-house-fill"></i>
-				  </div>
-				  <p class="mt-2">用户</p>
-				</div>
-			  </div>
-			</div>
-
-			<!-- Info Boxes -->
-			<div class="row mt-5 g-4">
-			  <div class="col-md-6">
-				<div class="info-box">
-				  <h4>适用人群：</h4>
-				  <p>投资人不在日本当地</p>
-				</div>
-			  </div>
-			  <div class="col-md-6">
-				<div class="info-box">
-				  <h4>合作模式：</h4>
-				  <p>投资人负责，投入房源、资金</p>
-				</div>
-			  </div>
-			  <div class="col-md-6">
-				<div class="info-box">
-				  <h4>QIQI HOUSE负责：</h4>
-				  <p>房源筛建、改造；线上运营、营销；线下保洁、管家、紧急事件</p>
-				</div>
-			  </div>
-			  <div class="col-md-6">
-				<div class="info-box">
-				  <h4>特点：</h4>
-				  <p>投资人大幅减少前期筹建以及后期的运营时间，轻松成为“甩手掌柜”，持续享受收益。</p>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
   
 
 	  <!-- Portfolio Section -->
