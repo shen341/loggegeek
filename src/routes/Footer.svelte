@@ -44,7 +44,7 @@
             <ul>
               <li><span class="material-icons">chevron_right</span> <a href="/#"> {$trans("memu.title.home")}</a></li>
               <li><span class="material-icons">chevron_right</span> <a href="/#about"> {$trans("memu.title.about")}</a></li>
-              <li><span class="material-icons">chevron_right</span> <a href="/#services"> {$trans("memu.title.service")}</a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/#hero"> {$trans("memu.title.service")}</a></li>
               <!-- <li><span class="material-icons">chevron_right</span> <a href="#"> Terms of service</a></li> -->
               <li><span class="material-icons">chevron_right</span> <a href="/term" target="_blank"> {$trans("footer.section.privacyPolicy")}   </a></li>
             </ul>
