@@ -63,9 +63,9 @@
 		  </div>
 		  -->
   
-		  <div class="row gy-4  justify-content-center">
+		  <div class="row gy-4  justify-content-center" style="text-align: center;">
 			<div class="col-xl-3 col-md-4">
-				<a href="/management-service">
+				<a href="/management-service" class="btn btn-info btn-lg btn3d">
 					<div class="icon-box">
 						<ChartLine color="#ffc451" width=56 height=56/>
 						<h3>{$trans("hero.section.planning")}</h3>
@@ -73,9 +73,9 @@
 				</a>
 			</div>
 		  </div>
-		  <div class="row gy-4 mt-1 mb-5 justify-content-center" >
+		  <div class="row gy-4 mt-1 mb-5 justify-content-center" style="text-align: center;">
 			<div class="col-xl-3 col-md-3" data-aos="fade-up" data-aos-delay="500">
-				<a href="/consultant">
+				<a href="/consultant" class="btn btn-primary btn-lg btn3d">
 					<div class="icon-box">
 						<AccountStar color="#ffc451" width=56 height=56/>
 						<h3>{$trans("hero.section.consultant")}</h3>
@@ -84,7 +84,7 @@
 			</div>
 
 			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-				<a href="/iot">
+				<a href="/iot" class="btn btn-success btn-lg btn3d">
 					<div class="icon-box">
 						<LockSmart color="#ffc451" width=56 height=56/>
 						<h3>{$trans("hero.section.iotSales")}</h3>
@@ -624,11 +624,6 @@
 	  </section><!-- /Contact Section -->
 
 	  <style>
-		.icon-class1{
-			margin-right: 20px;
-    		line-height: 0;	
-		}
-
 		@keyframes square-in-center {
 				from {
 					clip-path: inset(100% 100% 100% 100%);
@@ -655,17 +650,47 @@
 		}
 
 
-		
-		ul.custom{
-			text-align: left;
-			color: var(--bs-gray-600);
-			font-size: 14px;
-		}
 
 
 		.custom-backgroud{
 			background: color-mix(in srgb, #063b71, transparent 30%);
-			padding: 10px;
+			padding: 5px;
+			border-radius: 50px;
+			max-width: 980px;
+			-webkit-backdrop-filter: blur(5px);
+			backdrop-filter: blur(5px);			
+		}
+
+
+		.btn3d {
+			transition:all .08s linear;
+			position:relative;
+			outline:medium none;
+			-moz-outline-style:none;
+			border:0px;
+			margin-right:10px;
+			margin-top:15px;
+		}
+		.btn3d:focus {
+			outline:medium none;
+			-moz-outline-style:none;
+		}
+		.btn3d:active {
+			top:9px;
+		}
+
+		.btn-info {
+			box-shadow: 0 0 0 1px #5bc0de inset, 0 0 0 4px rgb(255 255 255 / 15%) inset, 0 8px 0 0 #46b8da, 0 8px 0 2px #ccc9c9, 0 10px 10px 8px rgba(0, 0, 0, 0.5);
+			background-color: #5bc0de;
+		}
+
+		.btn-primary {
+			box-shadow:0 0 0 1px #428bca inset, 0 0 0 4px rgba(255,255,255,0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 2px #ccc9c9, 0 10px 10px 8px rgba(0,0,0,0.5);
+			background-color:#428bca;
+		}
+		.btn-success {
+			box-shadow:0 0 0 1px #5cb85c inset, 0 0 0 4px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4cae4c, 0 8px 0 2px #ccc9c9, 0 10px 10px 8px rgba(0,0,0,0.5);
+			background-color:#5cb85c;
 		}
 
 
@@ -683,92 +708,6 @@
 				width: 100vw;
 				margin-top: 160px;
 			}
-		}
-
-		.model-title {
-			/* color: #FF7043; */
-			font-size: 1.5rem;
-			margin-bottom: 2rem;
-		}
-
-		.icon-circle {
-			width: 80px;
-			height: 80px;
-			border-radius: 50%;
-			background-color: #FF7043;
-			color: white;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin: 0 auto;
-			font-size: 2rem;
-		}
-
-		.qiqi-logo {
-			font-size: 0.8rem;
-			font-weight: bold;
-		}
-
-		.arrows {
-			position: relative;
-		}
-
-		.arrow-right, .arrow-left {
-			color: #FF7043;
-			font-size: 2rem;
-			font-weight: bold;
-		}
-
-		.small-text {
-			font-size: 0.8rem;
-			color: #666;
-			margin: 5px 0;
-		}
-
-		.info-box {
-			background-color: white;
-			border: 2px solid #FF7043;
-			border-radius: 10px;
-			padding: 15px;
-		}
-
-		.info-box h4 {
-			color: #FF7043;
-			font-size: 1.2rem;
-			margin-bottom: 10px;
-		}
-
-		.info-box p {
-			margin: 0;
-			color: #333;
-		}
-
-		.flow-diagram {
-			background-color: white;
-			padding: 30px;
-			border-radius: 10px;
-			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-		}
-
-		@media (max-width: 768px) {
-			.franchise-title {
-				font-size: 1.5rem;
-			}
-
-			.icon-circle {
-				width: 60px;
-				height: 60px;
-				font-size: 1.5rem;
-			}
-
-			.arrows {
-				margin: 20px 0;
-			}
-
-			.qiqi-logo {
-				font-size: 12px;
-			}
-
 		}
 
 	  </style>
