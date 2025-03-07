@@ -3,6 +3,9 @@
   import TranslateVariant from "svelte-material-icons/TranslateVariant.svelte"
   import "/node_modules/flag-icons/css/flag-icons.min.css";
   import { trans,locale, locales } from "$lib/language/i18n";
+  import ChartLine from "svelte-material-icons/ChartLine.svelte"
+	import LockSmart from "svelte-material-icons/LockSmart.svelte"
+	import AccountStar from "svelte-material-icons/AccountStar.svelte"
 
 	let mobileMenuOpen = false;
 
@@ -29,7 +32,15 @@
         <ul>
           <li><a href="/#hero" class="" on:click={()=>{mobileClick()}}>{$trans("memu.title.home")}<br></a></li>
           <li><a href="/#about" on:click={()=>{mobileClick()}}>{$trans("memu.title.about")}</a></li>
-          <li><a href="/#hero" on:click={()=>{mobileClick()}}>{$trans("memu.title.service")}</a></li>
+          <!-- <li><a href="/#hero" on:click={()=>{mobileClick()}}>{$trans("memu.title.service")}</a></li> -->
+          <li class="dropdown"><a href="#"><span>{$trans("memu.title.service")}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="/management-service"><ChartLine color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">民宿運営代行</span></a></li>
+              <li><a href="/consultant"><AccountStar color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">民泊コンサル</span></a></li>
+              <li><a href="/iot"><LockSmart color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">民泊旅館IoT</span></a></li>
+            </ul>
+          </li>
+
           <!-- <li><a href="/#portfolio" on:click={()=>{mobileClick()}}>{$trans("memu.title.portfolio")}</a></li> -->
           <!-- <li><a href="#team">Team</a></li> -->
           <li><a href="#contact" on:click={()=>{mobileClick()}}>{$trans("memu.title.contact")}</a></li>

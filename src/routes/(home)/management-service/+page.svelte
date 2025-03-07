@@ -3,9 +3,7 @@
   import TOPRIGHT from "$lib/img/manage/illustration/410516-114187.png"
   import TOPLEFT from "$lib/img/manage/illustration/teacher-isolated-transparent-background_879541-1630.png";
   import ArrowRightCircle from "svelte-material-icons/ArrowRightCircle.svelte"
-  import WALL1 from "$lib/img/manage/1.jpg";
   import WALL2 from "$lib/img/manage/2.png";
-  import WALL4 from "$lib/img/manage/4.jpg";  
 
   import WALL6 from "$lib/img/manage/6.jpg";
   import WALL7 from "$lib/img/manage/7.jpg";
@@ -14,6 +12,7 @@
   import WALL11 from "$lib/img/manage/11.png";
   import WALL12 from "$lib/img/manage/Image_20250222170109.jpg";
   import WALL14 from "$lib/img/manage/Image_20250222170306.jpg";
+	import MetaTagComponent from "../../Components/MetaTagComponent.svelte";
 
 
 
@@ -72,6 +71,12 @@
 
 <svelte:head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<MetaTagComponent/>
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
   <style>
     /* Animation keyframes */
     @keyframes slideInFromLeft {
@@ -237,7 +242,7 @@
 
 <section class="py-5 bg-light" id="plan">
   <div class="container text-center">
-    <h6 class="mb-4">民泊運営代行</h6>
+    <h6 class="mb-4">Private lodging management agency</h6>
     <h2 class="mb-5">料金プラン</h2>
     <div class="p-tb-pc fadeInTrigger fadeIn">
       <div class="p-tb-pc__item">

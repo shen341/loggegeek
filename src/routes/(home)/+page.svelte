@@ -1,40 +1,15 @@
 <script>
-	import PORTFOLIO1 from "$lib/img/masonry-portfolio/masonry-portfolio-1.jpg";
-	import PORTFOLIO2 from "$lib/img/masonry-portfolio/masonry-portfolio-2.jpg";
-	import PORTFOLIO3 from "$lib/img/masonry-portfolio/HomeAndConsumerIoT_Devices.png";
-	import PORTFOLIO4 from "$lib/img/masonry-portfolio/masonry-portfolio-4.jpg";
-	import PORTFOLIO5 from "$lib/img/masonry-portfolio/masonry-portfolio-5.jpg";
-	import PORTFOLIO6 from "$lib/img/masonry-portfolio/cvr01.png";
 	import WALL7 from "$lib/img/manage/7.jpg";
-	import WALL12 from "$lib/img/manage/Image_20250222170109.jpg";
-
 	import CheckAll from "svelte-material-icons/CheckAll.svelte"
-
-	import CogSyncOutline from "svelte-material-icons/CogSyncOutline.svelte"
-
-	import FaceAgent from "svelte-material-icons/FaceAgent.svelte"
-	import ChatProcessing from "svelte-material-icons/ChatProcessing.svelte"
 	import MapMarkerRadius from "svelte-material-icons/MapMarkerRadius.svelte"
 	import Cellphone from "svelte-material-icons/Cellphone.svelte"
 	import EmailOutline from "svelte-material-icons/EmailOutline.svelte"
 	import ChartLine from "svelte-material-icons/ChartLine.svelte"
 	import LockSmart from "svelte-material-icons/LockSmart.svelte"
 	import AccountStar from "svelte-material-icons/AccountStar.svelte"
-	import NfcTap from "svelte-material-icons/NfcTap.svelte"
-	import Sim from "svelte-material-icons/Sim.svelte"
-	import Creation from "svelte-material-icons/Creation.svelte"
-	import EarthPlus from "svelte-material-icons/EarthPlus.svelte"
-	import Numeric1Circle from "svelte-material-icons/Numeric1Circle.svelte"
-	import WifiArrowUpDown from "svelte-material-icons/WifiArrowUpDown.svelte"
-	import BedOutline from "svelte-material-icons/BedOutline.svelte"
 	import backgroundVideo from '$lib/video/backgroud4.mp4';
-	import ArrowRightBold from "svelte-material-icons/ArrowRightBold.svelte";
-	import ArrowLeftBold from "svelte-material-icons/ArrowLeftBold.svelte";
-	
 	import  MetaTagComponent from "../Components/MetaTagComponent.svelte";
-
 	import { trans } from "$lib/language/i18n";
-	import { toasts } from "svelte-toasts";
 
 	import {
     useForm,
@@ -88,7 +63,7 @@
 		  </div>
 		  -->
   
-		  <div class="row gy-4 mt-5 justify-content-center">
+		  <div class="row gy-4  justify-content-center">
 			<div class="col-xl-3 col-md-4">
 				<a href="/management-service">
 					<div class="icon-box">
@@ -176,7 +151,7 @@
 	  <!-- /Clients Section -->
   
 	  <!-- Features Section -->
-	  <section id="features" class="features section">
+	  <!-- <section id="features" class="features section">
   
 		<div class="container">
   
@@ -195,7 +170,7 @@
 					<li>{$trans("features.section.job1.detail2")}</li>
 				  </ul>
 				</div>
-			  </div><!-- End Features Item-->
+			  </div>	
   
 			  <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
 				<div class="icon-class1">
@@ -208,7 +183,7 @@
 					<li>{$trans("features.section.job2.detail2")}</li>
 				  </ul>				  
 				</div>
-			  </div><!-- End Features Item-->
+			  </div>
   
 			  <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
 				<div class="icon-class1">
@@ -221,29 +196,14 @@
 					<li>{$trans("features.section.job3.detail2")}</li>
 				  </ul>					  
 				</div>
-			  </div><!-- End Features Item-->
-  
-			  <!-- <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-				<div class="icon-class1">
-					<WifiArrowUpDown color="#ffc451" width=48 height=48/>
-				</div>				
-				<div>
-				  <h4>{$trans("features.section.job4")}</h4>
-				  <ul>
-					<li>{$trans("features.section.job4.detail1")}</li>
-					<li>{$trans("features.section.job4.detail2")}</li>
-				  </ul>					
-				</div>
-			  </div> -->
-			  
-			  <!-- End Features Item-->
-  
+			  </div>
 			</div>
 		  </div>
   
 		</div>
   
-	  </section><!-- /Features Section -->
+	  </section> -->
+	  <!-- /Features Section -->
   
 	  <!-- Services Section -->
 	  <!-- Call To Action Section -->
