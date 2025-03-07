@@ -49,8 +49,8 @@
 				<!--
 				<img src="/LodgeGeek_Logo_temp_by_canva.png" alt="ロゴ" class="hero-logo" onerror="console.log('ロゴ画像の読み込みに失敗しました')" onload="console.log('ロゴ画像が正常に読み込まれました')">
 			    -->
-				<h2>{$trans("hero.section.title")}</h2>
-				<p>{$trans("hero.section.subtitle")}</p>
+				<h1 style="font-weight: bold;margin-top: 10px;">{$trans("hero.section.title")}</h1>
+				<!-- <p>{$trans("hero.section.subtitle")}</p> -->
 			  </div>
 			</div>
   
@@ -75,7 +75,7 @@
 		  </div>
 		  <div class="row gy-4 mt-1 mb-5 justify-content-center" style="text-align: center;">
 			<div class="col-xl-3 col-md-3" data-aos="fade-up" data-aos-delay="500">
-				<a href="/consultant" class="btn btn-primary btn-lg btn3d">
+				<a href="/consultant" class="btn btn-info btn-lg btn3d">
 					<div class="icon-box">
 						<AccountStar color="#ffc451" width=56 height=56/>
 						<h3>{$trans("hero.section.consultant")}</h3>
@@ -84,7 +84,7 @@
 			</div>
 
 			<div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-				<a href="/iot" class="btn btn-success btn-lg btn3d">
+				<a href="/iot" class="btn btn-info btn-lg btn3d">
 					<div class="icon-box">
 						<LockSmart color="#ffc451" width=56 height=56/>
 						<h3>{$trans("hero.section.iotSales")}</h3>
