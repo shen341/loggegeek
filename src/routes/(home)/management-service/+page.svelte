@@ -242,7 +242,7 @@
 
 <section class="py-5 bg-light" id="plan">
   <div class="container text-center">
-    <h6 class="mb-4">Private lodging management agency</h6>
+    <h6 class="mb-4">SERVICE PRICE MENU</h6>
     <h2 class="mb-5">料金プラン</h2>
     <div class="p-tb-pc fadeInTrigger fadeIn">
       <div class="p-tb-pc__item">
@@ -262,37 +262,39 @@
                   </div>
               </div>
           </div>
-          <div class="p-tb-pc__ct">
-              <div class="p-tb-pc__ct-flex">
-                  <div class="p-tb-pc__ct-ttl-wrap">
-                      <h4 class="p-tb-pc__ct-ttl">製作&amp;構築関連</h4>
-                  </div>
-                  <div class="p-tb-pc__ct-txt-wrap">
-                      <p class="p-tb-pc__ct-txt">- リスティングページ構築</p>
-                      <p class="p-tb-pc__ct-txt">- ハウスガイド製作</p>
-                      <p class="p-tb-pc__ct-txt">- 間取り図作成</p>
-                      <p class="p-tb-pc__ct-txt">- 宿泊名簿フォーム構築</p>
-                      <p class="p-tb-pc__ct-txt">
-                          <span id="modalOpen1">
-                            <button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button>
-                          </span>
-                      </p>
-                  </div>
-              </div>
-          </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--mid">
-              <div class="p-tb-pc__ct-flex">
-                  <div class="p-tb-pc__ct-ttl-wrap">
-                      <h4 class="p-tb-pc__ct-ttl">運営メンテナンス</h4>
-                  </div>
-                  <div class="p-tb-pc__ct-txt-wrap">
-                      <p class="p-tb-pc__ct-txt">- 価格調整</p>
-                      <p class="p-tb-pc__ct-txt">- サイトコントローラー設定</p>
-                      <p class="p-tb-pc__ct-txt">- 清掃手配</p>
-                      <p class="p-tb-pc__ct-txt">- 現地駆けつけ手配</p>
-                  </div>
-              </div>
-          </div>
+            <div class="p-tb-pc__ct-flex">
+                <div class="p-tb-pc__ct-ttl-wrap">
+                    <h4 class="p-tb-pc__ct-ttl">運営メンテナンス</h4>
+                </div>
+                <div class="p-tb-pc__ct-txt-wrap">
+                    <p class="p-tb-pc__ct-txt">- 価格調整</p>
+                    <p class="p-tb-pc__ct-txt">- PMS</p>
+                    <p class="p-tb-pc__ct-txt">- 清掃手配</p>
+                    <p class="p-tb-pc__ct-txt">- 現地駆けつけ手配</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-tb-pc__ct">
+            <div class="p-tb-pc__ct-flex">
+                <div class="p-tb-pc__ct-ttl-wrap">
+                    <h4 class="p-tb-pc__ct-ttl">製作&amp;構築関連</h4>
+                </div>
+                <div class="p-tb-pc__ct-txt-wrap">
+                    <p class="p-tb-pc__ct-txt">- リスティングページ構築</p>
+                    <p class="p-tb-pc__ct-txt">- ハウスガイド製作</p>
+                    <p class="p-tb-pc__ct-txt">- 間取り図作成</p>
+                    <p class="p-tb-pc__ct-txt">- 宿泊名簿フォーム構築</p>
+                    <p class="p-tb-pc__ct-txt">
+                        <span id="modalOpen1">
+                          <button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
       </div>
       <!--一部代行-->
       <div class="p-tb-pc__item p-tb-pc__detail">
@@ -310,19 +312,19 @@
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
           </div>
-          <div class="p-tb-pc__ct p-tb-pc__ct--detail">
-              <p class="p-tb-pc__ct-txt">ー</p>
-              <p class="p-tb-pc__ct-txt">ー</p>
-              <p class="p-tb-pc__ct-txt">ー</p>
-              <p class="p-tb-pc__ct-txt">ー</p>
-              <p class="p-tb-pc__ct-txt"></p>
-          </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
           </div>
+          <div class="p-tb-pc__ct p-tb-pc__ct--detail">
+            <p class="p-tb-pc__ct-txt">ー</p>
+            <p class="p-tb-pc__ct-txt">ー</p>
+            <p class="p-tb-pc__ct-txt">ー</p>
+            <p class="p-tb-pc__ct-txt">ー</p>
+            <p class="p-tb-pc__ct-txt"></p>
+        </div>          
       </div>
       
       <!--完全代行-->
@@ -341,19 +343,19 @@
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
         </div>
+        <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
+          <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+          <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+          <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+          <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+        </div>
         <div class="p-tb-pc__ct p-tb-pc__ct--detail">
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-            <p class="p-tb-pc__ct-txt"></p>
         </div>
-        <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
-            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-        </div>
+
       </div>
 
       <!--メッセージ代行-->
@@ -372,19 +374,19 @@
               <p class="p-tb-pc__ct-txt">月額5,000円</p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
           </div>
-          <div class="p-tb-pc__ct p-tb-pc__ct--detail">
-              <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">30,000円&emsp;</p>
-              <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">70,000円〜</p>
-              <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000円&emsp;</p>
-              <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000円&emsp;</p>
-              <p class="p-tb-pc__ct-txt"></p>
-          </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
               <p class="p-tb-pc__ct-txt">ー</p>
               <p class="p-tb-pc__ct-txt">ー</p>
               <p class="p-tb-pc__ct-txt">ー</p>
               <p class="p-tb-pc__ct-txt">ー</p>
           </div>
+          <div class="p-tb-pc__ct p-tb-pc__ct--detail">
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">30,000円&emsp;</p>
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">70,000円〜</p>
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000円&emsp;</p>
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000円&emsp;</p>
+            <p class="p-tb-pc__ct-txt"></p>
+        </div>          
       </div>
     </div>
 
@@ -431,6 +433,27 @@
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
         </div>
+        <!-- 運営メンテナンス -->
+        <div class="p-tb-sp__ct">
+          <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
+          <div class="p-tb-sp__ct-item">
+              <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
+              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+          </div>
+          <div class="p-tb-sp__ct-item">
+              <p class="p-tb-sp__ct-item-ttl">- PMS</p>
+              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+          </div>
+          <div class="p-tb-sp__ct-item">
+              <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
+              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+          </div>
+          <div class="p-tb-sp__ct-item">
+              <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
+              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+          </div>
+       </div>
+        <!-- 製作&amp;構築関連 -->
         <div class="p-tb-sp__ct">
             <h4 class="p-tb-sp__ct-ttl">製作&amp;構築関連</h4>
             <div class="p-tb-sp__ct-item">
@@ -451,25 +474,7 @@
             </div>
             <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button></span>
         </div>
-        <div class="p-tb-sp__ct">
-            <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- サイトコントローラー設定</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-        </div>
+
       </div>
       <div class="p-tb-sp__item" id="plan3Item" style="{mobilePlan=="plan3"?"display: block;":"display: none;"}">
         <div class="p-tb-sp__ct p-tb-sp__ct--item">
@@ -481,23 +486,23 @@
             </div>
         </div>
         <div class="p-tb-sp__ct">
-            <h4 class="p-tb-sp__ct-ttl">ゲスト対応</h4>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- メッセージ</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 電話対応</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- レビュー対応</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 宿泊様情報の回収</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
+          <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
+          <div class="p-tb-sp__ct-item">
+              <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
+              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+          </div>
+          <div class="p-tb-sp__ct-item">
+              <p class="p-tb-sp__ct-item-ttl">- PMS</p>
+              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+          </div>
+          <div class="p-tb-sp__ct-item">
+              <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
+              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+          </div>
+          <div class="p-tb-sp__ct-item">
+              <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
+              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+          </div>
         </div>
         <div class="p-tb-sp__ct">
             <h4 class="p-tb-sp__ct-ttl">製作&amp;構築関連</h4>
@@ -519,25 +524,7 @@
             </div>
             <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button></span>
         </div>
-        <div class="p-tb-sp__ct">
-            <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- サイトコントローラー設定</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-            <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
-                <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
-        </div>
+
       </div>
       
       <div class="p-tb-sp__item" id="plan2Item" style="{mobilePlan=="plan2"?"display: block;":"display: none;"}">
@@ -569,6 +556,25 @@
               </div>
           </div>
           <div class="p-tb-sp__ct">
+            <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
+                <p class="p-tb-sp__ct-item-txt">ー</p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- PMS</p>
+                <p class="p-tb-sp__ct-item-txt">ー</p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
+                <p class="p-tb-sp__ct-item-txt">ー</p>
+            </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
+                <p class="p-tb-sp__ct-item-txt">ー</p>
+            </div>
+        </div>          
+          <div class="p-tb-sp__ct">
               <h4 class="p-tb-sp__ct-ttl">製作&amp;構築関連</h4>
               <div class="p-tb-sp__ct-item">
                   <p class="p-tb-sp__ct-item-ttl">- リスティングページ構築</p>
@@ -588,25 +594,7 @@
               </div>
               <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button></span>
           </div>
-          <div class="p-tb-sp__ct">
-              <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
-              <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
-                  <p class="p-tb-sp__ct-item-txt">ー</p>
-              </div>
-              <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- サイトコントローラー設定</p>
-                  <p class="p-tb-sp__ct-item-txt">ー</p>
-              </div>
-              <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
-                  <p class="p-tb-sp__ct-item-txt">ー</p>
-              </div>
-              <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
-                  <p class="p-tb-sp__ct-item-txt">ー</p>
-              </div>
-          </div>
+
       </div>
       <ul class="p-plan__items p-plan__items--sp">
           <li class="p-plan__item" id="note1" style="">

@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import SMARTLOCKER from "$lib/img/iot/smartlocker.webp";
+  import SMARTLOCKER from "$lib/img/iot/unlock2.jpg";
   import UNLOCK from "$lib/img/iot/unlock.jpg";
   import CAMERA from "$lib/img/iot/camera.jpg";
   import ArrowRightCircle from "svelte-material-icons/ArrowRightCircle.svelte"
@@ -28,12 +28,14 @@
 	<link href="https://fonts.gstatic.com" rel="preconnect">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </svelte:head>
 
 <section class="service-section py-5" id="consultant">
     <div class="container">
         <!-- Service Header -->
-        <div class="text-center   py-5">
+        <div class="text-center">
             <h1 class=" mb-3 big-title">IoT</h1>
             <div class="service-intro mb-5">
                 <h2 style="color: #FF9800;">民宿運営、もっと楽に、もっと安全に</h2>
@@ -43,9 +45,9 @@
                     <br>
                 </p> -->
             </div>
-            <div class="row gy-4">
+            <!-- <div class="row gy-4">
                 <div class="col-lg-6 order-1 order-lg-2">
-                    <img src="{SMARTLOCKER}" class="img-fluid" alt="">
+                    <img src="{SMARTLOCKER}" class="img-fluid" style="max-height: 360px;" alt="">
                 </div>
                 <div class="col-lg-6 order-2 order-lg-1 content">
                     <h3>スマートロック</h3>
@@ -54,11 +56,6 @@
                         1滞在1パスワード！ <br>
                         鍵紛失失敗不要！
                     </p>
-                    <h4>解除スタイル</h4>
-                    <div class="mt-2">
-                        <img src="{UNLOCK}" class="img-fluid" alt="unlock" style="max-height: 240px;">
-
-                    </div>
                 </div>
 
             </div>
@@ -71,16 +68,62 @@
                 <div class="col-lg-6 order-2 order-lg-2 content">
                     <h3>カメラ</h3>
                     <p class="mb-3" style="font-weight: bold;">
-                        リアルタイム監視！<br>
-                        予約者全員顔チェック！<br>
-                        不審者検知！
+                        セキュリティ強化！<br>
+                        ゲストの安心感向上！<br>
+                        不正利用の防止！<br>
+                        運営効率向上！<br>
+                        証拠の記録！
                     </p>
                 </div>
+            </div> -->
+
+            <div class="p-tb-pc fadeInTrigger fadeIn">
+              <div id="service-detail" class="my-5">
+                <div class="row">
+                  <!-- Card 1 -->
+                  <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">
+                          <span class="material-icons">maps_home_work</span> スマートロック
+                        </h5>
+                        <img src="{SMARTLOCKER}" alt="House Icon" class="img-fluid my-3" style="height: 240px;" />
+                        <p class="card-text">
+                          鍵の受け渡し不要です！<br>
+                          1滞在1パスワード！<br>
+                          鍵紛失失敗不要！
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Card 2 -->
+                  <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                      <div class="card-body text-center">
+                        <h1 class="card-title">
+                          <span class="material-icons">maps_home_work</span> カメラ
+                        </h1>
+          
+                        <img src="{CAMERA}" alt="Consultant Icon" class="img-fluid my-3"  style="height: 240px;" />
+                        <p class="card-text">
+                          セキュリティ強化！<br>
+                          ゲストの安心感向上！<br>
+                          不正利用の防止！<br>
+                          運営効率向上！<br>
+                          証拠の記録！
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
         </div>
         <div class="row">
-            <div class="mt-4 text-center">
-                <p class="lead mb-4" style="color:#2196F3">IoTの取付け又はソリューション提案は、今すぐ問い合わせしませんか。</p>
+            <div class=" text-center">
+                <p class="lead " style="color:#2196F3">IoTの取付け又はソリューション提案は、今すぐ問い合わせしませんか。</p>
                 <a href="/#contact" class="btn btn-danger btn-lg rounded-pill px-5">
                   問い合わせ
                   <ArrowRightCircle/>
@@ -89,7 +132,6 @@
         </div>
     </div>
 </section>
-
 
 <style>
 
@@ -120,11 +162,7 @@
       margin: 0 auto;
     }
   
-    .service-intro p {
-      color: #063b71;
-      line-height: 1.8;
-    }
-  
+
   
     .lead{
       font-size: 18px;
