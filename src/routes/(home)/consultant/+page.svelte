@@ -1,14 +1,12 @@
 <script>
   import { onMount } from 'svelte';
-  import MEETING from "$lib/img/consultant/meeting.png";
-  import MESSAGE from "$lib/img/consultant/message.jpg";
   import PRESENTATION from "$lib/img/consultant/presentation.jpg";
-  import ArrowRightCircle from "svelte-material-icons/ArrowRightCircle.svelte";
   import ProductionRelated from "../../Components/ProductionRelated.svelte";
   import HOUSE from "$lib/img/consultant/house.svg";
   import CONSULTANT from "$lib/img/consultant/consultant.svg";
   import InteriorDesignCoordination from "../../Components/InteriorDesignCoordination.svelte";
 	import MetaTagComponent from "../../Components/MetaTagComponent.svelte";
+	import { trans,locale } from "$lib/language/i18n";
 
 
   let  productModalShow=false;
@@ -43,10 +41,11 @@
   <div class="container">
     <!-- Service Header -->
     <div class="text-center   py-5">
-      <h1 class=" mb-3 big-title">民泊コンサル</h1>
+      <h1 class=" mb-3 big-title">{$trans("consultant.big.title")}
+</h1>
       <div class="service-intro mb-5">
         <p class="lead">
-          私たちは、民泊事業に特化し、オーナー様の成功を全力でサポートすることに専念しています。<br/>
+          {$trans("consultant.title.comment")}<br/>
         </p>
       </div>
     </div>
@@ -71,7 +70,7 @@
                   ストレスのない運営を実現します。これにより、オーナー様は運営の細かな部分に気を取られることなく、安心して事業の拡大や他の取り組みに集中できます。
                 </p>
                 <a href="#plan" class="btn btn-outline-danger rounded-pill">
-                  料金プランはこちら
+                  {$trans("consultant.consultant.plan.price")}はこちら
                   <ArrowRightCircle/>
                 </a>
               </div>
@@ -97,7 +96,7 @@
                   メッセージのやり取りが苦手な方や、即レスが難しい方のために、迅速でホスピタリティ溢れる対応を提供する「メッセージ代行サービス」。外国語でのやり取りにも対応しており、ゲストとのスムーズなコミュニケーションを実現し、予約率や満足度の向上に貢献します。
                 </p>
                 <a href="#plan" class="btn btn-outline-danger rounded-pill">
-                  料金プランはこちら
+                  {$trans("consultant.consultant.plan.price")}はこちら
                   <ArrowRightCircle/>
                 </a>
               </div>
@@ -111,16 +110,16 @@
         <div class="service-card bg-white rounded-4 p-4 h-100">
           <div class="row align-items-center">
             <div class="col-md-6">
-              <img src={PRESENTATION} alt="民泊コンサル業" class="img-fluid rounded-3 mb-4 mb-md-0"/>
+              <img src={PRESENTATION} alt="{$trans("consultant.consultant1")}" class="img-fluid rounded-3 mb-4 mb-md-0"/>
             </div>
             <div class="col-md-6">
               <div class="service-content">
                 <h3 class="service-title mb-3">
                   <span class="material-icons">maps_home_work</span>
-                  民泊コンサル業
+                  {$trans("consultant.consultant1")}
                 </h3>
                 <p class="service-description">
-                  民泊運営で培った実践的なノウハウを活かし、民泊立ち上げや収益最大化を支援する「コンサルティングサービス」を提供しています。物件購入型の民泊や転貸民泊の運営経験を持ち、物件選び、トラブル対応、リスティング構築、収益改善まで幅広くサポートします。
+                  {$trans("consultant.consultant1.detail")}
                 </p>
               </div>
             </div>
@@ -134,8 +133,9 @@
 
 <section class="py-5 bg-light" id="price">
   <div class="container text-center">
-    <h6 class="mb-4">民泊運営代行</h6>
-    <h2 class="mb-5">料金プラン</h2>
+    <h6 class="mb-4">{$trans("consultant.big.title")}
+</h6>
+    <h2 class="mb-5">{$trans("consultant.consultant.plan.price")}</h2>
     <div class="p-tb-pc fadeInTrigger fadeIn">
       <div id="service-detail" class="my-5">
         <div class="row">
@@ -144,13 +144,13 @@
             <div class="card h-100 shadow-sm">
               <div class="card-body text-center">
                 <h5 class="card-title">
-                  <span class="material-icons">maps_home_work</span> 民泊設備
+                  <span class="material-icons">maps_home_work</span> {$trans("consultant.homestay.facility")}
                 </h5>
                 <img src="{HOUSE}" alt="House Icon" class="img-fluid my-3" style="width: 96px;" />
                 <p class="card-text">
-                 インテリアコーディネートやカメラ撮影、旅館業申請など、民泊運営に欠かせないサービスを専門パートナーと協力して提供しています。詳細は、以下をご確認ください。
+                 {$trans("consultant.homestay.facility.detail")}
                 </p>
-                <button on:click={()=>{isInteriorModalVisible=!isInteriorModalVisible}} class="btn btn-outline-danger rounded-pill">詳しくはこちら</button>
+                <button on:click={()=>{isInteriorModalVisible=!isInteriorModalVisible}} class="btn btn-outline-danger rounded-pill">{$trans("manage.maker.detail.forward")}</button>
               </div>
             </div>
           </div>
@@ -159,17 +159,17 @@
           <div class="col-md-6 mb-4">
             <div class="card h-100 shadow-sm">
               <div class="card-body text-center">
-                <h1 class="card-title">
-                  <span class="material-icons">maps_home_work</span> 民泊コンサル業
-                </h1>
+                <h5 class="card-title">
+                  <span class="material-icons">maps_home_work</span> {$trans("consultant.big.title")}
+                </h5>
   
                 <img src="{CONSULTANT}" alt="Consultant Icon" class="img-fluid my-3"  style="width: 96px;" />
                 <p class="card-text">
-                  初めての民泊立ち上げから運営改善、収益最大化まで、オーナー様のニーズに合わせたコンサルティングを実施しています。詳しくはお問い合わせください。
+                  {$trans("consultant.homestay.consultant.detail")}
                 </p>
-                <p class="text-danger font-weight-bold">料金 30分 5,000円（税抜）</p>
-                <p class="text-muted">※初回限り 2回目以降は顧問コンサルをご案内</p>
-                <a href="/#contact" class="btn btn-outline-danger rounded-pill">お問い合わせはこちら</a>
+                <p class="text-danger font-weight-bold">{$trans("consultant.homestay.consultant.detail.price")}</p>
+                <p class="text-muted">{$trans("consultant.homestay.consultant.detail.comment")}</p>
+                <a href="/#contact" class="btn btn-outline-danger rounded-pill">{$trans("consultant.homestay.consultant.contact")}</a>
               </div>
             </div>
           </div>

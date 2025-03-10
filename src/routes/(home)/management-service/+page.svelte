@@ -14,8 +14,6 @@
   import WALL14 from "$lib/img/manage/Image_20250222170306.jpg";
 	import MetaTagComponent from "../../Components/MetaTagComponent.svelte";
 
-
-
   import ASK1 from "$lib/img/manage/illustration/2110.jpg";
   import ASK2 from "$lib/img/manage/illustration/2111.jpg";
   import ASK3 from "$lib/img/manage/illustration/2115.jpg";
@@ -28,7 +26,7 @@
 	import Cellphone from "svelte-material-icons/Cellphone.svelte"
   import ProductionRelated from "../../Components/ProductionRelated.svelte";
   import InteriorDesignCoordination from "../../Components/InteriorDesignCoordination.svelte";
-
+	import { trans,locale } from "$lib/language/i18n";
 
 
   
@@ -156,16 +154,16 @@
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 animate-on-scroll" >
-        <h1 class="display-4  mb-4 mt-4 big-title">月額<span class="important_red">6,000</span>円～</h1>
-        <h2 class="h2  mb-4 big-title">業界最安値の民泊管理代行</h2>
+        <h1 class="display-4  mb-4 mt-4 big-title">{$trans("manage.month.fee")}<span class="important_red">6,000</span>{$trans("manage.unit")}～</h1>
+        <h2 class="h2  mb-4 big-title">{$trans("manage.title")}</h2>
         <p class="lead mb-4">
-          住宅宿泊管理業者に払う管理代行用を抑えて<br>
-          自分で民泊運営をしたいオーナー様をサポートするサービスです。
+          {$trans("manage.lead1")}<br>
+          {$trans("manage.lead2")}
         </p>
         <div>
-          <p class="important_red text-center mb-2">問い合わせで簡単！30秒で完了</p>
+          <p class="important_red text-center mb-2">{$trans("manage.contact")}</p>
           <a href="#contact" class="btn btn-danger btn-lg rounded-pill">
-            問い合わせ
+            {$trans("manage.contact.button")}
             <ArrowRightCircle width="32" height="32"/>
           </a>
         </div>
@@ -202,13 +200,13 @@
 <section class="py-5 bg-light" id="problem">
   <div class="container text-center">
     <h6 class="mb-4">PROBLEM</h6>
-    <h2 class="mb-5">こんなお悩みありませんか？</h2>
+    <h2 class="mb-5">{$trans("manage.problem.title")}</h2>
     <div class="row mb-4">
       <div class="col-md-6 col-lg-3 mb-3">
         <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
           <div class="card-body">
             <img src="{ASK1}" alt="Person 1" class="rounded-circle mb-3" width="80">
-            <p>住宅宿泊管理業者に支払う管理費が高い...</p>
+            <p>{$trans("manage.problem.case1")}...</p>
           </div>
         </div>
       </div>
@@ -216,7 +214,7 @@
         <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
           <div class="card-body">
             <img src="{ASK2}" alt="Person 2" class="rounded-circle mb-3" width="80">
-            <p>自分のやり方やルールで、民泊を運営したい...</p>
+            <p>{$trans("manage.problem.case2")}...</p>
           </div>
         </div>
       </div>
@@ -224,7 +222,7 @@
         <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
           <div class="card-body">
             <img src="{ASK3}" alt="Person 3" class="rounded-circle mb-3" width="80">
-            <p>管理会社に委託しているのになんだかんだ自分でやっていることも多い...</p>
+            <p>{$trans("manage.problem.case3")}...</p>
           </div>
         </div>
       </div>
@@ -232,7 +230,7 @@
         <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
           <div class="card-body">
             <img src="{ASK4}" alt="Person 4" class="rounded-circle mb-3" width="80">
-            <p>必要なところだけプロにサポートしてほしい...</p>
+            <p>{$trans("manage.problem.case4")}...</p>
           </div>
         </div>
       </div>
@@ -243,35 +241,35 @@
 <section class="py-5 bg-light" id="plan">
   <div class="container text-center">
     <h6 class="mb-4">SERVICE PRICE MENU</h6>
-    <h2 class="mb-5">料金プラン</h2>
+    <h2 class="mb-5">{$trans("manage.plan.fee")}</h2>
     <div class="p-tb-pc fadeInTrigger fadeIn">
       <div class="p-tb-pc__item">
           <div class="p-tb-pc__ttl-wrap p-tb-pc__ttl-wrap--mt">
-              <h4 class="p-tb-pc__ttl">料&emsp;金</h4>
+              <h4 class="p-tb-pc__ttl">{$trans("manage.fee_detail_tile")}</h4>
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--mid">
               <div class="p-tb-pc__ct-flex">
                   <div class="p-tb-pc__ct-ttl-wrap">
-                      <h4 class="p-tb-pc__ct-ttl">ゲスト対応</h4>
+                      <h4 class="p-tb-pc__ct-ttl">{$trans("manage.geust")}</h4>
                   </div>
                   <div class="p-tb-pc__ct-txt-wrap">
-                      <p class="p-tb-pc__ct-txt">- メッセージ</p>
-                      <p class="p-tb-pc__ct-txt">- 電話対応</p>
-                      <p class="p-tb-pc__ct-txt">- レビュー対応</p>
-                      <p class="p-tb-pc__ct-txt">- ご宿泊者様情報の回収</p>
+                      <p class="p-tb-pc__ct-txt">- {$trans("manage.geust.message")}</p>
+                      <p class="p-tb-pc__ct-txt">- {$trans("manage.geust.telephone")}</p>
+                      <p class="p-tb-pc__ct-txt">- {$trans("manage.geust.review")}</p>
+                      <p class="p-tb-pc__ct-txt">- {$trans("manage.customer.collect.info")}</p>
                   </div>
               </div>
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--mid">
             <div class="p-tb-pc__ct-flex">
                 <div class="p-tb-pc__ct-ttl-wrap">
-                    <h4 class="p-tb-pc__ct-ttl">運営メンテナンス</h4>
+                    <h4 class="p-tb-pc__ct-ttl">{$trans("manage.maintenance")}</h4>
                 </div>
                 <div class="p-tb-pc__ct-txt-wrap">
-                    <p class="p-tb-pc__ct-txt">- 価格調整</p>
+                    <p class="p-tb-pc__ct-txt">- {$trans("manage.maintenance.price")}</p>
                     <p class="p-tb-pc__ct-txt">- PMS</p>
-                    <p class="p-tb-pc__ct-txt">- 清掃手配</p>
-                    <p class="p-tb-pc__ct-txt">- 現地駆けつけ手配</p>
+                    <p class="p-tb-pc__ct-txt">- {$trans("manage.maintenance.clean")}</p>
+                    <p class="p-tb-pc__ct-txt">- {$trans("manage.maintenance.welcome")}</p>
                 </div>
             </div>
         </div>
@@ -279,16 +277,16 @@
         <div class="p-tb-pc__ct">
             <div class="p-tb-pc__ct-flex">
                 <div class="p-tb-pc__ct-ttl-wrap">
-                    <h4 class="p-tb-pc__ct-ttl">製作&amp;構築関連</h4>
+                    <h4 class="p-tb-pc__ct-ttl">{$trans("manage.maker")}</h4>
                 </div>
                 <div class="p-tb-pc__ct-txt-wrap">
-                    <p class="p-tb-pc__ct-txt">- リスティングページ構築</p>
-                    <p class="p-tb-pc__ct-txt">- ハウスガイド製作</p>
-                    <p class="p-tb-pc__ct-txt">- 間取り図作成</p>
-                    <p class="p-tb-pc__ct-txt">- 宿泊名簿フォーム構築</p>
+                    <p class="p-tb-pc__ct-txt">- {$trans("manage.maker.listing.page")}</p>
+                    <p class="p-tb-pc__ct-txt">- {$trans("manage.maker.house.guide")}</p>
+                    <p class="p-tb-pc__ct-txt">- {$trans("manage.maker.floor.plan")}</p>
+                    <p class="p-tb-pc__ct-txt">- {$trans("manage.maker.stay.form")}</p>
                     <p class="p-tb-pc__ct-txt">
                         <span id="modalOpen1">
-                          <button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button>
+                          <button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>{$trans("manage.maker.detail.forward")}</button>
                         </span>
                     </p>
                 </div>
@@ -299,10 +297,10 @@
       <!--一部代行-->
       <div class="p-tb-pc__item p-tb-pc__detail">
           <div class="p-tb-pc__detail-wrap">
-              <h4 class="p-tb-pc__detail-ttl">一部代行</h4>
+              <h4 class="p-tb-pc__detail-ttl">{$trans("manage.plan1")}</h4>
               <div class="p-tb-pc__detail-price-wrap">
                   <p class="p-tb-pc__detail-price">
-                      売上×15％<span class="p-tb-pc__detail-price-note p-tb-pc__detail-price-note01">(OTA手数料除く)&ensp;※1</span>
+                      {$trans("manage.sales")}×15％<span class="p-tb-pc__detail-price-note p-tb-pc__detail-price-note01">{$trans("manage.ota")}&ensp;※1</span>
                   </p>
               </div>
           </div>
@@ -330,10 +328,10 @@
       <!--完全代行-->
       <div class="p-tb-pc__item p-tb-pc__detail">
         <div class="p-tb-pc__detail-wrap">
-            <h4 class="p-tb-pc__detail-ttl">完全代行</h4>
+            <h4 class="p-tb-pc__detail-ttl">{$trans("manage.plan2")}</h4>
             <div class="p-tb-pc__detail-price-wrap">
                 <p class="p-tb-pc__detail-price">
-                    売上×20％<span class="p-tb-pc__detail-price-note p-tb-pc__detail-price-note01">(OTA手数料除く)&ensp;※1</span>
+                    {$trans("manage.sales")}×20％<span class="p-tb-pc__detail-price-note p-tb-pc__detail-price-note01">{$trans("manage.ota")}&ensp;※1</span>
                 </p>
             </div>
         </div>
@@ -358,20 +356,20 @@
 
       </div>
 
-      <!--メッセージ代行-->
+      <!--{$trans("manage.geust.message")}代行-->
       <div class="p-tb-pc__item p-tb-pc__detail">
           <div class="p-tb-pc__detail-wrap">
-              <h4 class="p-tb-pc__detail-ttl">メッセージ代行</h4>
+              <h4 class="p-tb-pc__detail-ttl">{$trans("manage.plan3")}</h4>
               <div class="p-tb-pc__detail-price-wrap">
                   <p class="p-tb-pc__detail-price">
-                      月額35,000円<span class="p-tb-pc__detail-price-note p-tb-pc__detail-price-note02">※2</span>
+                      {$trans("manage.month.fee")}35,000{$trans("manage.unit")}<span class="p-tb-pc__detail-price-note p-tb-pc__detail-price-note02">※2</span>
                   </p>
               </div>
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-              <p class="p-tb-pc__ct-txt">月額5,000円</p>
+              <p class="p-tb-pc__ct-txt">{$trans("manage.month.fee")}5,000{$trans("manage.unit")}</p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
@@ -381,10 +379,10 @@
               <p class="p-tb-pc__ct-txt">ー</p>
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail">
-            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">30,000円&emsp;</p>
-            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">70,000円〜</p>
-            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000円&emsp;</p>
-            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000円&emsp;</p>
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">30,000{$trans("manage.unit")}&emsp;</p>
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">70,000{$trans("manage.unit")}〜</p>
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000{$trans("manage.unit")}&emsp;</p>
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000{$trans("manage.unit")}&emsp;</p>
             <p class="p-tb-pc__ct-txt"></p>
         </div>          
       </div>
@@ -395,49 +393,49 @@
            <!--完全代行 -->
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-          <li class="p-tb-sp__tab-item {mobilePlan=="plan1"?"is-open":""}" id="plan1" on:click={()=>{mobilePlanClick("plan1")}}>一部代行</li>
+          <li class="p-tb-sp__tab-item {mobilePlan=="plan1"?"is-open":""}" id="plan1" on:click={()=>{mobilePlanClick("plan1")}}>{$trans("manage.plan1")}</li>
            <!--完全代行 -->
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-          <li class="p-tb-sp__tab-item {mobilePlan=="plan3"?"is-open":""}" id="plan3" on:click={()=>{mobilePlanClick("plan3")}}>完全代行</li>
-          <!--メッセージ代行 -->
+          <li class="p-tb-sp__tab-item {mobilePlan=="plan3"?"is-open":""}" id="plan3" on:click={()=>{mobilePlanClick("plan3")}}>{$trans("manage.plan2")}</li>
+          <!--{$trans("manage.geust.message")}代行 -->
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-          <li class="p-tb-sp__tab-item {mobilePlan=="plan2"?"is-open":""}" id="plan2" on:click={()=>{mobilePlanClick("plan2")}}>メッセージ代行</li>
+          <li class="p-tb-sp__tab-item {mobilePlan=="plan2"?"is-open":""}" id="plan2" on:click={()=>{mobilePlanClick("plan2")}}>{$trans("manage.plan3")}</li>
       </ul>
       <div class="p-tb-sp__item" id="plan1Item" style="{mobilePlan=="plan1"?"display: block;":"display: none;"}">
           <div class="p-tb-sp__ct p-tb-sp__ct--item">
-              <h4 class="p-tb-sp__ct-ttl">料&emsp;金</h4>
+              <h4 class="p-tb-sp__ct-ttl">{$trans("manage.fee_detail_tile")}</h4>
               <div class="p-tb-sp__price-wrap">
                   <p class="p-tb-sp__price p-tb-sp__price--ty">
-                      売上×15％<span class="p-tb-sp__price-note p-tb-sp__price-note01">(OTA手数料除く)&ensp;※1</span>
+                    {$trans("manage.sales")}×15％<span class="p-tb-sp__price-note p-tb-sp__price-note01">{$trans("manage.ota")}&ensp;※1</span>
                   </p>
               </div>
           </div>
           <div class="p-tb-sp__ct">
-            <h4 class="p-tb-sp__ct-ttl">ゲスト対応</h4>
+            <h4 class="p-tb-sp__ct-ttl">{$trans("manage.geust")}</h4>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- メッセージ</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.message")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 電話対応</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.telephone")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- レビュー対応</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.review")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 宿泊様情報の回収</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.collect.info")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
         </div>
-        <!-- 運営メンテナンス -->
+        <!-- {$trans("manage.maintenance")} -->
         <div class="p-tb-sp__ct">
-          <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
+          <h4 class="p-tb-sp__ct-ttl">{$trans("manage.maintenance")}</h4>
           <div class="p-tb-sp__ct-item">
-              <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
+              <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.price")}</p>
               <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
           </div>
           <div class="p-tb-sp__ct-item">
@@ -445,50 +443,50 @@
               <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
           </div>
           <div class="p-tb-sp__ct-item">
-              <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
+              <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.clean")}</p>
               <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
           </div>
           <div class="p-tb-sp__ct-item">
-              <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
+              <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.welcome")}</p>
               <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
           </div>
        </div>
-        <!-- 製作&amp;構築関連 -->
+        <!-- {$trans("manage.maker")} -->
         <div class="p-tb-sp__ct">
-            <h4 class="p-tb-sp__ct-ttl">製作&amp;構築関連</h4>
+            <h4 class="p-tb-sp__ct-ttl">{$trans("manage.maker")}</h4>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- リスティングページ構築</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.listing.page")}</p>
                 <p class="p-tb-sp__ct-item-txt">ー</p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- ハウスガイド製作</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.house.guide")}</p>
                 <p class="p-tb-sp__ct-item-txt">ー</p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 間取り図作成</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.floor.plan")}</p>
                 <p class="p-tb-sp__ct-item-txt">ー</p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 宿泊名簿フォーム構築</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.stay.form")}</p>
                 <p class="p-tb-sp__ct-item-txt">ー</p>
             </div>
-            <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button></span>
+            <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>{$trans("manage.maker.detail.forward")}</button></span>
         </div>
 
       </div>
       <div class="p-tb-sp__item" id="plan3Item" style="{mobilePlan=="plan3"?"display: block;":"display: none;"}">
         <div class="p-tb-sp__ct p-tb-sp__ct--item">
-            <h4 class="p-tb-sp__ct-ttl">料&emsp;金</h4>
+            <h4 class="p-tb-sp__ct-ttl">{$trans("manage.fee_detail_tile")}</h4>
             <div class="p-tb-sp__price-wrap">
                 <p class="p-tb-sp__price p-tb-sp__price--ty">
-                    売上×20％<span class="p-tb-sp__price-note p-tb-sp__price-note01">(OTA手数料除く)&ensp;※1</span>
+                    {$trans("manage.sales")}×20％<span class="p-tb-sp__price-note p-tb-sp__price-note01">{$trans("manage.ota")}&ensp;※1</span>
                 </p>
             </div>
         </div>
         <div class="p-tb-sp__ct">
-          <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
+          <h4 class="p-tb-sp__ct-ttl">{$trans("manage.maintenance")}</h4>
           <div class="p-tb-sp__ct-item">
-              <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
+              <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.price")}</p>
               <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
           </div>
           <div class="p-tb-sp__ct-item">
@@ -496,69 +494,69 @@
               <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
           </div>
           <div class="p-tb-sp__ct-item">
-              <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
+              <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.clean")}</p>
               <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
           </div>
           <div class="p-tb-sp__ct-item">
-              <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
+              <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.welcome")}</p>
               <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
           </div>
         </div>
         <div class="p-tb-sp__ct">
-            <h4 class="p-tb-sp__ct-ttl">製作&amp;構築関連</h4>
+            <h4 class="p-tb-sp__ct-ttl">{$trans("manage.maker")}</h4>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- リスティングページ構築</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.listing.page")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- ハウスガイド製作</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.house.guide")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 間取り図作成</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.floor.plan")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 宿泊名簿フォーム構築</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.stay.form")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
-            <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button></span>
+            <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>{$trans("manage.maker.detail.forward")}</button></span>
         </div>
 
       </div>
       
       <div class="p-tb-sp__item" id="plan2Item" style="{mobilePlan=="plan2"?"display: block;":"display: none;"}">
           <div class="p-tb-sp__ct p-tb-sp__ct--item">
-              <h4 class="p-tb-sp__ct-ttl">料&emsp;金</h4>
+              <h4 class="p-tb-sp__ct-ttl">{$trans("manage.fee_detail_tile")}</h4>
               <div class="p-tb-sp__price-wrap">
                   <p class="p-tb-sp__price">
-                      月額35,000円<span class="p-tb-sp__price-note p-tb-sp__price-note02">※2</span>
+                      {$trans("manage.month.fee")}35,000{$trans("manage.unit")}<span class="p-tb-sp__price-note p-tb-sp__price-note02">※2</span>
                   </p>
               </div>
           </div>
           <div class="p-tb-sp__ct">
-              <h4 class="p-tb-sp__ct-ttl">ゲスト対応</h4>
+              <h4 class="p-tb-sp__ct-ttl">{$trans("manage.geust")}</h4>
               <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- メッセージ</p>
+                  <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.message")}</p>
                   <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
               </div>
               <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 電話対応</p>
+                  <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.telephone")}</p>
                   <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
               </div>
               <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- レビュー対応</p>
-                  <p class="p-tb-sp__ct-item-txt">月額5,000円&emsp;</p>
+                  <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.review")}</p>
+                  <p class="p-tb-sp__ct-item-txt">{$trans("manage.month.fee")}5,000{$trans("manage.unit")}&emsp;</p>
               </div>
               <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 宿泊様情報の回収</p>
+                  <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.collect.info")}</p>
                   <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
               </div>
           </div>
           <div class="p-tb-sp__ct">
-            <h4 class="p-tb-sp__ct-ttl">運営メンテナンス</h4>
+            <h4 class="p-tb-sp__ct-ttl">{$trans("manage.maintenance")}</h4>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 価格調整</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.price")}</p>
                 <p class="p-tb-sp__ct-item-txt">ー</p>
             </div>
             <div class="p-tb-sp__ct-item">
@@ -566,64 +564,50 @@
                 <p class="p-tb-sp__ct-item-txt">ー</p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 清掃手配</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.clean")}</p>
                 <p class="p-tb-sp__ct-item-txt">ー</p>
             </div>
             <div class="p-tb-sp__ct-item">
-                <p class="p-tb-sp__ct-item-ttl">- 現地駆けつけ手配</p>
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.welcome")}</p>
                 <p class="p-tb-sp__ct-item-txt">ー</p>
             </div>
         </div>          
           <div class="p-tb-sp__ct">
-              <h4 class="p-tb-sp__ct-ttl">製作&amp;構築関連</h4>
+              <h4 class="p-tb-sp__ct-ttl">{$trans("manage.maker")}</h4>
               <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- リスティングページ構築</p>
-                  <p class="p-tb-sp__ct-item-txt">30,000円&emsp;</p>
+                  <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.listing.page")}</p>
+                  <p class="p-tb-sp__ct-item-txt">30,000{$trans("manage.unit")}&emsp;</p>
               </div>
               <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- ハウスガイド製作</p>
-                  <p class="p-tb-sp__ct-item-txt">70,000円〜</p>
+                  <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.house.guide")}</p>
+                  <p class="p-tb-sp__ct-item-txt">70,000{$trans("manage.unit")}〜</p>
               </div>
               <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 間取り図作成</p>
-                  <p class="p-tb-sp__ct-item-txt">10,000円&emsp;</p>
+                  <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.floor.plan")}</p>
+                  <p class="p-tb-sp__ct-item-txt">10,000{$trans("manage.unit")}&emsp;</p>
               </div>
               <div class="p-tb-sp__ct-item">
-                  <p class="p-tb-sp__ct-item-ttl">- 宿泊名簿フォーム構築</p>
-                  <p class="p-tb-sp__ct-item-txt">10,000円&emsp;</p>
+                  <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.stay.form")}</p>
+                  <p class="p-tb-sp__ct-item-txt">10,000{$trans("manage.unit")}&emsp;</p>
               </div>
-              <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>詳しくはこちら</button></span>
+              <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>{$trans("manage.maker.detail.forward")}</button></span>
           </div>
 
       </div>
-      <ul class="p-plan__items p-plan__items--sp">
-          <li class="p-plan__item" id="note1" style="">
-              <p class="p-plan__item-txt">※1&ensp;OTA手数料を除く売上の15%（最低料金: 70,000円）</p>
-          </li>
-          <li class="p-plan__item" id="note2" style="display: none;">
-              <p class="p-plan__item-txt">※2&ensp;OTAの追加など、ゲストと連絡手段が増える場合は1つにつき＋月額10,000円</p>
-          </li>
-          <li class="p-plan__item">
-              <p class="p-plan__item-txt">※&ensp;&ensp;備品、清掃費用、駆けつけ費用など業務にかかる必要経費はオーナー様にて負担</p>
-          </li>
-          <li class="p-plan__item">
-              <p class="p-plan__item-txt">※&ensp;&ensp;価格表記はすべて税抜</p>
-          </li>
-      </ul>
     </div>
 
     <ul class="p-plan__items p-plan__items--pc">
         <li class="p-plan__item">
-            <p class="p-plan__item-txt">※1&ensp;OTA手数料を除く売上の15%（最低料金: 70,000円）</p>
+            <p class="p-plan__item-txt">※1 {$trans("manage.comment1")} </p>
         </li>
         <li class="p-plan__item">
-            <p class="p-plan__item-txt">※2&ensp;OTAの追加など、ゲストと連絡手段が増える場合は1つにつき＋月額10,000円</p>
+            <p class="p-plan__item-txt">※2&ensp;{$trans("manage.comment2")}</p>
         </li>
         <li class="p-plan__item">
-            <p class="p-plan__item-txt">※&ensp;&ensp;備品、清掃費用、駆けつけ費用など業務にかかる必要経費はオーナー様にて負担</p>
+            <p class="p-plan__item-txt">※&ensp;&ensp;{$trans("manage.comment3")}</p>
         </li>
         <li class="p-plan__item">
-            <p class="p-plan__item-txt">※&ensp;&ensp;価格表記はすべて税抜</p>
+            <p class="p-plan__item-txt">※&ensp;&ensp;{$trans("manage.comment4")}</p>
         </li>
     </ul>
 
@@ -633,21 +617,21 @@
 </section>
 
 
-<!-- Features Section -->
+<!-- service Section -->
 <section class="py-5 bg-light" id="service">
   <div class="container text-center">
     <h6 class="mb-4">SOLUTION</h6>
-    <h2 class="mb-5">再委託型</h2>
+    <h2 class="mb-5">{$trans("manage.subcontract")}</h2>
     <div class="mb-5">
-      不在型の民泊運営では、住宅宿泊事業法で<span class="important_red">全ての業務を1つの住宅宿泊管理業者に委託しなければならない</span>と定められています。
+      {$trans("manage.subcontract.comment")}
     </div>
     <div class="row">
       <div class="col-md-4 mb-3">
         <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
           <div class="card-body">
             <img src="{Reception}" alt="Icon 1" class="mb-3" width="64">
-            <h4 class="important_red text-center">宿泊者等への対応に関する業務</h4>
-            <p>カギの受け渡しや宿泊者等の対応業務</p>
+            <h4 class="important_red text-center">{$trans("manage.subcontract.guest")}</h4>
+            <p>{$trans("manage.subcontract.guest.key")}</p>
           </div>
         </div>
       </div>
@@ -655,8 +639,8 @@
         <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
           <div class="card-body">
             <img src="{Cleaner}" alt="Icon 2" class="mb-3" width="64">
-            <h4 class="important_red text-center">清掃・衛生業務</h4>
-            <p>居室の清掃や備品の交換、ゴミの処理</p>
+            <h4 class="important_red text-center">{$trans("manage.subcontract.clean")}</h4>
+            <p>{$trans("manage.subcontract.clean.detail")}</p>
           </div>
         </div>
       </div>
@@ -664,8 +648,8 @@
         <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
           <div class="card-body">
             <img src="{Security}" alt="Icon 3" class="mb-3" width="64">
-            <h4 class="important_red text-center">住宅・設備管理及び安全確保業務</h4>
-            <p>ライフライン、設備の管理、事故の予防業務</p>
+            <h4 class="important_red text-center">{$trans("manage.subcontract.security")}</h4>
+            <p>{$trans("manage.subcontract.security.detail")}</p>
           </div>
         </div>
       </div>
@@ -673,9 +657,9 @@
 
 
     <div>
-      <h3 class="important_red text-center mb-2 mt-5">再委託運営とは？</h3>
+      <h3 class="important_red text-center mb-2 mt-5">{$trans("manage.subcontract.why")}</h3>
       <a href="/subcontracting" class="btn btn-danger btn-lg rounded-pill">
-        詳しくは知りたい方へ
+        {$trans("manage.subcontract.detail")}
         <ArrowRightCircle width="32" height="32"/>
       </a>
     </div>
@@ -686,14 +670,14 @@
 <section class="py-5">
   <div class="container text-center">
     <h6 class="mb-4">SHOW</h6>
-    <h2 class="text-center mb-5">管理実績例</h2>
+    <h2 class="text-center mb-5">{$trans("manage.actual.results")}</h2>
     <div class="row g-4">
       <div class="col-md-4 animate-on-scroll" style="transform: translateY(50px);">
         <div class="card border-0 shadow-sm">
           <img src={WALL7} alt="Property" class="card-img-top" style="height: 310px;width:auto;">
           <div class="card-body">
-            <h5 class="card-title">物件例1</h5>
-            <p class="card-text">快適な空間で素敵な滞在を。</p>
+            <h5 class="card-title">{$trans("manage.actual.results.example")}1</h5>
+            <p class="card-text">{$trans("manage.actual.results.detail1")}</p>
           </div>
         </div>
       </div>
@@ -701,8 +685,8 @@
         <div class="card border-0 shadow-sm">
           <img src={WALL14} alt="Property" class="card-img-top" style="height: 310px;width:auto;">
           <div class="card-body">
-            <h5 class="card-title">物件例2</h5>
-            <p class="card-text"> 高級寝具セット</p>
+            <h5 class="card-title">{$trans("manage.actual.results.example")}2</h5>
+            <p class="card-text"> {$trans("manage.actual.results.detail2")}</p>
           </div>
         </div>
       </div>
@@ -710,8 +694,8 @@
         <div class="card border-0 shadow-sm">
           <img src={WALL10} alt="Property" class="card-img-top" style="height: 310px;width:auto;">
           <div class="card-body">
-            <h5 class="card-title">物件例3</h5>
-            <p class="card-text">観光地や交通の便が良い場所</p>
+            <h5 class="card-title">{$trans("manage.actual.results.example")}3</h5>
+            <p class="card-text">{$trans("manage.actual.results.detail3")}</p>
           </div>
         </div>
       </div>
@@ -719,8 +703,8 @@
         <div class="card border-0 shadow-sm">
           <img src={WALL11} alt="Property" class="card-img-top" style="height:310px;width:auto;">
           <div class="card-body">
-            <h5 class="card-title">物件例4</h5>
-            <p class="card-text">現地の生活を体験できること</p>
+            <h5 class="card-title">{$trans("manage.actual.results.example")}4</h5>
+            <p class="card-text">{$trans("manage.actual.results.detail4")}</p>
           </div>
         </div>
       </div>
@@ -728,8 +712,8 @@
         <div class="card border-0 shadow-sm">
           <img src={WALL12} alt="Property" class="card-img-top" style="height: 300px;width:auto;">
           <div class="card-body">
-            <h5 class="card-title">物件例5</h5>
-            <p class="card-text">コストパフォーマンス</p>
+            <h5 class="card-title">{$trans("manage.actual.results.example")}5</h5>
+            <p class="card-text">{$trans("manage.actual.results.detail5")}</p>
           </div>
         </div>
       </div>
@@ -737,8 +721,8 @@
         <div class="card border-0 shadow-sm">
           <img src={WALL2} alt="Property" class="card-img-top" style="height: 300px;width:auto;">
           <div class="card-body">
-            <h5 class="card-title">物件例6</h5>
-            <p class="card-text">キッチンや洗濯機など、便利な設備が整っている</p>
+            <h5 class="card-title">{$trans("manage.actual.results.example")}6</h5>
+            <p class="card-text">{$trans("manage.actual.results.detail6")}</p>
           </div>
         </div>
       </div>
@@ -749,8 +733,8 @@
 <!-- Contact Section -->
 <section id="contact" class="py-5 bg-light">
   <div class="container">
-    <h6 class="mb-4 text-center">まずは無料相談からはじめませんか？</h6>
-    <h2 class="mb-4 big-title">今すぐ問い合わせ</h2>
+    <!-- <h6 class="mb-4 text-center">まずは無料相談からはじめませんか？</h6> -->
+    <h2 class="mb-4 big-title">{$trans("manage.problem.contact")}</h2>
     <div class="row gy-4">
       <div class="col-lg-4">
         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">

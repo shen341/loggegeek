@@ -6,7 +6,7 @@
 	import EmailOutline from "svelte-material-icons/EmailOutline.svelte"
 	import MapMarkerRadius from "svelte-material-icons/MapMarkerRadius.svelte"
   import ArrowRightCircle from "svelte-material-icons/ArrowRightCircle.svelte"
-
+	import { trans,locale } from "$lib/language/i18n";
   onMount(() => {
     const elements = document.querySelectorAll('.animate-on-scroll');
     const observer = new IntersectionObserver((entries) => {
@@ -67,46 +67,47 @@
     <div class="text-center  animate-on-scroll">
       <h6 class="important_red mb-3 text-center">SOLUTION</h6>
       <h1 class="big-title  mb-4">
-        「再委託型」民泊運営業務
+        {$trans("subcontracting.big.title")}
       </h1>
     </div>
 
     <!-- background -->
     <div class="summary_top animate-on-scroll">
-      <h2><span class="txt">民泊運営方法における背景</span></h2>
+      <h2><span class="txt">{$trans("subcontracting.section1.title")}</span></h2>
     </div>
     <div class="mt-3 comment_box animate-on-scroll">
       <p>
-        民泊の運営には、大きく分けて「家主居住型」と「家主不在型」の2つのスタイルがあります。
+        {$trans("subcontracting.section1.detail")}
       </p>
       <strong>
-        ■家主居住型（ホームステイ型）
+        ■{$trans("subcontracting.section1.list1.start")}
       </strong>
 
       <ul class="mt-3">
-				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>ホストが普段住んでいる家の一部をゲストに貸し出すスタイルです。</span></li>
-				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>ホストとゲストが同じ家で生活を共にします。</span></li>
-				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>50㎡以下の部屋を貸し出す場合、消防設備の設置義務が緩和されることがあります。</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>{$trans("subcontracting.section1.list1.one")}</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>{$trans("subcontracting.section1.list1.two")}</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>{$trans("subcontracting.section1.list1.three")}</span></li>
       </ul>
 
       <p>
-        ただし、ホストの外出時間に制限があるなど、ルールが厳しく設定されています。
+        {$trans("subcontracting.section1.list1.end")}
       </p>
       <strong>
-        ■家主不在型（空き家活用型）
+        ■{$trans("subcontracting.section1.list2.start")}
       </strong>
 
       <ul class="mt-3">
-				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>ホストが常に家にいる必要がないスタイルです。</span></li>
-				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>空き家などを有効活用する場合に適しています。</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>{$trans("subcontracting.section1.list2.one")}</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#105092" width=24 height=24/></div> <span>{$trans("subcontracting.section1.list2.two")}</span></li>
       </ul>
 
       <p>
-        ホストの時間の自由度は高いですが、以下の点が義務付けられています。
+        {$trans("subcontracting.section1.list2.three")}
       </p>
       <ul class="mt-3">
-				<li><div style="margin-right:0.5rem;"><TagCheck color="#FF5722" width=24 height=24/></div> <span>消防設備の設置</span></li>
-				<li><div style="margin-right:0.5rem;"><TagCheck color="#FF5722" width=24 height=24/></div> <span>ゲスト対応、清掃、緊急時の駆けつけなど、民泊運営に関する全ての業務を住宅宿泊管理業者に委託
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#FF5722" width=24 height=24/></div> <span>{$trans("subcontracting.section1.list2.four")}</span></li>
+				<li><div style="margin-right:0.5rem;"><TagCheck color="#FF5722" width=24 height=24/></div> <span>
+          {$trans("subcontracting.section1.list2.five")}
         </span></li>
       </ul>
       
@@ -115,25 +116,24 @@
 
     <!-- 再委託型民泊運営とは？ -->
     <div class="summary_top animate-on-scroll">
-      <h2><span class="txt">再委託型民泊運営とは？</span></h2>
+      <h2><span class="txt">{$trans("subcontracting.section2.title")}</span></h2>
     </div>
     <div class="mt-3 comment_box animate-on-scroll">
       <p>
-        現在、民泊の多くは家主が不在で、運営を管理会社に委託する「家主不在型」です。しかし、多くの家主は「もっと自分で運営に関わりたい」と感じています。
+        {$trans("subcontracting.section2.detail1")}
       </p>
      <p style="line-height: 1.5rem;">
-      この問題を解決する運営方法が「再委託型」の民泊運営になります。<br>
-      再委託型運営とは、ホストが住宅宿泊管理業者に委託した民泊業務の一部をホストおよびホストが選んだ業者に戻す形で再委託するという運営方法です。
+      {$trans("subcontracting.section2.detail2")}
      </p>
 
      <div class="d-flex justify-content-center">
-      <img src="{SAITAKU}" alt="再委託型民泊運営" class="img-fluid custom_img" />
+      <img src="{SAITAKU}" alt="{$trans("subcontracting.section2.title")}" class="img-fluid custom_img" />
      </div>
 
      <div class="mt-4 text-center">
-      <p class="lead mb-4">まずは気軽にお問い合わからはじめませんか？</p>
+      <p class="lead mb-4">{$trans("subcontracting.contact.title")}</p>
       <a href="#contact" class="btn btn-danger btn-lg rounded-pill px-5">
-        問い合わせ
+        {$trans("manage.contact.button")}
         <ArrowRightCircle/>
       </a> 
      </div>
@@ -148,13 +148,13 @@
 <section class="py-5 bg-light" id="Merit">
     <div class="container text-center">
         <h6 class="mb-4">MERIT</h6>
-        <h2 class="mb-5">再委託型民泊管理のメリット</h2>
+        <h2 class="mb-5">{$trans("subcontracting.merit.title")}</h2>
         <div class="row mb-4">
             <div class="col-md-6 col-lg-3 mb-3">
               <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
                 <div class="card-body">
                   <span class="material-icons" style="font-size: 96px;color:#063b71">trending_down</span>
-                  <p class="text-center">コストカットができる</p>
+                  <p class="text-center">{$trans("subcontracting.merit1")}</p>
                 </div>
               </div>
             </div>
@@ -162,7 +162,7 @@
               <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
                 <div class="card-body">
                     <span class="material-icons">phone_disabled</span>                  
-                    <p  class="text-center">面倒な連絡も一切なし</p>
+                    <p  class="text-center">{$trans("subcontracting.merit2")}</p>
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@
               <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
                 <div class="card-body">
                     <span class="material-icons"> room_preferences </span>
-                    <p class="text-center">自分スタイルでできる</p>
+                    <p class="text-center">{$trans("subcontracting.merit3")}</p>
                 </div>
               </div>
             </div>
@@ -178,7 +178,7 @@
               <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
                 <div class="card-body">
                     <span class="material-icons">support_agent</span>
-                    <p  class="text-center">本当に必要な箇所だけサポートを受けられる</p>
+                    <p  class="text-center">{$trans("subcontracting.merit4")}</p>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@
                 <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
                   <div class="card-body">
                       <span class="material-icons">thumb_up_alt</span>
-                      <p  class="text-center">各業務のプロに依頼することも可能</p>
+                      <p  class="text-center">{$trans("subcontracting.merit5")}</p>
                   </div>
                 </div>
               </div>
@@ -201,7 +201,7 @@
 <section id="contact" class="py-5 bg-light">
   <div class="container">
     <h6 class="mb-4 text-center">CONTACT</h6>
-    <h2 class="mb-5 text-center">問い合わせ</h2>
+    <h2 class="mb-5 text-center">{$trans("manage.contact.button")}</h2>
     <div class="row gy-4">
       <div class="col-lg-4">
         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">

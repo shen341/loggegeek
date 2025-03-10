@@ -6,7 +6,8 @@
   import Camera from "svelte-material-icons/Camera.svelte";
   import Broom from "svelte-material-icons/Broom.svelte";
   import FileDocument from "svelte-material-icons/FileDocument.svelte";
-
+	import { trans,locale } from "$lib/language/i18n";
+  import ArrowRightCircle from "svelte-material-icons/ArrowRightCircle.svelte"
   export let showModal = false;
 </script>
 
@@ -20,7 +21,7 @@
 
     <!-- Modal Header -->
     <div class="text-center mb-5">
-      <h2 class="modal-title">民泊設営</h2>
+      <h2 class="modal-title">{$trans("interiorDesign.big.title")}</h2>
     </div>
 
     <!-- Service Cards -->
@@ -31,9 +32,9 @@
           <div class="icon-wrapper mb-3">
             <FloorPlan size="48"/>
           </div>
-          <h3>インテリアコーディネート</h3>
-          <p>デザイン性と機能性を両立させ、喜ぶ空間を提供します。</p>
-          <div class="price">料金 77,000円〜</div>
+          <h3>{$trans("interiorDesign.card1.title")}</h3>
+          <p>{$trans("interiorDesign.card1.detail")}</p>
+          <div class="price">{$trans("interiorDesign.card1.price")}</div>
         </div>
       </div>
 
@@ -43,9 +44,9 @@
           <div class="icon-wrapper mb-3">
             <Sofa size="48"/>
           </div>
-          <h3>設営</h3>
-          <p>家具の組み立てから小物の設置まで、すべてをお任せください。</p>
-          <div class="price">料金 300,000円〜</div>
+          <h3>{$trans("interiorDesign.card2.title")}</h3>
+          <p>{$trans("interiorDesign.card2.detail")}</p>
+          <div class="price">{$trans("interiorDesign.card2.price")}</div>
         </div>
       </div>
 
@@ -55,9 +56,9 @@
           <div class="icon-wrapper mb-3">
             <Camera size="48"/>
           </div>
-          <h3>撮影</h3>
-          <p>高単価を狙える写真をお撮りします。</p>
-          <div class="price">料金 121,000円〜</div>
+          <h3>{$trans("interiorDesign.card3.title")}</h3>
+          <p>{$trans("interiorDesign.card3.detail")}</p>
+          <div class="price">{$trans("interiorDesign.card3.price")}</div>
         </div>
       </div>
 
@@ -67,9 +68,9 @@
           <div class="icon-wrapper mb-3">
             <Broom size="48"/>
           </div>
-          <h3>清掃</h3>
-          <p>常に清潔な空間を維持し、ゲスト満足度を高めます。</p>
-          <div class="price">料金 お見積もり</div>
+          <h3>{$trans("interiorDesign.card4.title")}</h3>
+          <p>{$trans("interiorDesign.card4.detail")}</p>
+          <div class="price">{$trans("interiorDesign.card4.price")}</div>
         </div>
       </div>
 
@@ -79,9 +80,9 @@
           <div class="icon-wrapper mb-3">
             <FileDocument size="48"/>
           </div>
-          <h3>旅館申請</h3>
-          <p>旅館申請の複雑な手続きを安心してお任せいただけます。</p>
-          <div class="price">料金 350,000円〜</div>
+          <h3>{$trans("interiorDesign.card5.title")}</h3>
+          <p>{$trans("interiorDesign.card5.detail")}</p>
+          <div class="price">{$trans("interiorDesign.card5.price")}</div>
         </div>
       </div>
 
@@ -91,9 +92,9 @@
           <div class="icon-wrapper mb-3">
             <FileDocument size="48"/>
           </div>
-          <h3>民泊申請</h3>
-          <p>民泊申請の複雑な手続きを安心ください。</p>
-          <div class="price">料金 150,000円〜</div>
+          <h3>{$trans("interiorDesign.card6.title")}</h3>
+          <p>{$trans("interiorDesign.card6.detail")}</p>
+          <div class="price">{$trans("interiorDesign.card6.price")}</div>
         </div>
       </div>
     </div>
@@ -101,7 +102,8 @@
     <!-- CTA Button -->
     <div class="text-center mt-5">
       <a href="/#contact" class="btn btn-danger btn-lg rounded-pill px-5">
-        お問い合わせはこちら
+        {$trans("interiorDesign.contact.us")}
+        <ArrowRightCircle/>
       </a>
     </div>
   </div>
