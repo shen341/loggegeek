@@ -815,7 +815,7 @@
 
   .big-title{
     color: #063b71;
-    font-size: 64px;
+    /* font-size: 64px; */
     font-weight: 900;
     height: auto;
     letter-spacing: normal;
@@ -1234,9 +1234,9 @@ p.p-tb-pc__ct-txt{
 
   /* スマホ */
   @media only screen and (max-width: 767px){
-    .big-title{
+    /* .big-title{
       font-size: 48px;
-    }
+    } */
   }
 
 
