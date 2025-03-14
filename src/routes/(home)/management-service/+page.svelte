@@ -782,7 +782,7 @@
           <div>
             <h3>Social Media</h3>
             <p>
-            <a href="weixin://dl/chat?dinzzz" target="_blank"><img src="{WECHAT}" style="width: 36px;height:36px" alt="" />dinzzz</a>
+              <img src="{WECHAT}" style="width: 36px;height:36px" alt="" />dinzzz
             <a href="https://line.me/R/ti/p/@834rjqcs" target="_blank"><img src="{LINE}" style="width: 36px;height:36px" alt="" />834rjqcs</a>
             </p>				  
           </div>
