@@ -27,7 +27,9 @@
   import ProductionRelated from "../../Components/ProductionRelated.svelte";
   import InteriorDesignCoordination from "../../Components/InteriorDesignCoordination.svelte";
 	import { trans,locale } from "$lib/language/i18n";
-
+  import Facebook from "svelte-material-icons/Facebook.svelte"
+  import WECHAT from "$lib/img/socail/apps-wechat.svg";
+  import LINE from "$lib/img/socail/icons8-line-96.png";
 
   
   let  productModalShow=false;
@@ -772,6 +774,20 @@
         </div>
         </div><!-- End Info Item -->
   
+        <!-- End Info Item -->
+			  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+          <div class="icon">
+            <Facebook color="#ffc451" width=36 height=36/>
+          </div>
+          <div>
+            <h3>Social Media</h3>
+            <p>
+            <a href="weixin://dl/chat?dinzzz" target="_blank"><img src="{WECHAT}" style="width: 36px;height:36px" alt="" />dinzzz</a>
+            <a href="https://line.me/R/ti/p/@834rjqcs" target="_blank"><img src="{LINE}" style="width: 36px;height:36px" alt="" />834rjqcs</a>
+            </p>				  
+          </div>
+        </div>
+
       </div>
       <!-- Start of Contact Form (Tallyを使用)-->
       <div class="col-lg-8">

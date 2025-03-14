@@ -4,6 +4,8 @@
     import Instagram from "svelte-material-icons/Instagram.svelte"
     import Linkedin from "svelte-material-icons/Linkedin.svelte"
     import { trans,locale, locales } from "$lib/language/i18n";
+    import WECHAT from "$lib/img/socail/apps-wechat.svg";
+    import LINE from "$lib/img/socail/icons8-line-96.png";
 
 </script>
 <svelte:head>
@@ -28,14 +30,17 @@
               <p><strong>Phone(Japan Local):</strong> <span><a href="tel:03-6824-7905">03-6824-7905</a></span></p>
               <p><strong>Phone(International):</strong> <span><a href="tel:+81368247905">+81-368247905</a></span></p>
               <p><strong>Fax(Japan Local):</strong> <span> 03-4530-8790</span></p>
-              <p><strong>Email:</strong> <span><a href="mailTo:contact@lodgegeek.com" class="__cf_email__" >contact@lodgegeek.com
-              </a></span></p>
+              <p><strong>Email:</strong> <span><a href="mailTo:contact@lodgegeek.com" class="__cf_email__" >contact@lodgegeek.com</a></span></p>
+              <p><strong>WeChat:</strong> <span><a href="weixin://dl/chat?dinzzz" target="_blank" class="__cf_email__" >dinzzz</a></span></p>
+              <p><strong>Line:</strong> <span><a href="https://line.me/R/ti/p/@834rjqcs" target="_blank" class="__cf_email__" >Line友だち追加</a></span></p>
+
             </div>
             <div class="social-links d-flex mt-4">
+              <a href="weixin://dl/chat?dinzzz" target="_blank"><img src="{WECHAT}" style="width: 36px;height:36px" alt="" /></a>
+              <a href="https://line.me/R/ti/p/@834rjqcs" target="_blank"><img src="{LINE}" style="width: 36px;height:36px" alt="" /></a>
               <a href=""><Twitter color="white" width=36 height=36/></a>
               <a href=""><Facebook color="white" width=36 height=36/></a>
-              <a href=""><Instagram color="white" width=36 height=36/></a>
-              <a href=""><Linkedin color="white" width=36 height=36/></a>
+
             </div>
           </div>
 
