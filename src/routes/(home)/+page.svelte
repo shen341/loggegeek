@@ -717,6 +717,10 @@
 				margin-top: 0px;
 				top: 0;
 			}
+			
+			.custom-backgroud{
+				border-radius: 0px;
+			}
 		}
 
 		@media only screen and (min-width: 768px){
