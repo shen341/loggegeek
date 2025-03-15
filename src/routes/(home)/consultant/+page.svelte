@@ -41,8 +41,7 @@
   <div class="container">
     <!-- Service Header -->
     <div class="text-center   py-5">
-      <h1 class=" mb-3 big-title">{$trans("consultant.big.title")}
-</h1>
+      <h1 class=" mb-3 big-title">{$trans("consultant.big.title")}</h1>
       <div class="service-intro mb-5">
         <p class="lead">
           {$trans("consultant.title.comment")}<br/>
@@ -133,8 +132,7 @@
 
 <section class="py-5 bg-light" id="price">
   <div class="container text-center">
-    <h6 class="mb-4">{$trans("consultant.big.title")}
-</h6>
+    <h6 class="mb-4">Plan Price</h6>
     <h2 class="mb-5">{$trans("consultant.consultant.plan.price")}</h2>
     <div id="service-detail" class="my-5">
       <div class="row">
