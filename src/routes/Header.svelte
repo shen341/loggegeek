@@ -124,10 +124,18 @@
       display: none;
     }
 
+  
+  @media (max-width: 767px) {
+    .fixed-top {
+      position: absolute;
+    }
+  }
+
   @media (max-width: 480px) {
     .menu_icon{
       display: block;
     }
+
   }
 
   @media (max-width: 768px) {
