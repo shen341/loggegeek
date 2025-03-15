@@ -8,6 +8,7 @@
     import LINE from "$lib/img/socail/icons8-line-96.png";
     import REDNOTE from "$lib/img/socail/rednote.png";
     import REDNOTEQR from "$lib/img/socail/reenoteQR.jpg";
+    import WECHATQR from "$lib/img/socail/wechatQR.jpg";
 
 
 </script>
@@ -53,10 +54,19 @@
               <!-- svelte-ignore a11y-invalid-attribute -->
               <a href="javascript:void(0)"><Instagram color="white" width=36 height=36/></a>
               <a href="https://wa.link/nydnxe" target="_blank"><Whatsapp color="white" width=36 height=36/></a>
-              <Tooltip tip="WechatId:<br/>dinzzz<br/>" top color="coral">
-                <!-- svelte-ignore a11y-invalid-attribute -->
+              <!-- <Tooltip tip="WechatId:<br/>dinzzz<br/>" top color="coral">
                 <a href="javascript:void(0)"><img src="{WECHAT}" style="width: 36px;height:36px" alt="" /></a>
-              </Tooltip>
+              </Tooltip> -->
+              <div class="qr-tooltip-container">
+                <!-- svelte-ignore a11y-invalid-attribute -->
+                <a href="javascript:void(0)" class="social-link">
+                  <img src="{WECHAT}" style="width: 36px;height:36px" alt="" />
+                </a>
+                <div class="qr-tooltip">
+                  <div class="qr-tooltip-arrow"></div>
+                  <img src="{WECHATQR}" alt="Wechat QR Code" class="qr-code-img"/>
+                </div>
+              </div>
             </div>
           </div>
 

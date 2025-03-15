@@ -136,41 +136,39 @@
     <h6 class="mb-4">{$trans("consultant.big.title")}
 </h6>
     <h2 class="mb-5">{$trans("consultant.consultant.plan.price")}</h2>
-    <div class="p-tb-pc fadeInTrigger fadeIn">
-      <div id="service-detail" class="my-5">
-        <div class="row">
-          <!-- Card 1 -->
-          <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <h5 class="card-title">
-                  <span class="material-icons">maps_home_work</span> {$trans("consultant.homestay.facility")}
-                </h5>
-                <img src="{HOUSE}" alt="House Icon" class="img-fluid my-3" style="width: 96px;" />
-                <p class="card-text">
-                 {$trans("consultant.homestay.facility.detail")}
-                </p>
-                <button on:click={()=>{isInteriorModalVisible=!isInteriorModalVisible}} class="btn btn-outline-danger rounded-pill">{$trans("manage.maker.detail.forward")}</button>
-              </div>
+    <div id="service-detail" class="my-5">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-sm-12 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <span class="material-icons">maps_home_work</span> {$trans("consultant.homestay.facility")}
+              </h5>
+              <img src="{HOUSE}" alt="House Icon" class="img-fluid my-3" style="width: 96px;" />
+              <p class="card-text">
+               {$trans("consultant.homestay.facility.detail")}
+              </p>
+              <button on:click={()=>{isInteriorModalVisible=!isInteriorModalVisible}} class="btn btn-outline-danger rounded-pill">{$trans("manage.maker.detail.forward")}</button>
             </div>
           </div>
-      
-          <!-- Card 2 -->
-          <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <h5 class="card-title">
-                  <span class="material-icons">maps_home_work</span> {$trans("consultant.big.title")}
-                </h5>
-  
-                <img src="{CONSULTANT}" alt="Consultant Icon" class="img-fluid my-3"  style="width: 96px;" />
-                <p class="card-text">
-                  {$trans("consultant.homestay.consultant.detail")}
-                </p>
-                <p class="text-danger font-weight-bold">{$trans("consultant.homestay.consultant.detail.price")}</p>
-                <p class="text-muted">{$trans("consultant.homestay.consultant.detail.comment")}</p>
-                <a href="/#contact" class="btn btn-outline-danger rounded-pill">{$trans("consultant.homestay.consultant.contact")}</a>
-              </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="col-md-6 col-sm-12 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <span class="material-icons">maps_home_work</span> {$trans("consultant.big.title")}
+              </h5>
+
+              <img src="{CONSULTANT}" alt="Consultant Icon" class="img-fluid my-3"  style="width: 96px;" />
+              <p class="card-text">
+                {$trans("consultant.homestay.consultant.detail")}
+              </p>
+              <p class="text-danger font-weight-bold">{$trans("consultant.homestay.consultant.detail.price")}</p>
+              <p class="text-muted">{$trans("consultant.homestay.consultant.detail.comment")}</p>
+              <a href="/#contact" class="btn btn-outline-danger rounded-pill">{$trans("consultant.homestay.consultant.contact")}</a>
             </div>
           </div>
         </div>
@@ -278,15 +276,5 @@
     margin: 40px auto 0;
     position: relative;
 }
-
-
-
-
-@media screen and (max-width: 767px) {
-    .p-tb-pc {
-        display: none;
-    }
-}
-
 
 </style>

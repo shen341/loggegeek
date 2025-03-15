@@ -209,7 +209,7 @@ export default {
         "manage.problem.case4":"必要なところだけプロにサポートしてほしい",
         "manage.problem.contact":"今すぐ問い合わせ",
 
-        "consultant.big.title":"民泊コンサル",
+        "consultant.big.title":"Plan Price",
         "consultant.title.comment":"私たちは、民泊事業に特化し、オーナー様の成功を全力でサポートすることに専念しています。",
         "consultant.consultant1":"民泊コンサル業",
         "consultant.consultant1.detail":"民泊運営で培った実践的なノウハウを活かし、民泊立ち上げや収益最大化を支援する「コンサルティングサービス」を提供しています。物件購入型の民泊や転貸民泊の運営経験を持ち、物件選び、トラブル対応、リスティング構築、収益改善まで幅広くサポートします。",
@@ -517,7 +517,7 @@ export default {
         "manage.problem.case3":"尽管我将其外包给管理公司，但经常需要自己去做",
         "manage.problem.case4":"我想在需要时获得专业支持",
         "manage.problem.contact":"现在联系我们",
-        "consultant.big.title":"民宿顾问",
+        "consultant.big.title":"Plan Price",
         "consultant.title.comment":"我们专注于度假民宿业务，致力于帮助业主取得成功。",
         "consultant.consultant1":"私人住宿咨询业务",
         "consultant.consultant1.detail":"利用在民宿旅馆经营中积累的实用知识，提供咨询服务，支持私人住宿设施的设立和利润最大化。我们拥有房产购买型度假租赁和分租度假租赁的运营经验，提供从选房、故障排除、房源建设、盈利提升等多方面的支持。",
@@ -826,7 +826,7 @@ export default {
         "manage.problem.case4":"I want professional support only where I need it",
         "manage.problem.contact":"Contact us now",
 
-        "consultant.big.title":"Private lodging consulting",
+        "consultant.big.title":"Plan Price",
         "consultant.title.comment":"We specialize in the private lodging business and are dedicated to supporting our owners' success.",
         "consultant.consultant1":"Private lodging consulting business",
         "consultant.consultant1.detail":"We provide consulting services that utilize the practical know-how we have cultivated in operating private lodgings to support the launch of private lodgings and maximizing profits. With experience in operating private lodgings through property purchase and sub-leasing, we provide a wide range of support, from property selection, troubleshooting, listing creation, and profit improvement.",
