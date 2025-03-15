@@ -9,11 +9,27 @@
 	import AccountStar from "svelte-material-icons/AccountStar.svelte"
 	import backgroundVideo from '$lib/video/backgroud4.mp4';
 	import  MetaTagComponent from "../Components/MetaTagComponent.svelte";
-	import { trans } from "$lib/language/i18n";
+	import { trans,locale } from "$lib/language/i18n";
+    import { browser, building, dev, version } from '$app/environment';
 
 	import {
-    useForm,
-  } from "svelte-use-form";
+		useForm,
+	} from "svelte-use-form";
+
+
+	if (browser) {
+      // @ts-ignore
+      let userLang = window.navigator.language || navigator.userLanguage;
+
+      if (userLang === "ja") {
+            $locale = "日本語"
+      } else if (userLang === "zh-CN") {
+            $locale = "中文"
+      } else {
+			$locale="English"
+		}
+
+    }
 
   const inquireForm = useForm();
   let customerName="",customerEmail="",title="",customerMessage=""
