@@ -11,7 +11,7 @@
   import WALL10 from "$lib/img/manage/10.jpg";
   import WALL11 from "$lib/img/manage/11.png";
   import WALL12 from "$lib/img/manage/20.jpg";
-  import WALL14 from "$lib/img/manage/Image_20250222170306.jpg";
+  import WALL14 from "$lib/img/manage/14.jpg";
 	import MetaTagComponent from "../../Components/MetaTagComponent.svelte";
 
   import ASK1 from "$lib/img/manage/illustration/2110.jpg";
@@ -688,22 +688,26 @@
         </a>
       </div>
       <div class="col-md-4 animate-on-scroll" style="transform: translateY(50px);">
-        <div class="card border-0 shadow-sm">
-          <img src={WALL14} alt="Property" class="card-img-top" style="height: 310px;width:auto;">
-          <div class="card-body">
-            <h5 class="card-title">{$trans("manage.actual.results.example")}2</h5>
-            <p class="card-text"> {$trans("manage.actual.results.detail2")}</p>
+        <a href="https://www.airbnb.jp/rooms/935642690863220334" target="_blank">
+          <div class="card border-0 shadow-sm">
+            <img src={WALL14} alt="Property" class="card-img-top" style="height: 310px;width:auto;">
+            <div class="card-body">
+              <h5 class="card-title">{$trans("manage.actual.results.example")}2</h5>
+              <p class="card-text"> {$trans("manage.actual.results.detail2")}</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-4 animate-on-scroll" style="transform: translateY(50px);">
-        <div class="card border-0 shadow-sm">
-          <img src={WALL10} alt="Property" class="card-img-top" style="height: 310px;width:auto;">
-          <div class="card-body">
-            <h5 class="card-title">{$trans("manage.actual.results.example")}3</h5>
-            <p class="card-text">{$trans("manage.actual.results.detail3")}</p>
+        <a href="https://www.airbnb.jp/rooms/28271131" target="_blank">
+          <div class="card border-0 shadow-sm">
+            <img src={WALL10} alt="Property" class="card-img-top" style="height: 310px;width:auto;">
+            <div class="card-body">
+              <h5 class="card-title">{$trans("manage.actual.results.example")}3</h5>
+              <p class="card-text">{$trans("manage.actual.results.detail3")}</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-4 animate-on-scroll" style="transform: translateY(50px);">
         <a href="https://www.airbnb.jp/rooms/1316004369933068728?source_impression_id=p3_1742018300_P3tp2179E47o3HLC" target="_blank">
@@ -755,6 +759,9 @@
 
 <style>
 
+a div div.card-body p {
+  text-align: left;
+}
 
 .rounded-pill {
   font-weight: 700;

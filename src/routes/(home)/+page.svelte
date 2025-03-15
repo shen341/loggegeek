@@ -21,6 +21,8 @@
       // @ts-ignore
       let userLang = window.navigator.language || navigator.userLanguage;
 
+	//   console.log(userLang);
+
       if (userLang === "ja") {
             $locale = "日本語"
       } else if (userLang === "zh-CN") {
