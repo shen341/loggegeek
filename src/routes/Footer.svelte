@@ -187,7 +187,6 @@
   @media (max-width: 768px) {
     .qr-tooltip {
       left: 200%;
-      transform: translateX(0);
     }
 
     .qr-tooltip-container:hover .qr-tooltip {
