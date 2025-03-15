@@ -136,7 +136,7 @@
 
      <div class="mt-4 text-center">
       <p class="lead mb-4">{$trans("subcontracting.contact.title")}</p>
-      <a href="#contact" class="btn btn-danger btn-lg rounded-pill px-5">
+      <a href="/#contact" class="btn btn-danger btn-lg rounded-pill px-5">
         {$trans("manage.contact.button")}
         <ArrowRightCircle/>
       </a> 
@@ -201,76 +201,6 @@
 
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container">
-    <h6 class="mb-4 text-center">CONTACT</h6>
-    <h2 class="mb-5 text-center">{$trans("manage.contact.button")}</h2>
-    <div class="row gy-4">
-      <div class="col-lg-4">
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-        <div class="icon">
-          <MapMarkerRadius color="#ffc451" width=36 height=36/>
-        </div>
-
-        <div>
-          <h3>Address</h3>
-          <p>〒134-0088 東京都江戸川区西葛西2-22-45 542室</p>
-          <p>Room.542, 2-22-45, Nishikasai, Edogawaku, Tokyo, 134-0088, Japan</p>
-        </div>
-        </div><!-- End Info Item -->
-  
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-        <div class="icon">
-          <Cellphone color="#ffc451" width=36 height=36/>
-        </div>
-        <div>
-          <h3>Call Us</h3>
-          <p><a href="tel:03-6824-7905">Japan Local: 03-6824-7905</a></p>
-          <p><a href="tel:+81368247905">International: +81-368247905</a></p>
-        </div>
-        </div><!-- End Info Item -->
-  
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-        <div class="icon">
-          <EmailOutline color="#ffc451" width=36 height=36/>
-        </div>
-        <div>
-          <h3>Email Us</h3>
-          <p><a href="mailTo:contact@lodgegeek.com" class="__cf_email__" >contact@lodgegeek.com
-          </a>
-        </p>
-        </div>
-        </div><!-- End Info Item -->
-  
-        <!-- End Info Item -->
-			  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-          <div class="icon">
-            <Facebook color="#ffc451" width=36 height=36/>
-          </div>
-          <div>
-            <h3>Social Media</h3>
-            <p>
-            <img src="{WECHAT}" style="width: 36px;height:36px" alt="" />dinzzz
-            <a href="https://line.me/R/ti/p/@834rjqcs" target="_blank"><img src="{LINE}" style="width: 36px;height:36px" alt="" />834rjqcs</a>
-            </p>				  
-          </div>
-        </div>
-
-      </div>
-      <!-- Start of Contact Form (Tallyを使用)-->
-      <div class="col-lg-8">
-        <div class="wrap">
-          <iframe data-tally-src="https://tally.so/embed/meBRqQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="313" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-        </div>
-      </div>
-      <!-- End of Contact Form (Tallyを使用)-->
-    </div>
-
-  </div>
-
-</section>
-<!-- /Contact Section -->
 
 <style>
 

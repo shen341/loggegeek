@@ -5,6 +5,8 @@
   import Sofa from "svelte-material-icons/Sofa.svelte";
   import Camera from "svelte-material-icons/Camera.svelte";
   import Broom from "svelte-material-icons/Broom.svelte";
+  import Web from "svelte-material-icons/Web.svelte";
+  import Monitor from "svelte-material-icons/Monitor.svelte";
   import FileDocument from "svelte-material-icons/FileDocument.svelte";
 	import { trans,locale } from "$lib/language/i18n";
   import ArrowRightCircle from "svelte-material-icons/ArrowRightCircle.svelte"
@@ -97,6 +99,31 @@
           <div class="price">{$trans("interiorDesign.card6.price")}</div>
         </div>
       </div>
+
+      <!-- home page -->
+      <div class="col-md-3">
+        <div class="service-card text-center">
+          <div class="icon-wrapper mb-3">
+            <Web size="48"/>
+          </div>
+          <h3>{$trans("interiorDesign.card7.title")}</h3>
+          <p>{$trans("interiorDesign.card7.detail")}</p>
+          <div class="price">{$trans("interiorDesign.card7.price")}</div>
+        </div>
+      </div>
+
+      <!-- Reservation system -->
+      <div class="col-md-3">
+        <div class="service-card text-center">
+          <div class="icon-wrapper mb-3">
+            <Monitor size="48"/>  
+          </div>
+          <h3>{$trans("interiorDesign.card8.title")}</h3>
+          <p>{$trans("interiorDesign.card8.detail")}</p>
+          <div class="price">{$trans("interiorDesign.card8.price")}</div>
+        </div>
+      </div>
+
     </div>
 
     <!-- CTA Button -->

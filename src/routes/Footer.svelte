@@ -1,11 +1,14 @@
 <script>
-  	import Twitter from "svelte-material-icons/Twitter.svelte"
-    import Facebook from "svelte-material-icons/Facebook.svelte"
     import Instagram from "svelte-material-icons/Instagram.svelte"
-    import Linkedin from "svelte-material-icons/Linkedin.svelte"
+    import Whatsapp from "svelte-material-icons/Whatsapp.svelte"
+    import Tooltip from "sv-tooltip"
+
     import { trans,locale, locales } from "$lib/language/i18n";
     import WECHAT from "$lib/img/socail/apps-wechat.svg";
     import LINE from "$lib/img/socail/icons8-line-96.png";
+    import REDNOTE from "$lib/img/socail/rednote.png";
+    import REDNOTEQR from "$lib/img/socail/reenoteQR.jpg";
+
 
 </script>
 <svelte:head>
@@ -36,11 +39,24 @@
 
             </div>
             <div class="social-links d-flex mt-4">
-              <a href="weixin://dl/chat?dinzzz" target="_blank"><img src="{WECHAT}" style="width: 36px;height:36px" alt="" /></a>
               <a href="https://line.me/R/ti/p/@834rjqcs" target="_blank"><img src="{LINE}" style="width: 36px;height:36px" alt="" /></a>
-              <a href=""><Twitter color="white" width=36 height=36/></a>
-              <a href=""><Facebook color="white" width=36 height=36/></a>
-
+              <div class="qr-tooltip-container">
+                <!-- svelte-ignore a11y-invalid-attribute -->
+                <a href="javascript:void(0)" class="social-link">
+                  <img src="{REDNOTE}" style="width: 36px;height:36px" alt="RedNote" />
+                </a>
+                <div class="qr-tooltip">
+                  <div class="qr-tooltip-arrow"></div>
+                  <img src="{REDNOTEQR}" alt="RedNote QR Code" class="qr-code-img"/>
+                </div>
+              </div>
+              <!-- svelte-ignore a11y-invalid-attribute -->
+              <a href="javascript:void(0)"><Instagram color="white" width=36 height=36/></a>
+              <a href="https://wa.link/nydnxe" target="_blank"><Whatsapp color="white" width=36 height=36/></a>
+              <Tooltip tip="WechatId:<br/>dinzzz<br/>" top color="coral">
+                <!-- svelte-ignore a11y-invalid-attribute -->
+                <a href="javascript:void(0)"><img src="{WECHAT}" style="width: 36px;height:36px" alt="" /></a>
+              </Tooltip>
             </div>
           </div>
 
@@ -80,3 +96,107 @@
     </div>
 
 </footer>
+
+<style>
+  .qr-tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+
+  .social-link:hover {
+    transform: translateY(-2px);
+  }
+
+  .qr-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .qr-tooltip-arrow {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid white;
+  }
+
+  .qr-code-img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 4px;
+  }
+
+  /* Show tooltip on hover */
+  .qr-tooltip-container:hover .qr-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+  }
+
+  /* Animation for tooltip */
+  @keyframes tooltipFadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-5px);
+    }
+  }
+
+  /* Optional: Add a subtle bounce effect */
+  @keyframes tooltipBounce {
+    0%, 100% {
+      transform: translateX(-50%) translateY(-5px);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-8px);
+    }
+  }
+
+  .qr-tooltip-container:hover .qr-tooltip {
+    animation: tooltipFadeIn 0.3s ease forwards,
+               tooltipBounce 2s ease infinite 0.3s;
+  }
+
+  /* Optional: Add media query for mobile devices */
+  @media (max-width: 768px) {
+    .qr-tooltip {
+      left: 200%;
+      transform: translateX(0);
+    }
+
+    .qr-tooltip-container:hover .qr-tooltip {
+      transform: translateX(0) translateY(-5px);
+    }
+
+    .qr-tooltip-arrow {
+      left: 20px;
+      transform: translateX(0);
+    }
+  }
+</style>

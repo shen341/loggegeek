@@ -10,7 +10,7 @@
   import WALL8 from "$lib/img/manage/8.jpg";
   import WALL10 from "$lib/img/manage/10.jpg";
   import WALL11 from "$lib/img/manage/11.png";
-  import WALL12 from "$lib/img/manage/Image_20250222170109.jpg";
+  import WALL12 from "$lib/img/manage/20.jpg";
   import WALL14 from "$lib/img/manage/Image_20250222170306.jpg";
 	import MetaTagComponent from "../../Components/MetaTagComponent.svelte";
 
@@ -18,18 +18,10 @@
   import ASK2 from "$lib/img/manage/illustration/2111.jpg";
   import ASK3 from "$lib/img/manage/illustration/2115.jpg";
   import ASK4 from "$lib/img/manage/illustration/2119.png";
-  import Reception from "$lib/img/manage/illustration/Reception.svg";
-  import Cleaner from "$lib/img/manage/illustration/cleaner.svg";
-  import Security from "$lib/img/manage/illustration/Security.svg";
-	import EmailOutline from "svelte-material-icons/EmailOutline.svelte"
-	import MapMarkerRadius from "svelte-material-icons/MapMarkerRadius.svelte"
-	import Cellphone from "svelte-material-icons/Cellphone.svelte"
   import ProductionRelated from "../../Components/ProductionRelated.svelte";
   import InteriorDesignCoordination from "../../Components/InteriorDesignCoordination.svelte";
 	import { trans,locale } from "$lib/language/i18n";
-  import Facebook from "svelte-material-icons/Facebook.svelte"
-  import WECHAT from "$lib/img/socail/apps-wechat.svg";
-  import LINE from "$lib/img/socail/icons8-line-96.png";
+
 
   
   let  productModalShow=false;
@@ -164,7 +156,7 @@
         </p>
         <div>
           <p class="important_red text-center mb-2">{$trans("manage.contact")}</p>
-          <a href="#contact" class="btn btn-danger btn-lg rounded-pill">
+          <a href="/#contact" class="btn btn-danger btn-lg rounded-pill">
             {$trans("manage.contact.button")}
             <ArrowRightCircle width="32" height="32"/>
           </a>
@@ -258,7 +250,7 @@
                       <p class="p-tb-pc__ct-txt">- {$trans("manage.geust.message")}</p>
                       <p class="p-tb-pc__ct-txt">- {$trans("manage.geust.telephone")}</p>
                       <p class="p-tb-pc__ct-txt">- {$trans("manage.geust.review")}</p>
-                      <p class="p-tb-pc__ct-txt">- {$trans("manage.customer.collect.info")}</p>
+                      <!-- <p class="p-tb-pc__ct-txt">- {$trans("manage.customer.collect.info")}</p> -->
                   </div>
               </div>
           </div>
@@ -310,13 +302,13 @@
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-              <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+              <!-- <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p> -->
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-              <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-              <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+              <p class="p-tb-pc__ct-txt">ー</p>
+              <p class="p-tb-pc__ct-txt">ー</p>
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail">
             <p class="p-tb-pc__ct-txt">ー</p>
@@ -341,7 +333,7 @@
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
-            <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <!-- <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p> -->
         </div>
         <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
           <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
@@ -372,7 +364,7 @@
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
               <p class="p-tb-pc__ct-txt">{$trans("manage.month.fee")}5,000{$trans("manage.unit")}</p>
-              <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+              <!-- <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p> -->
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail p-tb-pc__ct--mid">
               <p class="p-tb-pc__ct-txt">ー</p>
@@ -382,7 +374,7 @@
           </div>
           <div class="p-tb-pc__ct p-tb-pc__ct--detail">
             <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">30,000{$trans("manage.unit")}&emsp;</p>
-            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">70,000{$trans("manage.unit")}〜</p>
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">30,000{$trans("manage.unit")}</p>
             <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000{$trans("manage.unit")}&emsp;</p>
             <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000{$trans("manage.unit")}&emsp;</p>
             <p class="p-tb-pc__ct-txt"></p>
@@ -428,10 +420,10 @@
                 <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.review")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
-            <div class="p-tb-sp__ct-item">
+            <!-- <div class="p-tb-sp__ct-item">
                 <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.collect.info")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-            </div>
+            </div> -->
         </div>
         <!-- {$trans("manage.maintenance")} -->
         <div class="p-tb-sp__ct">
@@ -446,11 +438,11 @@
           </div>
           <div class="p-tb-sp__ct-item">
               <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.clean")}</p>
-              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+              <p class="p-tb-sp__ct-item-txt">ー</p>
           </div>
           <div class="p-tb-sp__ct-item">
               <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maintenance.welcome")}</p>
-              <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
+              <p class="p-tb-sp__ct-item-txt">ー</p>
           </div>
        </div>
         <!-- {$trans("manage.maker")} -->
@@ -550,10 +542,10 @@
                   <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.review")}</p>
                   <p class="p-tb-sp__ct-item-txt">{$trans("manage.month.fee")}5,000{$trans("manage.unit")}&emsp;</p>
               </div>
-              <div class="p-tb-sp__ct-item">
+              <!-- <div class="p-tb-sp__ct-item">
                   <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.geust.collect.info")}</p>
                   <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
-              </div>
+              </div> -->
           </div>
           <div class="p-tb-sp__ct">
             <h4 class="p-tb-sp__ct-ttl">{$trans("manage.maintenance")}</h4>
@@ -582,7 +574,7 @@
               </div>
               <div class="p-tb-sp__ct-item">
                   <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.house.guide")}</p>
-                  <p class="p-tb-sp__ct-item-txt">70,000{$trans("manage.unit")}〜</p>
+                  <p class="p-tb-sp__ct-item-txt">30,000{$trans("manage.unit")}</p>
               </div>
               <div class="p-tb-sp__ct-item">
                   <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.floor.plan")}</p>
@@ -594,13 +586,26 @@
               </div>
               <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>{$trans("manage.maker.detail.forward")}</button></span>
           </div>
-
       </div>
+      <ul class="p-plan__items p-plan__items--sp">
+          <li class="p-plan__item" id="note1" style="">
+              <p class="p-plan__item-txt">※1&ensp;{$trans("manage.comment1")}</p>
+          </li>
+          <li class="p-plan__item" id="note2" >
+              <p class="p-plan__item-txt">※2&ensp;{$trans("manage.comment2")}</p>
+          </li>
+          <li class="p-plan__item">
+              <p class="p-plan__item-txt">※&ensp;{$trans("manage.comment3")}</p>
+          </li>
+          <li class="p-plan__item">
+              <p class="p-plan__item-txt">※&ensp;{$trans("manage.comment4")}</p>
+          </li>
+      </ul>      
     </div>
 
     <ul class="p-plan__items p-plan__items--pc">
         <li class="p-plan__item">
-            <p class="p-plan__item-txt">※1 {$trans("manage.comment1")} </p>
+            <p class="p-plan__item-txt">※1&ensp;{$trans("manage.comment1")} </p>
         </li>
         <li class="p-plan__item">
             <p class="p-plan__item-txt">※2&ensp;{$trans("manage.comment2")}</p>
@@ -612,9 +617,6 @@
             <p class="p-plan__item-txt">※&ensp;&ensp;{$trans("manage.comment4")}</p>
         </li>
     </ul>
-
-
-
   </div>
 </section>
 
@@ -623,11 +625,11 @@
 <section class="py-5 bg-light" id="service">
   <div class="container text-center">
     <h6 class="mb-4">SOLUTION</h6>
-    <h2 class="mb-5">{$trans("manage.subcontract")}</h2>
-    <div class="mb-5">
+    <h2 class="mb-2">{$trans("manage.subcontract")}</h2>
+    <h3>
       {$trans("manage.subcontract.comment")}
-    </div>
-    <div class="row">
+    </h3>
+    <!-- <div class="row">
       <div class="col-md-4 mb-3">
         <div class="card feature-card h-100 border-0 shadow-sm animate-on-scroll">
           <div class="card-body">
@@ -655,11 +657,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
-    <div>
-      <h3 class="important_red text-center mb-2 mt-5">{$trans("manage.subcontract.why")}</h3>
+    <div class="mt-3">
+      <!-- <h3 class="important_red text-center mb-2 mt-5">{$trans("manage.subcontract.why")}</h3> -->
       <a href="/subcontracting" class="btn btn-danger btn-lg rounded-pill">
         {$trans("manage.subcontract.detail")}
         <ArrowRightCircle width="32" height="32"/>
@@ -671,17 +673,19 @@
 <!-- Property Showcase Section -->
 <section class="py-5">
   <div class="container text-center">
-    <h6 class="mb-4">SHOW</h6>
+    <h6 class="mb-4">SHOW CASE</h6>
     <h2 class="text-center mb-5">{$trans("manage.actual.results")}</h2>
     <div class="row g-4">
       <div class="col-md-4 animate-on-scroll" style="transform: translateY(50px);">
-        <div class="card border-0 shadow-sm">
-          <img src={WALL7} alt="Property" class="card-img-top" style="height: 310px;width:auto;">
-          <div class="card-body">
-            <h5 class="card-title">{$trans("manage.actual.results.example")}1</h5>
-            <p class="card-text">{$trans("manage.actual.results.detail1")}</p>
-          </div>
+        <a href="https://www.airbnb.jp/rooms/1298403749612104291" target="_blank">
+          <div class="card border-0 shadow-sm">
+            <img src={WALL7} alt="Property" class="card-img-top" style="height: 310px;width:auto;">
+            <div class="card-body">
+              <h5 class="card-title">{$trans("manage.actual.results.example")}1</h5>
+              <p class="card-text">{$trans("manage.actual.results.detail1")}</p>
+            </div>
         </div>
+        </a>
       </div>
       <div class="col-md-4 animate-on-scroll" style="transform: translateY(50px);">
         <div class="card border-0 shadow-sm">
@@ -702,106 +706,43 @@
         </div>
       </div>
       <div class="col-md-4 animate-on-scroll" style="transform: translateY(50px);">
-        <div class="card border-0 shadow-sm">
-          <img src={WALL11} alt="Property" class="card-img-top" style="height:310px;width:auto;">
-          <div class="card-body">
-            <h5 class="card-title">{$trans("manage.actual.results.example")}4</h5>
-            <p class="card-text">{$trans("manage.actual.results.detail4")}</p>
+        <a href="https://www.airbnb.jp/rooms/1316004369933068728?source_impression_id=p3_1742018300_P3tp2179E47o3HLC" target="_blank">
+          <div class="card border-0 shadow-sm">
+            <img src={WALL11} alt="Property" class="card-img-top" style="height:310px;width:auto;">
+            <div class="card-body">
+              <h5 class="card-title">{$trans("manage.actual.results.example")}4</h5>
+              <p class="card-text">{$trans("manage.actual.results.detail4")}</p>
+            </div>
           </div>
-        </div>
+        </a>
+
       </div>
       <div class="col-md-4 animate-on-scroll" style="transform: translateY(50px);">
-        <div class="card border-0 shadow-sm">
-          <img src={WALL12} alt="Property" class="card-img-top" style="height: 300px;width:auto;">
-          <div class="card-body">
-            <h5 class="card-title">{$trans("manage.actual.results.example")}5</h5>
-            <p class="card-text">{$trans("manage.actual.results.detail5")}</p>
+        <a href="https://www.airbnb.jp/rooms/1316026333877933642?source_impression_id=p3_1742018784_P3UUpiWZG63wPhKE" target="_blank">
+          <div class="card border-0 shadow-sm">
+            <img src={WALL12} alt="Property" class="card-img-top" style="height: 300px;width:auto;">
+            <div class="card-body">
+              <h5 class="card-title">{$trans("manage.actual.results.example")}5</h5>
+              <p class="card-text">{$trans("manage.actual.results.detail5")}</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-4 animate-on-scroll" style="transform: translateY(50px);">
-        <div class="card border-0 shadow-sm">
-          <img src={WALL2} alt="Property" class="card-img-top" style="height: 300px;width:auto;">
-          <div class="card-body">
-            <h5 class="card-title">{$trans("manage.actual.results.example")}6</h5>
-            <p class="card-text">{$trans("manage.actual.results.detail6")}</p>
+        <a href="https://www.airbnb.jp/rooms/1325728674362953566" target="_blank">
+          <div class="card border-0 shadow-sm">
+            <img src={WALL2} alt="Property" class="card-img-top" style="height: 300px;width:auto;">
+            <div class="card-body">
+              <h5 class="card-title">{$trans("manage.actual.results.example")}6</h5>
+              <p class="card-text">{$trans("manage.actual.results.detail6")}</p>
+            </div>
           </div>
-        </div>
+        </a>
+
       </div>
     </div>
   </div>
 </section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container">
-    <!-- <h6 class="mb-4 text-center">まずは無料相談からはじめませんか？</h6> -->
-    <h2 class="mb-4 big-title">{$trans("manage.problem.contact")}</h2>
-    <div class="row gy-4">
-      <div class="col-lg-4">
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-        <div class="icon">
-          <MapMarkerRadius color="#ffc451" width=36 height=36/>
-        </div>
-
-        <div>
-          <h3>Address</h3>
-          <p>〒134-0088 東京都江戸川区西葛西2-22-45 542室</p>
-          <p>Room.542, 2-22-45, Nishikasai, Edogawaku, Tokyo, 134-0088, Japan</p>
-        </div>
-        </div><!-- End Info Item -->
-  
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-        <div class="icon">
-          <Cellphone color="#ffc451" width=36 height=36/>
-        </div>
-        <div>
-          <h3>Call Us</h3>
-          <p><a href="tel:03-6824-7905">Japan Local: 03-6824-7905</a></p>
-          <p><a href="tel:+81368247905">International: +81-368247905</a></p>
-        </div>
-        </div><!-- End Info Item -->
-  
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-        <div class="icon">
-          <EmailOutline color="#ffc451" width=36 height=36/>
-        </div>
-        <div>
-          <h3>Email Us</h3>
-          <p><a href="mailTo:contact@lodgegeek.com" class="__cf_email__" >contact@lodgegeek.com
-          </a>
-        </p>
-        </div>
-        </div><!-- End Info Item -->
-  
-        <!-- End Info Item -->
-			  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-          <div class="icon">
-            <Facebook color="#ffc451" width=36 height=36/>
-          </div>
-          <div>
-            <h3>Social Media</h3>
-            <p>
-              <img src="{WECHAT}" style="width: 36px;height:36px" alt="" />dinzzz
-            <a href="https://line.me/R/ti/p/@834rjqcs" target="_blank"><img src="{LINE}" style="width: 36px;height:36px" alt="" />834rjqcs</a>
-            </p>				  
-          </div>
-        </div>
-
-      </div>
-      <!-- Start of Contact Form (Tallyを使用)-->
-      <div class="col-lg-8">
-        <div class="wrap">
-          <iframe data-tally-src="https://tally.so/embed/meBRqQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="313" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-        </div>
-      </div>
-      <!-- End of Contact Form (Tallyを使用)-->
-    </div>
-
-  </div>
-
-</section>
-<!-- /Contact Section -->
 
 
 <ProductionRelated bind:showModal={productModalShow}/>
@@ -1068,9 +1009,10 @@ p.p-tb-pc__ct-txt{
 }
 
 .p-plan__items {
-    margin: 15px 0 0 500px;
+    margin: 15px 0 0 80px;
     position: relative;
     list-style: none;
+    text-align: left;
 }
 .p-plan__item-txt {
     font-size: 11px;
@@ -1206,24 +1148,26 @@ p.p-tb-pc__ct-txt{
 }
 
 
-
+.p-plan__items--sp {
+        display: none;
+    }
 
 @media screen and (max-width: 767px) {
     .p-plan__items--pc {
         display: none;
     }
-}
-
-.p-plan__items--sp {
-        display: none;
-    }
-@media screen and (max-width: 767px) {
     .p-plan__items--sp {
         display: block;
     }
     .p-plan__items {
         margin: 20px 0 0 0;
     }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
     .p-tb-sp {
         display: block;
         width: 100vw;
