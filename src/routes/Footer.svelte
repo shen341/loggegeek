@@ -195,7 +195,7 @@
     }
 
     .qr-tooltip-arrow {
-      left: 20px;
+      left: 80px;
       transform: translateX(0);
     }
   }
