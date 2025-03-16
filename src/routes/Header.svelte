@@ -15,6 +15,10 @@
     }
   }
 
+  function mobileMenuAction() {
+    mobileMenuOpen=!mobileMenuOpen;
+  }
+
   let mobileActiveMenu = "";
   const mobileMenuDropdown = (menu="") => {
     if (mobileActiveMenu==menu) {
@@ -48,9 +52,9 @@
               <i class="bi bi-chevron-down toggle-dropdown"></i>
             </a>
             <ul class="{mobileActiveMenu=="service"?"dropdown-active":""}">
-              <li><a href="/management-service"><ChartLine color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.planning")}</span></a></li>
-              <li><a href="/consultant"><AccountStar color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.consultant")}</span></a></li>
-              <li><a href="/iot"><LockSmart color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.iotSales")}</span></a></li>
+              <li><a href="/management-service" on:click={()=>{mobileMenuAction()}}><ChartLine color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.planning")}</span></a></li>
+              <li><a href="/consultant" on:click={()=>{mobileMenuAction()}} ><AccountStar color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.consultant")}</span></a></li>
+              <li><a href="/iot" on:click={()=>{mobileMenuAction()}}><LockSmart color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.iotSales")}</span></a></li>
             </ul>
           </li>
 
@@ -72,7 +76,7 @@
                     <span class="fi {language=="日本語"?"fi-jp":(language=="中文"?"fi-cn":"fi-um")}"></span>
                     <span style="margin-left: 5px;">{language}</span>
                   </a>
-              </li>                       
+               </li>                       
               {/each}
 
               <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
