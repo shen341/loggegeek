@@ -1,5 +1,5 @@
 <script>
-  import WALL7 from "$lib/img/manage/7.jpg";
+  import WALL7 from "$lib/img/manage/70.jpg";
   import CheckAll from "svelte-material-icons/CheckAll.svelte";
   import MapMarkerRadius from "svelte-material-icons/MapMarkerRadius.svelte";
   import Cellphone from "svelte-material-icons/Cellphone.svelte";
