@@ -23,6 +23,8 @@
 
 	onMount(() => {
 		isContactVisible = window.location.hash === '#contact';
+
+		
 	
 		const handleHashChange = () => {
 			isContactVisible = window.location.hash === '#contact';
@@ -35,7 +37,7 @@
 		};
 
 		window.addEventListener('hashchange', handleHashChange);
-
+		isContactVisible=true;
 		return () => {
 			window.removeEventListener('hashchange', handleHashChange);
 		};

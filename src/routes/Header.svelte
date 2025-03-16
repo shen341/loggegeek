@@ -16,7 +16,7 @@
   }
 
   function mobileMenuAction() {
-    mobileMenuOpen=!mobileMenuOpen;
+    mobileMenuOpen=false;
   }
 
   let mobileActiveMenu = "";
