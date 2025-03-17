@@ -808,6 +808,13 @@ a div div.card-body p {
     max-width: 100%;
     justify-content: center;
   }
+
+  @media (max-width: 768px) {
+    .big-title{
+      font-size: 48px;
+    }
+  }
+
   .watermark {
     color: #063b71;
     font-size: 160px;

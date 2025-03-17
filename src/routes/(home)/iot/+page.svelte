@@ -149,6 +149,12 @@
       max-width: 100%;
       justify-content: center;
     }
+
+    @media (max-width: 768px) {
+    .big-title{
+      font-size: 48px;
+    }
+  }
   
     .service-section {
       background-color: #f8f9fa;
