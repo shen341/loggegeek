@@ -7,7 +7,7 @@
   import ChartLine from "svelte-material-icons/ChartLine.svelte";
   import LockSmart from "svelte-material-icons/LockSmart.svelte";
   import AccountStar from "svelte-material-icons/AccountStar.svelte";
-  import backgroundVideo from "$lib/video/backgroud4.mp4";
+  import backgroundVideo from "$lib/video/bali7.mp4";
   import MetaTagComponent from "../Components/MetaTagComponent.svelte";
   import { trans, locale } from "$lib/language/i18n";
   import { browser, building, dev, version } from "$app/environment";
@@ -755,12 +755,13 @@
   }
 
   .custom-backgroud {
-    background: color-mix(in srgb, #063b71, transparent 30%);
+    /* background: color-mix(in srgb, #063b71, transparent 30%); */
+	background: color-mix(in srgb, #739bc5, transparent 30%);
     padding: 5px;
     border-radius: 50px;
     max-width: 980px;
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
   }
 
   .btn3d {
@@ -781,13 +782,8 @@
   }
 
   .btn-info {
-    box-shadow:
-      0 0 0 1px #5bc0de inset,
-      0 0 0 4px rgb(255 255 255 / 15%) inset,
-      0 8px 0 0 #46b8da,
-      0 8px 0 2px #ccc9c9,
-      0 10px 10px 8px rgba(0, 0, 0, 0.5);
-    background-color: #5bc0de;
+    box-shadow: 0 0 0 1px var(--bs-info-border-subtle) inset, 0 0 0 4px rgb(255 255 255 / 15%) inset, 0 8px 0 0 #3a9dbb, 0 8px 0 2px #ccc9c9, 0 10px 10px 8px rgba(0, 0, 0, 0.5);
+    background-color: #3ad2f1;
   }
 
   .btn-primary {

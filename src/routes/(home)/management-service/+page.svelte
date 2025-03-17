@@ -268,7 +268,7 @@
             </div>
         </div>
 
-        <div class="p-tb-pc__ct">
+        <div class="p-tb-pc__ct custom-height">
             <div class="p-tb-pc__ct-flex">
                 <div class="p-tb-pc__ct-ttl-wrap">
                     <h4 class="p-tb-pc__ct-ttl">{$trans("manage.maker")}</h4>
@@ -278,6 +278,7 @@
                     <p class="p-tb-pc__ct-txt">- {$trans("manage.maker.house.guide")}</p>
                     <p class="p-tb-pc__ct-txt">- {$trans("manage.maker.floor.plan")}</p>
                     <p class="p-tb-pc__ct-txt">- {$trans("manage.maker.stay.form")}</p>
+                    <p class="p-tb-pc__ct-txt">- {$trans("manage.maker.homepage.create")}</p>
                     <p class="p-tb-pc__ct-txt">
                         <span id="modalOpen1">
                           <button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>{$trans("manage.maker.detail.forward")}</button>
@@ -310,12 +311,12 @@
               <p class="p-tb-pc__ct-txt">ー</p>
               <p class="p-tb-pc__ct-txt">ー</p>
           </div>
-          <div class="p-tb-pc__ct p-tb-pc__ct--detail">
+          <div class="p-tb-pc__ct p-tb-pc__ct--detail custom-height">
             <p class="p-tb-pc__ct-txt">ー</p>
             <p class="p-tb-pc__ct-txt">ー</p>
             <p class="p-tb-pc__ct-txt">ー</p>
             <p class="p-tb-pc__ct-txt">ー</p>
-            <p class="p-tb-pc__ct-txt"></p>
+            <p class="p-tb-pc__ct-txt">ー</p>
         </div>          
       </div>
       
@@ -341,11 +342,12 @@
           <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
           <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
         </div>
-        <div class="p-tb-pc__ct p-tb-pc__ct--detail">
+        <div class="p-tb-pc__ct p-tb-pc__ct--detail custom-height">
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
             <p class="p-tb-pc__ct-txt"><span class="material-icons">check_circle</span></p>
+            <p class="p-tb-pc__ct-txt">ー</p>
         </div>
 
       </div>
@@ -372,12 +374,12 @@
               <p class="p-tb-pc__ct-txt">ー</p>
               <p class="p-tb-pc__ct-txt">ー</p>
           </div>
-          <div class="p-tb-pc__ct p-tb-pc__ct--detail">
+          <div class="p-tb-pc__ct p-tb-pc__ct--detail custom-height">
             <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">30,000{$trans("manage.unit")}&emsp;</p>
             <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">30,000{$trans("manage.unit")}</p>
             <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000{$trans("manage.unit")}&emsp;</p>
             <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">10,000{$trans("manage.unit")}&emsp;</p>
-            <p class="p-tb-pc__ct-txt"></p>
+            <p class="p-tb-pc__ct-txt p-tb-pc__ct-txt--price">150,000{$trans("manage.unit")}&emsp;</p>
         </div>          
       </div>
     </div>
@@ -464,6 +466,10 @@
                 <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.stay.form")}</p>
                 <p class="p-tb-sp__ct-item-txt">ー</p>
             </div>
+            <div class="p-tb-sp__ct-item">
+                <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.homepage.create")}</p>
+                <p class="p-tb-sp__ct-item-txt">ー</p>
+            </div>
             <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>{$trans("manage.maker.detail.forward")}</button></span>
         </div>
 
@@ -514,6 +520,10 @@
                 <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.stay.form")}</p>
                 <p class="p-tb-sp__ct-item-txt"><span class="material-icons">check_circle</span></p>
             </div>
+            <div class="p-tb-sp__ct-item">
+              <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.homepage.create")}</p>
+              <p class="p-tb-sp__ct-item-txt">ー</p>
+          </div>
             <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>{$trans("manage.maker.detail.forward")}</button></span>
         </div>
 
@@ -583,6 +593,10 @@
               <div class="p-tb-sp__ct-item">
                   <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.stay.form")}</p>
                   <p class="p-tb-sp__ct-item-txt">10,000{$trans("manage.unit")}&emsp;</p>
+              </div>
+              <div class="p-tb-sp__ct-item">
+                  <p class="p-tb-sp__ct-item-ttl">- {$trans("manage.maker.homepage.create")}</p>
+                  <p class="p-tb-sp__ct-item-txt">150,000{$trans("manage.unit")}&emsp;</p>
               </div>
               <span id="modalOpen4" class="p-tb-sp__ct-item-link"><button class="btn btn-outline-danger rounded-pill" on:click={()=>{productModalShow=true}}>{$trans("manage.maker.detail.forward")}</button></span>
           </div>
@@ -758,6 +772,10 @@
 
 
 <style>
+
+.custom-height{
+  height: 290px !important;
+}
 
 a div div.card-body p {
   text-align: left;
