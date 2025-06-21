@@ -4,11 +4,13 @@
   import MapMarkerRadius from "svelte-material-icons/MapMarkerRadius.svelte";
   import Cellphone from "svelte-material-icons/Cellphone.svelte";
   import EmailOutline from "svelte-material-icons/EmailOutline.svelte";
-  import ChartLine from "svelte-material-icons/ChartLine.svelte";
-  import LockSmart from "svelte-material-icons/LockSmart.svelte";
-  import AccountStar from "svelte-material-icons/AccountStar.svelte";
   import backgroundVideo from "$lib/video/boat.mp4";
   import MetaTagComponent from "../Components/MetaTagComponent.svelte";
+  import Mountain1 from "$lib/img/category/mountain-1.jpg";
+  import Mountain2 from "$lib/img/category/mountain-2.jpg";
+  import Mountain3 from "$lib/img/category/mountain-3.jpg";
+  import Mountain4 from "$lib/img/category/mountain-4.jpg";
+
   import { trans, locale } from "$lib/language/i18n";
   import { browser, building, dev, version } from "$app/environment";
   import { onMount } from 'svelte';
@@ -102,7 +104,7 @@
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-3 col-md-4 col-sm-6">
 				<div class="card my-5">
-					<img src="https://cdn.pixabay.com/photo/2024/01/25/12/30/mountain-8531778_960_720.jpg 1x, https://cdn.pixabay.com/photo/2024/01/25/12/30/mountain-8531778_1280.jpg" class="card-img-top" alt="...">
+					<img src={Mountain1} class="card-img-top" alt="...">
 					<h5 class="card-title text-light">
             {$trans("hero.section.planning")}
 					</h5>
@@ -111,7 +113,7 @@
 			</div>
 			<div class="col-12 col-lg-3 col-md-4 col-sm-6">
 				<div class="card my-5">
-					<img src="https://cdn.pixabay.com/photo/2022/10/23/13/43/canoe-7541311_960_720.jpg" class="card-img-top" alt="...">
+					<img src={Mountain2} class="card-img-top" alt="...">
 					<h5 class="card-title text-light">
             {$trans("hero.section.consultant")}
 					</h5>
@@ -120,7 +122,7 @@
 			</div>
 			<div class="col-12 col-lg-3 col-md-4 col-sm-6">
 				<div class="card my-5">
-					<img src="https://cdn.pixabay.com/photo/2019/07/04/18/49/city-4317139_960_720.jpg" alt="...">
+					<img src={Mountain3} alt="...">
 					<h5 class="card-title text-light">
             {$trans("hero.section.iotSales")}
 					</h5>
@@ -129,7 +131,7 @@
 			</div>
 			<div class="col-12 col-lg-3 col-md-4 col-sm-6">
 				<div class="card my-5">
-					<img src="https://cdn.pixabay.com/photo/2016/11/21/16/32/boy-1846310_960_720.jpg" alt="...">
+					<img src={Mountain4} alt="...">
 					<h5 class="card-title text-light">
             {$trans("photography_planning")}
 					</h5>
@@ -364,9 +366,6 @@
       clip-path: inset(0 0 0 0);
     }
   }
-  .hero:before {
-    animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) square-in-center both;
-  }
 
   .hero-video {
     position: absolute;
@@ -381,38 +380,6 @@
     /* height: 300px; */
   }
 
-  .custom-backgroud {
-    /* background: color-mix(in srgb, #063b71, transparent 30%); */
-	background: color-mix(in srgb, #739bc5, transparent 30%);
-    padding: 5px;
-    border-radius: 50px;
-    max-width: 980px;
-    -webkit-backdrop-filter: blur(5px);
-    /* backdrop-filter: blur(5px); */
-  }
-
-  .btn3d {
-    transition: all 0.08s linear;
-    position: relative;
-    outline: medium none;
-    -moz-outline-style: none;
-    border: 0px;
-    margin-right: 10px;
-    margin-top: 15px;
-  }
-  .btn3d:focus {
-    outline: medium none;
-    -moz-outline-style: none;
-  }
-  .btn3d:active {
-    top: 9px;
-  }
-
-  .btn-info {
-    box-shadow: 0 0 0 1px var(--bs-info-border-subtle) inset, 0 0 0 4px rgb(255 255 255 / 15%) inset, 0 8px 0 0 #3a9dbb, 0 8px 0 2px #ccc9c9, 0 10px 10px 8px rgba(0, 0, 0, 0.5);
-    background-color: #3ad2f1;
-  }
-
   .module, .module-small {
     position: relative;
     padding: 140px 0;
@@ -421,51 +388,6 @@
     background-size: cover;
 }
 
-.module-title {
-    position: relative;
-    letter-spacing: 4px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 30px;
-    color: #111;
-    margin: 0 0 70px;
-}
-
-.module-title + .module-subtitle {
-    margin-top: -35px;
-}
-.module-subtitle {
-    text-align: center;
-    font-size: 16px;
-    color: #111;
-    margin-bottom: 70px;
-}
-.features-icon, .alt-features-icon {
- text-align: center;
-}
-.features-title, .alt-features-title {
-	text-align: center;
-}
-
-.features-card {
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(40px);
-    background: hsl(0deg 0% 100% / 12%);
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.features-card:hover {
-	transform: scale(1.05);
-	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
-
-.card-1{
-  background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
-      background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
-}
 
 
 @-webkit-keyframes animation-bg {
@@ -549,7 +471,7 @@ h5{
 	-ms-transition: all .2s ease-out;
 	-o-transition: all .2s ease-out;
 	transition: all .2s ease-out;
-	font-family: 'Leckerli One', cursive;
+  font-family: var(--default-font);
 }
 
 .card:hover h5{
@@ -577,6 +499,10 @@ div.col-12:nth-child(3) > .card:nth-child(1) > .btn:nth-child(3):hover
 {
   background-color: PaleVioletRed;
 }
+div.col-12:nth-child(4) > .card:nth-child(1) > .btn:nth-child(3):hover
+{
+  background-color: rgb(81, 178, 235);
+}
 
 .card img
 {
@@ -601,9 +527,7 @@ border-radius:15px;
       top: 0;
     }
 
-    .custom-backgroud {
-      border-radius: 0px;
-    }
+
 	.module, .module-small {
 		padding: 40px 0;
 	}
