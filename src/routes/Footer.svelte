@@ -26,7 +26,14 @@
               <span class="sitename">株式会社LodgeGeek</span>
               -->
               <span class="sitename">{$trans("footer.section.companyName")}</span>
+
             </a>
+            
+            <div class="footer-contact pt-3" >
+              <p class="sitename custom-number">住宅宿泊管理業者
+                <br>登録番号：国土交通大臣(01)第F037122号</p>
+            </div>
+
             <div class="footer-contact pt-3">
               <p>{$trans("footer.section.address1")}
               </p>
@@ -194,6 +201,12 @@
                tooltipBounce 2s ease infinite 0.3s;
   }
 
+  .custom-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+
   /* Optional: Add media query for mobile devices */
   @media (max-width: 768px) {
     .qr-tooltip {
@@ -208,5 +221,12 @@
       left: 80px;
       transform: translateX(0);
     }
+
+    .custom-number {
+      font-size: 1rem;
+    }
   }
+
+
+
 </style>
