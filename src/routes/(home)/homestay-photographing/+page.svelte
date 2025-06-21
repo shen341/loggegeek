@@ -323,4 +323,17 @@
 		color: #555;
 		font-weight: 500;
 	}
+
+	@media (max-width: 768px) {
+		.page-title {
+			font-size: 1.5rem;
+			padding: 5px 10px;
+		}
+		.section-title h2 {
+			font-size: 1.25rem;
+		}
+		.category-title {
+			font-size: 1rem;
+		}
+	}
 </style>

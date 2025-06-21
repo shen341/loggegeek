@@ -85,10 +85,10 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><span class="material-icons">chevron_right</span> <a href="/consultant"> {$trans("services.section.job1")}</a></li>
-              <li><span class="material-icons">chevron_right</span> <a href="/iot"> {$trans("services.section.job2")}</a></li>
-              <li><span class="material-icons">chevron_right</span> <a href="/consultant"> {$trans("services.section.job3")}</a></li>
-
+              <li><span class="material-icons">chevron_right</span> <a href="/management-service"> {$trans("services.section.job1")}</a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/iot-service"> {$trans("services.section.job2")}</a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/consulting-service"> {$trans("services.section.job3")}</a></li>
+              <li><span class="material-icons">chevron_right</span> <a href="/homestay-photographing"> {$trans("photography_planning")}</a></li>
             </ul>
           </div>
 
