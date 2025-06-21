@@ -6,6 +6,7 @@
   import ChartLine from "svelte-material-icons/ChartLine.svelte"
 	import LockSmart from "svelte-material-icons/LockSmart.svelte"
 	import AccountStar from "svelte-material-icons/AccountStar.svelte"
+  import Camera from "svelte-material-icons/Camera.svelte"
 
 	let mobileMenuOpen = false;
 
@@ -53,8 +54,9 @@
             </a>
             <ul class="{mobileActiveMenu=="service"?"dropdown-active":""}">
               <li><a href="/management-service" on:click={()=>{mobileMenuAction()}}><ChartLine color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.planning")}</span></a></li>
-              <li><a href="/consultant" on:click={()=>{mobileMenuAction()}} ><AccountStar color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.consultant")}</span></a></li>
-              <li><a href="/iot" on:click={()=>{mobileMenuAction()}}><LockSmart color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.iotSales")}</span></a></li>
+              <li><a href="/consulting-service" on:click={()=>{mobileMenuAction()}} ><AccountStar color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.consultant")}</span></a></li>
+              <li><a href="/iot-service" on:click={()=>{mobileMenuAction()}}><LockSmart color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("hero.section.iotSales")}</span></a></li>
+              <li><a href="/homestay-photographing" on:click={()=>{mobileMenuAction()}}><Camera color="#ffc451" width=20 height=20/><span style="margin-left: 5px;">{$trans("photography_planning")}</span></a></li>
             </ul>
           </li>
 

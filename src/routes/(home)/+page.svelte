@@ -7,7 +7,7 @@
   import ChartLine from "svelte-material-icons/ChartLine.svelte";
   import LockSmart from "svelte-material-icons/LockSmart.svelte";
   import AccountStar from "svelte-material-icons/AccountStar.svelte";
-  import backgroundVideo from "$lib/video/bali7.mp4";
+  import backgroundVideo from "$lib/video/boat.mp4";
   import MetaTagComponent from "../Components/MetaTagComponent.svelte";
   import { trans, locale } from "$lib/language/i18n";
   import { browser, building, dev, version } from "$app/environment";
@@ -86,70 +86,59 @@
   />
 </svelte:head>
 
+
+
 <!-- Hero Section -->
-<section id="hero" class="hero section">
-  <!-- <img src="{HEROBG}" class="hero-bg" alt=""> -->
-  <video autoplay loop muted playsinline class="hero-video">
-    <source src={backgroundVideo} type="video/mp4" />
-  </video>
 
-  <div class="container custom-backgroud">
-    <div class="row justify-content-center text-center">
-      <div class="col-xl-12 col-lg-12">
-        <!--
-				<img src="/LodgeGeek_Logo_temp_by_canva.png" alt="ロゴ" class="hero-logo" onerror="console.log('ロゴ画像の読み込みに失敗しました')" onload="console.log('ロゴ画像が正常に読み込まれました')">
-			    -->
-        <h1 style="font-weight: bold;margin-top: 10px;">
-          {$trans("hero.section.title")}
-        </h1>
-        <!-- <p>{$trans("hero.section.subtitle")}</p> -->
-      </div>
-    </div>
-
-    <!--
-		  <div class="row justify-content-center text-center">
-			<div class="col-xl-12 col-lg-12">
-			  <h2>{$trans("hero.section.title")}</h2>
-			  <p>{$trans("hero.section.subtitle")}</p>
-			</div>
-		  </div>
-		  -->
-
-    <div class="row gy-4 justify-content-center" style="text-align: center;">
-      <div class="col-xl-3 col-md-4">
-        <a href="/management-service" class="btn btn-info btn-lg btn3d">
-          <div class="icon-box">
-            <ChartLine color="#ffc451" width="56" height="56" />
-            <h3>{$trans("hero.section.planning")}</h3>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div
-      class="row gy-4 mt-1 mb-5 justify-content-center"
-      style="text-align: center;"
-    >
-      <div class="col-xl-3 col-md-3" data-aos="fade-up" data-aos-delay="500">
-        <a href="/consultant" class="btn btn-info btn-lg btn3d">
-          <div class="icon-box">
-            <AccountStar color="#ffc451" width="56" height="56" />
-            <h3>{$trans("hero.section.consultant")}</h3>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-xl-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-        <a href="/iot" class="btn btn-info btn-lg btn3d">
-          <div class="icon-box">
-            <LockSmart color="#ffc451" width="56" height="56" />
-            <h3>{$trans("hero.section.iotSales")}</h3>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- /Hero Section -->
+
+
+<section id="hero" class=" section module">
+	<video autoplay loop muted playsinline class="hero-video">
+		<source src={backgroundVideo} type="video/mp4" />
+	  </video>
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-3 col-md-4 col-sm-6">
+				<div class="card my-5">
+					<img src="https://cdn.pixabay.com/photo/2024/01/25/12/30/mountain-8531778_960_720.jpg 1x, https://cdn.pixabay.com/photo/2024/01/25/12/30/mountain-8531778_1280.jpg" class="card-img-top" alt="...">
+					<h5 class="card-title text-light">
+            {$trans("hero.section.planning")}
+					</h5>
+					<a href="/management-service" class="btn btn-light">Link</a>
+				</div>
+			</div>
+			<div class="col-12 col-lg-3 col-md-4 col-sm-6">
+				<div class="card my-5">
+					<img src="https://cdn.pixabay.com/photo/2022/10/23/13/43/canoe-7541311_960_720.jpg" class="card-img-top" alt="...">
+					<h5 class="card-title text-light">
+            {$trans("hero.section.consultant")}
+					</h5>
+					<a href="/consulting-service" class="btn btn-light">Link</a>
+				</div>
+			</div>
+			<div class="col-12 col-lg-3 col-md-4 col-sm-6">
+				<div class="card my-5">
+					<img src="https://cdn.pixabay.com/photo/2019/07/04/18/49/city-4317139_960_720.jpg" alt="...">
+					<h5 class="card-title text-light">
+            {$trans("hero.section.iotSales")}
+					</h5>
+					<a href="/iot-service" class="btn btn-light">Link</a>
+				</div>
+			</div>
+			<div class="col-12 col-lg-3 col-md-4 col-sm-6">
+				<div class="card my-5">
+					<img src="https://cdn.pixabay.com/photo/2016/11/21/16/32/boy-1846310_960_720.jpg" alt="...">
+					<h5 class="card-title text-light">
+            {$trans("photography_planning")}
+					</h5>
+					<a href="/homestay-photographing" class="btn btn-light">Link</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <!-- About Section -->
 <section id="about" class="about section">
@@ -192,369 +181,7 @@
 </section>
 <!-- /About Section -->
 
-<!-- Clients Section -->
-<!-- <section id="clients" class="clients section">
-  
-		<div class="container" data-aos="fade-up" data-aos-delay="100">
-  
-		  <div class="swiper">
-			<div class="swiper-wrapper align-items-center">
-			  <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-			  <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-			  <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-			  <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-			  <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-			  <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-			  <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-			  <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-			</div>
-			<div class="swiper-pagination"></div>
-		  </div>
-  
-		</div>
-  
-	  </section> -->
-<!-- /Clients Section -->
 
-<!-- Features Section -->
-<!-- <section id="features" class="features section">
-  
-		<div class="container">
-  
-		  <div class="row gy-4">
-			<div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{WALL12}" alt=""></div>
-			<div class="col-lg-6">
-  
-			  <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" >
-				<div class="icon-class1">
-					<Creation color="#ffc451" width=48 height=48/>
-				</div>
-				<div>
-				  <h4>{$trans("features.section.job1")}</h4>
-				  <ul>
-					<li>{$trans("features.section.job1.detail1")}</li>
-					<li>{$trans("features.section.job1.detail2")}</li>
-				  </ul>
-				</div>
-			  </div>	
-  
-			  <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-				<div class="icon-class1">
-					<EarthPlus color="#ffc451" width=48 height=48/>
-				</div>
-				<div>
-				  <h4>{$trans("features.section.job2")}</h4>
-				  <ul>
-					<li>{$trans("features.section.job2.detail1")}</li>
-					<li>{$trans("features.section.job2.detail2")}</li>
-				  </ul>				  
-				</div>
-			  </div>
-  
-			  <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-				<div class="icon-class1">
-					<Numeric1Circle color="#ffc451" width=48 height=48/>
-				</div>
-				<div>
-				  <h4>{$trans("features.section.job3")}</h4>
-				  <ul>
-					<li>{$trans("features.section.job3.detail1")}</li>
-					<li>{$trans("features.section.job3.detail2")}</li>
-				  </ul>					  
-				</div>
-			  </div>
-			</div>
-		  </div>
-  
-		</div>
-  
-	  </section> -->
-<!-- /Features Section -->
-
-<!-- Services Section -->
-<!-- Call To Action Section -->
-<!-- <section id="call-to-action" class="call-to-action section">
-  
-		<img src="{CTABG}" alt="">
-  
-		<div class="container">
-		  <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-			<div class="col-xl-10">
-			  <div class="text-center">
-				<h3>{$trans("action.section.title")}</h3>
-				<p>{$trans("action.section.subtitle")}</p>
-				<a class="cta-btn" href="#">Call To Action</a>
-			  </div>
-			</div>
-		  </div>
-		</div>
-  
-	  </section><!-- /Call To Action Section -->
-
-<!-- Portfolio Section -->
-
-<!-- Stats Section -->
-<!-- <section id="stats" class="stats section">
-  
-		<div class="container" data-aos="fade-up" data-aos-delay="100">
-  
-		  <div class="row gy-4 align-items-center justify-content-between">
-  
-			<div class="col-lg-5">
-			  <img src="{STATSIMG}" alt="" class="img-fluid">
-			</div>
-  
-			<div class="col-lg-6">
-  
-			  <h3 class="fw-bold fs-2 mb-3">Voluptatem dignissimos provident quasi</h3>
-			  <p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-			  </p>
-  
-			  <div class="row gy-4">
-  
-				<div class="col-lg-6">
-				  <div class="stats-item d-flex">
-					<i class="bi bi-emoji-smile flex-shrink-0"></i>
-					<div>
-					  <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-					  <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-					</div>
-				  </div>
-				</div>
-  
-				<div class="col-lg-6">
-				  <div class="stats-item d-flex">
-					<i class="bi bi-journal-richtext flex-shrink-0"></i>
-					<div>
-					  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-					  <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-					</div>
-				  </div>
-				</div>
-  
-				<div class="col-lg-6">
-				  <div class="stats-item d-flex">
-					<i class="bi bi-headset flex-shrink-0"></i>
-					<div>
-					  <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-					  <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-					</div>
-				  </div>
-				</div>
-  
-				<div class="col-lg-6">
-				  <div class="stats-item d-flex">
-					<i class="bi bi-people flex-shrink-0"></i>
-					<div>
-					  <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-					  <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-					</div>
-				  </div>
-				</div>
-  
-			  </div>
-  
-			</div>
-  
-		  </div>
-  
-		</div>
-  
-	  </section> -->
-<!-- /Stats Section -->
-
-<!-- Testimonials Section -->
-<!-- <section id="testimonials" class="testimonials section">
-  
-		<img src="{TESTIMONIALSBG}" class="testimonials-bg" alt="">
-  
-		<div class="container" data-aos="fade-up" data-aos-delay="100">
-  
-		  <div class="swiper">
-			<div class="swiper-wrapper">
-  
-			  <div class="swiper-slide">
-				<div class="testimonial-item">
-				  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-				  <h3>Saul Goodman</h3>
-				  <h4>Ceo &amp; Founder</h4>
-				  <div class="stars">
-					<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-				  </div>
-				  <p>
-					<i class="bi bi-quote quote-icon-left"></i>
-					<span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-					<i class="bi bi-quote quote-icon-right"></i>
-				  </p>
-				</div>
-			  </div>
-  
-			  <div class="swiper-slide">
-				<div class="testimonial-item">
-				  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-				  <h3>Sara Wilsson</h3>
-				  <h4>Designer</h4>
-				  <div class="stars">
-					<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-				  </div>
-				  <p>
-					<i class="bi bi-quote quote-icon-left"></i>
-					<span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-					<i class="bi bi-quote quote-icon-right"></i>
-				  </p>
-				</div>
-			  </div>
-  
-			  <div class="swiper-slide">
-				<div class="testimonial-item">
-				  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-				  <h3>Jena Karlis</h3>
-				  <h4>Store Owner</h4>
-				  <div class="stars">
-					<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-				  </div>
-				  <p>
-					<i class="bi bi-quote quote-icon-left"></i>
-					<span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-					<i class="bi bi-quote quote-icon-right"></i>
-				  </p>
-				</div>
-			  </div>
-  
-			  <div class="swiper-slide">
-				<div class="testimonial-item">
-				  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-				  <h3>Matt Brandon</h3>
-				  <h4>Freelancer</h4>
-				  <div class="stars">
-					<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-				  </div>
-				  <p>
-					<i class="bi bi-quote quote-icon-left"></i>
-					<span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-					<i class="bi bi-quote quote-icon-right"></i>
-				  </p>
-				</div>
-			  </div>
-  
-			  <div class="swiper-slide">
-				<div class="testimonial-item">
-				  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-				  <h3>John Larson</h3>
-				  <h4>Entrepreneur</h4>
-				  <div class="stars">
-					<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-				  </div>
-				  <p>
-					<i class="bi bi-quote quote-icon-left"></i>
-					<span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-					<i class="bi bi-quote quote-icon-right"></i>
-				  </p>
-				</div>
-			  </div>
-  
-			</div>
-			<div class="swiper-pagination"></div>
-		  </div>
-  
-		</div>
-  
-	  </section> -->
-<!-- /Testimonials Section -->
-
-<!-- Team Section -->
-<!-- <section id="team" class="team section">
-  
-		<div class="container section-title" data-aos="fade-up">
-		  <h2>Team</h2>
-		  <p>our Team</p>
-		</div>
-		<div class="container">
-  
-		  <div class="row gy-4">
-  
-			<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-			  <div class="team-member">
-				<div class="member-img">
-				  <img src="{TEAM1}" class="img-fluid" alt="">
-				  <div class="social">
-					<a href="">
-						<div class="icon">
-							<Twitter color="#ffc451" width=36 height=36/>
-						</div>
-					</a>
-					<a href=""><i class="bi bi-facebook"></i></a>
-					<a href=""><i class="bi bi-instagram"></i></a>
-					<a href=""><i class="bi bi-linkedin"></i></a>
-				  </div>
-				</div>
-				<div class="member-info">
-				  <h4>Walter White</h4>
-				  <span>Chief Executive Officer</span>
-				</div>
-			  </div>
-			</div>
-  
-			<div class="col-lg-3 col-md-6 d-flex align-items-stretch" >
-			  <div class="team-member">
-				<div class="member-img">
-				  <img src="{TEAM2}" class="img-fluid" alt="">
-				  <div class="social">
-					<a href=""><i class="bi bi-twitter-x"></i></a>
-					<a href=""><i class="bi bi-facebook"></i></a>
-					<a href=""><i class="bi bi-instagram"></i></a>
-					<a href=""><i class="bi bi-linkedin"></i></a>
-				  </div>
-				</div>
-				<div class="member-info">
-				  <h4>Sarah Jhonson</h4>
-				  <span>Product Manager</span>
-				</div>
-			  </div>
-			</div>
-  
-			<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-			  <div class="team-member">
-				<div class="member-img">
-				  <img src="{TEAM3}" class="img-fluid" alt="">
-				  <div class="social">
-					<a href=""><i class="bi bi-twitter-x"></i></a>
-					<a href=""><i class="bi bi-facebook"></i></a>
-					<a href=""><i class="bi bi-instagram"></i></a>
-					<a href=""><i class="bi bi-linkedin"></i></a>
-				  </div>
-				</div>
-				<div class="member-info">
-				  <h4>William Anderson</h4>
-				  <span>CTO</span>
-				</div>
-			  </div>
-			</div>
-  
-			<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-			  <div class="team-member">
-				<div class="member-img">
-				  <img src="{TEAM4}" class="img-fluid" alt="">
-				  <div class="social">
-					<a href=""><i class="bi bi-twitter-x"></i></a>
-					<a href=""><i class="bi bi-facebook"></i></a>
-					<a href=""><i class="bi bi-instagram"></i></a>
-					<a href=""><i class="bi bi-linkedin"></i></a>
-				  </div>
-				</div>
-				<div class="member-info">
-				  <h4>Amanda Jepson</h4>
-				  <span>Accountant</span>
-				</div>
-			  </div>
-			</div>
-  
-		  </div>
-  
-		</div>
-	  </section> -->
-<!-- /Team Section -->
 
 <!-- Contact Section -->
 <section id="contact" class="contact section">
@@ -786,24 +413,186 @@
     background-color: #3ad2f1;
   }
 
-  .btn-primary {
-    box-shadow:
-      0 0 0 1px #428bca inset,
-      0 0 0 4px rgba(255, 255, 255, 0.15) inset,
-      0 8px 0 0 #357ebd,
-      0 8px 0 2px #ccc9c9,
-      0 10px 10px 8px rgba(0, 0, 0, 0.5);
-    background-color: #428bca;
-  }
-  .btn-success {
-    box-shadow:
-      0 0 0 1px #5cb85c inset,
-      0 0 0 4px rgba(255, 255, 255, 0.15) inset,
-      0 8px 0 0 #4cae4c,
-      0 8px 0 2px #ccc9c9,
-      0 10px 10px 8px rgba(0, 0, 0, 0.5);
-    background-color: #5cb85c;
-  }
+  .module, .module-small {
+    position: relative;
+    padding: 140px 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.module-title {
+    position: relative;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    color: #111;
+    margin: 0 0 70px;
+}
+
+.module-title + .module-subtitle {
+    margin-top: -35px;
+}
+.module-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 70px;
+}
+.features-icon, .alt-features-icon {
+ text-align: center;
+}
+.features-title, .alt-features-title {
+	text-align: center;
+}
+
+.features-card {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(40px);
+    background: hsl(0deg 0% 100% / 12%);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.features-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-1{
+  background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+
+@-webkit-keyframes animation-bg {
+0% {
+  background-position: 50% 100%;
+}
+100% {
+  background-position: 50% 0%;
+}
+}
+@keyframes animation-bg {
+0% {
+  background-position: 50% 100%;
+}
+100% {
+  background-position: 50% 0%;
+}
+}
+
+section
+{
+  margin-top:5rem;
+}
+
+.card 
+{
+margin-top:5%;
+  -webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-ms-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+ transition: all .2s ease-out;
+border-radius:15px;
+border:none;
+  background-color:white;
+}
+
+
+.btn 
+{
+opacity:0;  
+position:absolute;
+left:50%;
+top: 110%;
+ transform: translate(-50%, -50%);
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0);
+-webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-ms-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+ transition: all .2s ease-out;
+border-radius: 10px;
+padding:0.8rem 1.7rem;
+border:none;
+font-weight:bold;
+}
+
+.card:hover .btn
+{
+opacity:1;
+top: 100%;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover
+{
+box-shadow: 0 4px 18px 0 rgba(0,0,0,0.7);
+
+}
+
+h5{
+	position: absolute;
+	left:50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1rem;
+	opacity:0.8;
+	text-shadow: 1px 1px 2px black;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	font-family: 'Leckerli One', cursive;
+}
+
+.card:hover h5{
+	opacity:1;
+  font-size: 1.5rem;
+}
+
+.btn:hover 
+{
+	color:white;
+	border:none;
+}
+
+div.col-12:nth-child(1) > .card:nth-child(1) > .btn:nth-child(3):hover
+{
+background-color:Navy;
+}
+
+div.col-12:nth-child(2) > .card:nth-child(1) > .btn:nth-child(3):hover
+{
+  background-color:SeaGreen;
+}
+
+div.col-12:nth-child(3) > .card:nth-child(1) > .btn:nth-child(3):hover
+{
+  background-color: PaleVioletRed;
+}
+
+.card img
+{
+filter:blur(0px);
+  -webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-ms-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+ transition: all .2s ease-out;
+border-radius:15px;
+}
+
+.card:hover img{
+	filter:blur(3px);
+}
+
 
   /* スマホ */
   @media only screen and (max-width: 767px) {
@@ -815,6 +604,9 @@
     .custom-backgroud {
       border-radius: 0px;
     }
+	.module, .module-small {
+		padding: 40px 0;
+	}
   }
 
   @media only screen and (min-width: 768px) {
