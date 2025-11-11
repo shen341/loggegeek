@@ -7,6 +7,8 @@
 	import LockSmart from "svelte-material-icons/LockSmart.svelte"
 	import AccountStar from "svelte-material-icons/AccountStar.svelte"
   import Camera from "svelte-material-icons/Camera.svelte"
+  import PhoneClassic from "svelte-material-icons/PhoneClassic.svelte"
+  import EmailFast from "svelte-material-icons/EmailFast.svelte"
 
 	let mobileMenuOpen = false;
 
@@ -32,8 +34,7 @@
 </script>
 
 <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between gnav_sub_parent">
       <a href="/" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="/favicon.png" alt="">
@@ -42,7 +43,7 @@
       </a>
 
       <!-- svelte-ignore a11y-no-static-element-interactions -->
-      <nav id="navmenu" class="navmenu {mobileMenuOpen?'active_mobile_memu':""}">
+      <nav id="navmenu" class="navmenu {mobileMenuOpen?'active_mobile_memu':""}" style="display: inline-flex;">
         <ul>
           <li><a href="/#hero" class="" on:click={()=>{mobileClick()}}>{$trans("memu.title.home")}<br></a></li>
           <li><a href="/#about" on:click={()=>{mobileClick()}}>{$trans("memu.title.about")}</a></li>
@@ -93,6 +94,18 @@
             </ul>
           </li>         
         </ul>
+        <div class="gnav_sub">
+          <a class="gnav_tel" href="tel:0368247905"> 
+              <PhoneClassic color="white" width=36 height=36/>
+              <span class="gnav_telLink">03-6824-7905
+                <span class="gnav_telMemo">平日9:00～17:00(土日休)</span>
+              </span>
+            </a>
+
+          <a class="gnav_form" href="/#contact">
+            <EmailFast color="white" width=48 height=48/><span style="margin-left: 5px;">{$trans("manage.contact.button")}</span></a>
+        </div>
+
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div class="menu_icon" on:click={() => mobileMenuOpen =!mobileMenuOpen}>
 			<FormatListBulleted color="white" width=32 height=32/>
@@ -103,6 +116,9 @@
   </header>
 
   <style>
+  .header {
+      padding: 5px 0;
+    }
   ul li.dropdown ul li a {
       justify-content: flex-start;
       font-size: 12px;
@@ -126,9 +142,55 @@
         z-index: 9999;
 	}
 
-  .menu_icon{
-      display: none;
-    }
+.menu_icon{
+    display: none;
+  }
+
+  .gnav_sub_parent {
+    margin-right: 2px;
+    padding-right: 0px;
+  }
+  .gnav_sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    gap: min((100vw - 40px) * 20 / 1920, 2rem);
+    /* padding: min((100vw - 40px) * 28 / 1920, 1.4rem) min((100vw - 40px) * 20 / 1920, 1rem) min((100vw - 40px) * 28 / 1920, 1.4rem) min((100vw - 40px) * 30 / 1920, 1.5rem); */
+    background: var(--bs-warning);;
+    border-radius: 0 0 0 2.5rem;
+    margin-left: 15px;
+  }
+
+  .gnav_sub .gnav_tel {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.8rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    font-size: min((100vw - 40px) * 24 / 1920, 2.4rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+  .gnav_telMemo {
+    display: block;
+      padding-top: 0.3em;
+      font-size: 47%;
+      letter-spacing: 0.1em;
+  }
 
   
   @media (max-width: 767px) {
@@ -140,6 +202,9 @@
   @media (max-width: 480px) {
     .menu_icon{
       display: block;
+    }
+    .gnav_sub {
+      display: none;
     }
 
   }
