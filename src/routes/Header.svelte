@@ -163,6 +163,16 @@
     margin-left: 15px;
   }
 
+  .gnav_sub:before {
+    position: relative;
+    top: 5%;
+    display: block;
+    width: 0.15rem;
+    height: 90%;
+    content: "";
+    background: var(--bs-light);
+  }  
+
   .gnav_sub .gnav_tel {
     position: relative;
     display: -webkit-box;
